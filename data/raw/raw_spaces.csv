@@ -1,0 +1,810 @@
+SpaceKey,FloorKey,PropertyKey,SpaceCode,SpaceName,SpaceType,AreaSqM,Capacity,IsBookable
+5001,1001,1,BOM-01-FL01-WKA,Open Workstation Bay A - Floor 1,Open Workstation,625.6,67,False
+5002,1001,1,BOM-01-FL01-WKB,Open Workstation Bay B - Floor 1,Open Workstation,462.4,44,False
+5003,1001,1,BOM-01-FL01-OFF,Executive & Managerial Pod - Floor 1,Private Office,95.2,9,False
+5004,1001,1,BOM-01-FL01-SMR,Huddle Meeting Room - Floor 1,Small Meeting Room,54.4,6,True
+5005,1001,1,BOM-01-FL01-LMR,Conference Room - Floor 1,Large Meeting Room,68.0,12,True
+5006,1001,1,BOM-01-FL01-FOC,Focus & Phone Booths - Floor 1,Focus Room,27.2,4,False
+5007,1001,1,BOM-01-FL01-COL,Agile Collaboration Lounge - Floor 1,Collaboration Area,27.2,8,False
+5008,1001,1,BOM-01-FL01-REC,Main Reception & Welcome Hub,Reception / Shared Support,54.4,4,False
+5009,1002,1,BOM-01-FL02-WKA,Open Workstation Bay A - Floor 2,Open Workstation,625.6,67,False
+5010,1002,1,BOM-01-FL02-WKB,Open Workstation Bay B - Floor 2,Open Workstation,462.4,44,False
+5011,1002,1,BOM-01-FL02-OFF,Executive & Managerial Pod - Floor 2,Private Office,95.2,9,False
+5012,1002,1,BOM-01-FL02-SMR,Huddle Meeting Room - Floor 2,Small Meeting Room,54.4,6,True
+5013,1002,1,BOM-01-FL02-LMR,Conference Room - Floor 2,Large Meeting Room,68.0,12,True
+5014,1002,1,BOM-01-FL02-FOC,Focus & Phone Booths - Floor 2,Focus Room,27.2,4,False
+5015,1002,1,BOM-01-FL02-COL,Agile Collaboration Lounge - Floor 2,,27.2,8,False
+5016,1003,1,BOM-01-FL03-WKA,Open Workstation Bay A - Floor 3,Open Workstation,625.6,67,False
+5017,1003,1,BOM-01-FL03-WKB,Open Workstation Bay B - Floor 3,Open Workstation,462.4,44,False
+5018,1003,1,BOM-01-FL03-OFF,Executive & Managerial Pod - Floor 3,Private Office,95.2,9,False
+5019,1003,1,BOM-01-FL03-SMR,Huddle Meeting Room - Floor 3,Small Meeting Room,54.4,6,True
+5020,1003,1,BOM-01-FL03-LMR,Conference Room - Floor 3,Large Meeting Room,68.0,12,True
+5021,1003,1,BOM-01-FL03-FOC,Focus & Phone Booths - Floor 3,Focus Room,27.2,4,False
+5022,1003,1,BOM-01-FL03-COL,Agile Collaboration Lounge - Floor 3,Collaboration Area,27.2,8,False
+5023,1004,1,BOM-01-FL04-WKA,Open Workstation Bay A - Floor 4,Open Workstation,625.6,67,False
+5024,1004,1,BOM-01-FL04-WKB,Open Workstation Bay B - Floor 4,Open Workstation,462.4,44,False
+5025,1004,1,BOM-01-FL04-OFF,Executive & Managerial Pod - Floor 4,Private Office,95.2,9,False
+5026,1004,1,BOM-01-FL04-SMR,Huddle Meeting Room - Floor 4,Small Meeting Room,54.4,6,True
+5027,1004,1,BOM-01-FL04-LMR,Conference Room - Floor 4,Large Meeting Room,68.0,12,True
+5028,1004,1,BOM-01-FL04-FOC,Focus & Phone Booths - Floor 4,Focus Room,27.2,4,False
+5029,1004,1,BOM-01-FL04-COL,Agile Collaboration Lounge - Floor 4,Collaboration Area,27.2,8,False
+5030,1005,1,BOM-01-FL05-WKA,Open Workstation Bay A - Floor 5,Open Workstation,625.6,67,False
+5031,1005,1,BOM-01-FL05-WKB,Open Workstation Bay B - Floor 5,Open Workstation,462.4,44,False
+5032,1005,1,BOM-01-FL05-OFF,Executive & Managerial Pod - Floor 5,Private Office,95.2,9,False
+5033,1005,1,BOM-01-FL05-SMR,Huddle Meeting Room - Floor 5,Small Meeting Room,54.4,6,True
+5034,1005,1,BOM-01-FL05-LMR,Conference Room - Floor 5,Large Meeting Room,68.0,12,True
+5035,1005,1,BOM-01-FL05-FOC,Focus & Phone Booths - Floor 5,Focus Room,27.2,4,False
+5036,1005,1,BOM-01-FL05-COL,Agile Collaboration Lounge - Floor 5,Collaboration Area,27.2,8,False
+5037,1006,2,BOM-02-FL01-WKA,Open Workstation Bay A - Floor 1,Open Workstation,575.0,60,False
+5038,1006,2,BOM-02-FL01-WKB,Open Workstation Bay B - Floor 1,Open Workstation,425.0,41,False
+5039,1006,2,BOM-02-FL01-OFF,Executive & Managerial Pod - Floor 1,Private Office,87.5,9,False
+5040,1006,2,BOM-02-FL01-SMR,Huddle Meeting Room - Floor 1,Small Meeting Room,50.0,6,True
+5041,1006,2,BOM-02-FL01-LMR,Conference Room - Floor 1,Large Meeting Room,62.5,12,True
+5042,1006,2,BOM-02-FL01-FOC,Focus & Phone Booths - Floor 1,Focus Room,25.0,4,False
+5043,1006,2,BOM-02-FL01-COL,Agile Collaboration Lounge - Floor 1,Collaboration Area,25.0,8,False
+5044,1006,2,BOM-02-FL01-REC,Main Reception & Welcome Hub,Reception / Shared Support,50.0,4,False
+5045,1007,2,BOM-02-FL02-WKA,Open Workstation Bay A - Floor 2,Open Workstation,575.0,60,False
+5046,1007,2,BOM-02-FL02-WKB,Open Workstation Bay B - Floor 2,Open Workstation,425.0,40,False
+5047,1007,2,BOM-02-FL02-OFF,Executive & Managerial Pod - Floor 2,Private Office,87.5,9,False
+5048,1007,2,BOM-02-FL02-SMR,Huddle Meeting Room - Floor 2,Small Meeting Room,50.0,6,True
+5049,1007,2,BOM-02-FL02-LMR,Conference Room - Floor 2,Large Meeting Room,62.5,12,True
+5050,1007,2,BOM-02-FL02-FOC,Focus & Phone Booths - Floor 2,Focus Room,25.0,4,False
+5051,1007,2,BOM-02-FL02-COL,Agile Collaboration Lounge - Floor 2,Collaboration Area,25.0,8,False
+5052,1008,2,BOM-02-FL03-WKA,Open Workstation Bay A - Floor 3,Open Workstation,575.0,60,False
+5053,1008,2,BOM-02-FL03-WKB,Open Workstation Bay B - Floor 3,Open Workstation,425.0,40,False
+5054,1008,2,BOM-02-FL03-OFF,Executive & Managerial Pod - Floor 3,Private Office,87.5,9,False
+5055,1008,2,BOM-02-FL03-SMR,Huddle Meeting Room - Floor 3,Small Meeting Room,50.0,6,True
+5056,1008,2,BOM-02-FL03-LMR,Conference Room - Floor 3,Large Meeting Room,62.5,12,True
+5057,1008,2,BOM-02-FL03-FOC,Focus & Phone Booths - Floor 3,Focus Room,25.0,4,False
+5058,1008,2,BOM-02-FL03-COL,Agile Collaboration Lounge - Floor 3,Collaboration Area,25.0,8,False
+5059,1009,3,BOM-03-FL01-WKA,Open Workstation Bay A - Floor 1,Open Workstation,812.67,110,False
+5060,1009,3,BOM-03-FL01-WKB,Open Workstation Bay B - Floor 1,Open Workstation,600.67,75,False
+5061,1009,3,BOM-03-FL01-OFF,Executive & Managerial Pod - Floor 1,Private Office,123.67,16,False
+5062,1009,3,BOM-03-FL01-SMR,Huddle Meeting Room - Floor 1,Small Meeting Room,70.67,6,True
+5063,1009,3,BOM-03-FL01-LMR,Conference Room - Floor 1,Large Meeting Room,88.33,12,True
+5064,1009,3,BOM-03-FL01-FOC,Focus & Phone Booths - Floor 1,Focus Room,35.33,8,False
+5065,1009,3,BOM-03-FL01-COL,Agile Collaboration Lounge - Floor 1,Collaboration Area,35.33,8,False
+5066,1009,3,BOM-03-FL01-REC,Main Reception & Welcome Hub,Reception / Shared Support,70.67,4,False
+5067,1010,3,BOM-03-FL02-WKA,Open Workstation Bay A - Floor 2,Open Workstation,812.67,110,False
+5068,1010,3,BOM-03-FL02-WKB,Open Workstation Bay B - Floor 2,Open Workstation,600.67,75,False
+5069,1010,3,BOM-03-FL02-OFF,Executive & Managerial Pod - Floor 2,Private Office,123.67,16,False
+5070,1010,3,BOM-03-FL02-SMR,Huddle Meeting Room - Floor 2,Small Meeting Room,70.67,6,True
+5071,1010,3,BOM-03-FL02-LMR,Conference Room - Floor 2,Large Meeting Room,88.33,12,True
+5072,1010,3,BOM-03-FL02-FOC,Focus & Phone Booths - Floor 2,Focus Room,35.33,8,False
+5073,1010,3,BOM-03-FL02-COL,Agile Collaboration Lounge - Floor 2,Collaboration Area,35.33,8,False
+5074,1011,3,BOM-03-FL03-WKA,Open Workstation Bay A - Floor 3,Open Workstation,812.67,110,False
+5075,1011,3,BOM-03-FL03-WKB,Open Workstation Bay B - Floor 3,Open Workstation,600.67,74,False
+5076,1011,3,BOM-03-FL03-OFF,Executive & Managerial Pod - Floor 3,Private Office,123.67,16,False
+5077,1011,3,BOM-03-FL03-SMR,Huddle Meeting Room - Floor 3,Small Meeting Room,70.67,6,True
+5078,1011,3,BOM-03-FL03-LMR,Conference Room - Floor 3,Large Meeting Room,88.33,12,True
+5079,1011,3,BOM-03-FL03-FOC,Focus & Phone Booths - Floor 3,Focus Room,35.33,8,False
+5080,1011,3,BOM-03-FL03-COL,Agile Collaboration Lounge - Floor 3,Collaboration Area,35.33,8,False
+5081,1012,3,BOM-03-FL04-WKA,Open Workstation Bay A - Floor 4,Open Workstation,812.67,110,False
+5082,1012,3,BOM-03-FL04-WKB,Open Workstation Bay B - Floor 4,Open Workstation,600.67,74,False
+5083,1012,3,BOM-03-FL04-OFF,Executive & Managerial Pod - Floor 4,Private Office,123.67,16,False
+5084,1012,3,BOM-03-FL04-SMR,Huddle Meeting Room - Floor 4,Small Meeting Room,70.67,6,True
+5085,1012,3,BOM-03-FL04-LMR,Conference Room - Floor 4,Large Meeting Room,88.33,12,True
+5086,1012,3,BOM-03-FL04-FOC,Focus & Phone Booths - Floor 4,Focus Room,35.33,8,False
+5087,1012,3,BOM-03-FL04-COL,Agile Collaboration Lounge - Floor 4,Collaboration Area,35.33,8,False
+5088,1013,3,BOM-03-FL05-WKA,Open Workstation Bay A - Floor 5,Open Workstation,812.67,110,False
+5089,1013,3,BOM-03-FL05-WKB,Open Workstation Bay B - Floor 5,Open Workstation,600.67,74,False
+5090,1013,3,BOM-03-FL05-OFF,Executive & Managerial Pod - Floor 5,Private Office,123.67,16,False
+5091,1013,3,BOM-03-FL05-SMR,Huddle Meeting Room - Floor 5,Small Meeting Room,70.67,6,True
+5092,1013,3,BOM-03-FL05-LMR,Conference Room - Floor 5,Large Meeting Room,88.33,12,True
+5093,1013,3,BOM-03-FL05-FOC,Focus & Phone Booths - Floor 5,Focus Room,35.33,8,False
+5094,1013,3,BOM-03-FL05-COL,Agile Collaboration Lounge - Floor 5,Collaboration Area,35.33,8,False
+5095,1014,3,BOM-03-FL06-WKA,Open Workstation Bay A - Floor 6,Open Workstation,812.67,110,False
+5096,1014,3,BOM-03-FL06-WKB,Open Workstation Bay B - Floor 6,Open Workstation,600.67,74,False
+5097,1014,3,BOM-03-FL06-OFF,Executive & Managerial Pod - Floor 6,Private Office,123.67,16,False
+5098,1014,3,BOM-03-FL06-SMR,Huddle Meeting Room - Floor 6,Small Meeting Room,70.67,6,True
+5099,1014,3,BOM-03-FL06-LMR,Conference Room - Floor 6,Large Meeting Room,88.33,12,True
+5100,1014,3,BOM-03-FL06-FOC,Focus & Phone Booths - Floor 6,Focus Room,35.33,8,False
+5101,1014,3,BOM-03-FL06-COL,Agile Collaboration Lounge - Floor 6,Collaboration Area,35.33,8,False
+5102,1015,4,PNQ-01-FL01-WKA,Open Workstation Bay A - Floor 1,Open Workstation,891.25,113,False
+5103,1015,4,PNQ-01-FL01-WKB,Open Workstation Bay B - Floor 1,Open Workstation,658.75,77,False
+5104,1015,4,PNQ-01-FL01-OFF,Executive & Managerial Pod - Floor 1,Private Office,135.62,17,False
+5105,1015,4,PNQ-01-FL01-SMR,Huddle Meeting Room - Floor 1,Small Meeting Room,77.5,6,True
+5106,1015,4,PNQ-01-FL01-LMR,Conference Room - Floor 1,Large Meeting Room,96.88,12,True
+5107,1015,4,PNQ-01-FL01-FOC,Focus & Phone Booths - Floor 1,Focus Room,38.75,8,False
+5108,1015,4,PNQ-01-FL01-COL,Agile Collaboration Lounge - Floor 1,Collaboration Area,38.75,8,False
+5109,1015,4,PNQ-01-FL01-REC,Main Reception & Welcome Hub,Reception / Shared Support,77.5,4,False
+5110,1016,4,PNQ-01-FL02-WKA,Open Workstation Bay A - Floor 2,Open Workstation,891.25,113,False
+5111,1016,4,PNQ-01-FL02-WKB,Open Workstation Bay B - Floor 2,Open Workstation,658.75,77,False
+5112,1016,4,PNQ-01-FL02-OFF,Executive & Managerial Pod - Floor 2,Private Office,135.62,17,False
+5113,1016,4,PNQ-01-FL02-SMR,Huddle Meeting Room - Floor 2,Small Meeting Room,77.5,6,True
+5114,1016,4,PNQ-01-FL02-LMR,Conference Room - Floor 2,Large Meeting Room,96.88,12,True
+5115,1016,4,PNQ-01-FL02-FOC,Focus & Phone Booths - Floor 2,Focus Room,38.75,8,False
+5116,1016,4,PNQ-01-FL02-COL,Agile Collaboration Lounge - Floor 2,Collaboration Area,38.75,8,False
+5117,1017,4,PNQ-01-FL03-WKA,Open Workstation Bay A - Floor 3,Open Workstation,891.25,113,False
+5118,1017,4,PNQ-01-FL03-WKB,Open Workstation Bay B - Floor 3,Open Workstation,658.75,77,False
+5119,1017,4,PNQ-01-FL03-OFF,Executive & Managerial Pod - Floor 3,Private Office,135.62,17,False
+5120,1017,4,PNQ-01-FL03-SMR,Huddle Meeting Room - Floor 3,open_workstation,77.5,6,True
+5121,1017,4,PNQ-01-FL03-LMR,Conference Room - Floor 3,Large Meeting Room,96.88,12,True
+5122,1017,4,PNQ-01-FL03-FOC,Focus & Phone Booths - Floor 3,Focus Room,38.75,8,False
+5123,1017,4,PNQ-01-FL03-COL,Agile Collaboration Lounge - Floor 3,Collaboration Area,38.75,8,False
+5124,1018,4,PNQ-01-FL04-WKA,Open Workstation Bay A - Floor 4,Open Workstation,891.25,113,False
+5125,1018,4,PNQ-01-FL04-WKB,Open Workstation Bay B - Floor 4,Open Workstation,658.75,77,False
+5126,1018,4,PNQ-01-FL04-OFF,Executive & Managerial Pod - Floor 4,Private Office,135.62,17,False
+5127,1018,4,PNQ-01-FL04-SMR,Huddle Meeting Room - Floor 4,Small Meeting Room,77.5,6,True
+5128,1018,4,PNQ-01-FL04-LMR,Conference Room - Floor 4,Large Meeting Room,96.88,12,True
+5129,1018,4,PNQ-01-FL04-FOC,Focus & Phone Booths - Floor 4,Focus Room,38.75,8,False
+5130,1018,4,PNQ-01-FL04-COL,Agile Collaboration Lounge - Floor 4,Collaboration Area,38.75,8,False
+5131,1019,4,PNQ-01-FL05-WKA,Open Workstation Bay A - Floor 5,Open Workstation,891.25,113,False
+5132,1019,4,PNQ-01-FL05-WKB,Open Workstation Bay B - Floor 5,Open Workstation,658.75,77,False
+5133,1019,4,PNQ-01-FL05-OFF,Executive & Managerial Pod - Floor 5,Private Office,135.62,17,False
+5134,1019,4,PNQ-01-FL05-SMR,Huddle Meeting Room - Floor 5,Small Meeting Room,77.5,6,True
+5135,1019,4,PNQ-01-FL05-LMR,Conference Room - Floor 5,Large Meeting Room,96.88,12,True
+5136,1019,4,PNQ-01-FL05-FOC,Focus & Phone Booths - Floor 5,Focus Room,38.75,8,False
+5137,1019,4,PNQ-01-FL05-COL,Agile Collaboration Lounge - Floor 5,Collaboration Area,38.75,8,False
+5138,1020,4,PNQ-01-FL06-WKA,Open Workstation Bay A - Floor 6,Open Workstation,891.25,113,False
+5139,1020,4,PNQ-01-FL06-WKB,Open Workstation Bay B - Floor 6,Open Workstation,658.75,77,False
+5140,1020,4,PNQ-01-FL06-OFF,Executive & Managerial Pod - Floor 6,Private Office,135.62,17,False
+5141,1020,4,PNQ-01-FL06-SMR,Huddle Meeting Room - Floor 6,Small Meeting Room,77.5,6,True
+5142,1020,4,PNQ-01-FL06-LMR,Conference Room - Floor 6,Large Meeting Room,96.88,12,True
+5143,1020,4,PNQ-01-FL06-FOC,Focus & Phone Booths - Floor 6,Focus Room,38.75,8,False
+5144,1020,4,PNQ-01-FL06-COL,Agile Collaboration Lounge - Floor 6,Collaboration Area,38.75,8,False
+5145,1021,4,PNQ-01-FL07-WKA,Open Workstation Bay A - Floor 7,Open Workstation,891.25,113,False
+5146,1021,4,PNQ-01-FL07-WKB,Open Workstation Bay B - Floor 7,Open Workstation,658.75,77,False
+5147,1021,4,PNQ-01-FL07-OFF,Executive & Managerial Pod - Floor 7,Private Office,135.62,17,False
+5148,1021,4,PNQ-01-FL07-SMR,Huddle Meeting Room - Floor 7,Small Meeting Room,77.5,6,True
+5149,1021,4,PNQ-01-FL07-LMR,Conference Room - Floor 7,Large Meeting Room,96.88,12,True
+5150,1021,4,PNQ-01-FL07-FOC,Focus & Phone Booths - Floor 7,Focus Room,38.75,8,False
+5151,1021,4,PNQ-01-FL07-COL,Agile Collaboration Lounge - Floor 7,Collaboration Area,38.75,8,False
+5152,1022,4,PNQ-01-FL08-WKA,Open Workstation Bay A - Floor 8,Open Workstation,891.25,113,False
+5153,1022,4,PNQ-01-FL08-WKB,Open Workstation Bay B - Floor 8,Open Workstation,658.75,77,False
+5154,1022,4,PNQ-01-FL08-OFF,Executive & Managerial Pod - Floor 8,Private Office,135.62,17,False
+5155,1022,4,PNQ-01-FL08-SMR,Huddle Meeting Room - Floor 8,Small Meeting Room,77.5,6,True
+5156,1022,4,PNQ-01-FL08-LMR,Conference Room - Floor 8,Large Meeting Room,96.88,12,True
+5157,1022,4,PNQ-01-FL08-FOC,Focus & Phone Booths - Floor 8,Focus Room,38.75,8,False
+5158,1022,4,PNQ-01-FL08-COL,Agile Collaboration Lounge - Floor 8,Collaboration Area,38.75,8,False
+5159,1023,5,PNQ-02-FL01-WKA,Open Workstation Bay A - Floor 1,Open Workstation,717.6,100,False
+5160,1023,5,PNQ-02-FL01-WKB,Open Workstation Bay B - Floor 1,Open Workstation,530.4,68,False
+5161,1023,5,PNQ-02-FL01-OFF,Executive & Managerial Pod - Floor 1,Private Office,109.2,15,False
+5162,1023,5,PNQ-02-FL01-SMR,Huddle Meeting Room - Floor 1,Small Meeting Room,62.4,6,True
+5163,1023,5,PNQ-02-FL01-LMR,Conference Room - Floor 1,Large Meeting Room,78.0,12,True
+5164,1023,5,PNQ-02-FL01-FOC,Focus & Phone Booths - Floor 1,Focus Room,31.2,7,False
+5165,1023,5,PNQ-02-FL01-COL,Agile Collaboration Lounge - Floor 1,Collaboration Area,31.2,8,False
+5166,1023,5,PNQ-02-FL01-REC,Main Reception & Welcome Hub,Reception / Shared Support,62.4,4,False
+5167,1024,5,PNQ-02-FL02-WKA,Open Workstation Bay A - Floor 2,Open Workstation,717.6,100,False
+5168,1024,5,PNQ-02-FL02-WKB,Open Workstation Bay B - Floor 2,Open Workstation,530.4,68,False
+5169,1024,5,PNQ-02-FL02-OFF,Executive & Managerial Pod - Floor 2,Private Office,109.2,15,False
+5170,1024,5,PNQ-02-FL02-SMR,Huddle Meeting Room - Floor 2,Small Meeting Room,62.4,6,True
+5171,1024,5,PNQ-02-FL02-LMR,Conference Room - Floor 2,Large Meeting Room,78.0,12,True
+5172,1024,5,PNQ-02-FL02-FOC,Focus & Phone Booths - Floor 2,Focus Room,31.2,7,False
+5173,1024,5,PNQ-02-FL02-COL,Agile Collaboration Lounge - Floor 2,Collaboration Area,31.2,8,False
+5174,1025,5,PNQ-02-FL03-WKA,Open Workstation Bay A - Floor 3,Open Workstation,717.6,100,False
+5175,1025,5,PNQ-02-FL03-WKB,Open Workstation Bay B - Floor 3,Open Workstation,530.4,68,False
+5176,1025,5,PNQ-02-FL03-OFF,Executive & Managerial Pod - Floor 3,Private Office,109.2,15,False
+5177,1025,5,PNQ-02-FL03-SMR,Huddle Meeting Room - Floor 3,Small Meeting Room,62.4,6,True
+5178,1025,5,PNQ-02-FL03-LMR,Conference Room - Floor 3,Large Meeting Room,78.0,12,True
+5179,1025,5,PNQ-02-FL03-FOC,Focus & Phone Booths - Floor 3,Focus Room,31.2,7,False
+5180,1025,5,PNQ-02-FL03-COL,Agile Collaboration Lounge - Floor 3,Collaboration Area,31.2,8,False
+5181,1026,5,PNQ-02-FL04-WKA,Open Workstation Bay A - Floor 4,Open Workstation,717.6,100,False
+5182,1026,5,PNQ-02-FL04-WKB,Open Workstation Bay B - Floor 4,Open Workstation,530.4,68,False
+5183,1026,5,PNQ-02-FL04-OFF,Executive & Managerial Pod - Floor 4,Private Office,109.2,15,False
+5184,1026,5,PNQ-02-FL04-SMR,Huddle Meeting Room - Floor 4,Small Meeting Room,62.4,6,True
+5185,1026,5,PNQ-02-FL04-LMR,Conference Room - Floor 4,Large Meeting Room,78.0,12,True
+5186,1026,5,PNQ-02-FL04-FOC,Focus & Phone Booths - Floor 4,Focus Room,31.2,7,False
+5187,1026,5,PNQ-02-FL04-COL,Agile Collaboration Lounge - Floor 4,Collaboration Area,31.2,8,False
+5188,1027,5,PNQ-02-FL05-WKA,Open Workstation Bay A - Floor 5,Open Workstation,717.6,100,False
+5189,1027,5,PNQ-02-FL05-WKB,Open Workstation Bay B - Floor 5,Open Workstation,530.4,68,False
+5190,1027,5,PNQ-02-FL05-OFF,Executive & Managerial Pod - Floor 5,Private Office,109.2,15,False
+5191,1027,5,PNQ-02-FL05-SMR,Huddle Meeting Room - Floor 5,Small Meeting Room,62.4,6,True
+5192,1027,5,PNQ-02-FL05-LMR,Conference Room - Floor 5,Large Meeting Room,78.0,12,True
+5193,1027,5,PNQ-02-FL05-FOC,Focus & Phone Booths - Floor 5,Focus Room,31.2,7,False
+5194,1027,5,PNQ-02-FL05-COL,Agile Collaboration Lounge - Floor 5,Collaboration Area,31.2,8,False
+5195,1028,6,BLR-01-FL01-WKA,Open Workstation Bay A - Floor 1,Open Workstation,912.33,116,False
+5196,1028,6,BLR-01-FL01-WKB,Open Workstation Bay B - Floor 1,Open Workstation,674.33,79,False
+5197,1028,6,BLR-01-FL01-OFF,Executive & Managerial Pod - Floor 1,Private Office,138.83,17,False
+5198,1028,6,BLR-01-FL01-SMR,Huddle Meeting Room - Floor 1,Small Meeting Room,79.33,6,True
+5199,1028,6,BLR-01-FL01-LMR,Conference Room - Floor 1,Large Meeting Room,99.17,12,True
+5200,1028,6,BLR-01-FL01-FOC,Focus & Phone Booths - Floor 1,Focus Room,39.67,8,False
+5201,1028,6,BLR-01-FL01-COL,Agile Collaboration Lounge - Floor 1,Collaboration Area,39.67,8,False
+5202,1028,6,BLR-01-FL01-REC,Main Reception & Welcome Hub,Reception / Shared Support,79.33,4,False
+5203,1029,6,BLR-01-FL02-WKA,Open Workstation Bay A - Floor 2,Open Workstation,912.33,116,False
+5204,1029,6,BLR-01-FL02-WKB,Open Workstation Bay B - Floor 2,Open Workstation,674.33,79,False
+5205,1029,6,BLR-01-FL02-OFF,Executive & Managerial Pod - Floor 2,Private Office,138.83,17,False
+5206,1029,6,BLR-01-FL02-SMR,Huddle Meeting Room - Floor 2,Small Meeting Room,79.33,6,True
+5207,1029,6,BLR-01-FL02-LMR,Conference Room - Floor 2,Large Meeting Room,99.17,12,True
+5208,1029,6,BLR-01-FL02-FOC,Focus & Phone Booths - Floor 2,Focus Room,39.67,8,False
+5209,1029,6,BLR-01-FL02-COL,Agile Collaboration Lounge - Floor 2,Collaboration Area,39.67,8,False
+5210,1030,6,BLR-01-FL03-WKA,Open Workstation Bay A - Floor 3,Open Workstation,912.33,116,False
+5211,1030,6,BLR-01-FL03-WKB,Open Workstation Bay B - Floor 3,Open Workstation,674.33,79,False
+5212,1030,6,BLR-01-FL03-OFF,Executive & Managerial Pod - Floor 3,Private Office,138.83,17,False
+5213,1030,6,BLR-01-FL03-SMR,Huddle Meeting Room - Floor 3,Small Meeting Room,79.33,6,True
+5214,1030,6,BLR-01-FL03-LMR,Conference Room - Floor 3,Large Meeting Room,99.17,12,True
+5215,1030,6,BLR-01-FL03-FOC,Focus & Phone Booths - Floor 3,Focus Room,39.67,8,False
+5216,1030,6,BLR-01-FL03-COL,Agile Collaboration Lounge - Floor 3,Collaboration Area,39.67,8,False
+5217,1031,6,BLR-01-FL04-WKA,Open Workstation Bay A - Floor 4,Open Workstation,912.33,116,False
+5218,1031,6,BLR-01-FL04-WKB,Open Workstation Bay B - Floor 4,Open Workstation,674.33,79,False
+5219,1031,6,BLR-01-FL04-OFF,Executive & Managerial Pod - Floor 4,Private Office,138.83,17,False
+5220,1031,6,BLR-01-FL04-SMR,Huddle Meeting Room - Floor 4,Small Meeting Room,79.33,6,True
+5221,1031,6,BLR-01-FL04-LMR,Conference Room - Floor 4,Large Meeting Room,99.17,12,True
+5222,1031,6,BLR-01-FL04-FOC,Focus & Phone Booths - Floor 4,Focus Room,39.67,8,False
+5223,1031,6,BLR-01-FL04-COL,Agile Collaboration Lounge - Floor 4,Collaboration Area,39.67,8,False
+5224,1032,6,BLR-01-FL05-WKA,Open Workstation Bay A - Floor 5,Open Workstation,912.33,116,False
+5225,1032,6,BLR-01-FL05-WKB,Open Workstation Bay B - Floor 5,Open Workstation,674.33,79,False
+5226,1032,6,BLR-01-FL05-OFF,Executive & Managerial Pod - Floor 5,Private Office,138.83,17,False
+5227,1032,6,BLR-01-FL05-SMR,Huddle Meeting Room - Floor 5,Small Meeting Room,79.33,6,True
+5228,1032,6,BLR-01-FL05-LMR,Conference Room - Floor 5,Large Meeting Room,99.17,12,True
+5229,1032,6,BLR-01-FL05-FOC,Focus & Phone Booths - Floor 5,Focus Room,39.67,8,False
+5230,1032,6,BLR-01-FL05-COL,Agile Collaboration Lounge - Floor 5,Collaboration Area,39.67,8,False
+5231,1033,6,BLR-01-FL06-WKA,Open Workstation Bay A - Floor 6,Open Workstation,912.33,116,False
+5232,1033,6,BLR-01-FL06-WKB,Open Workstation Bay B - Floor 6,Open Workstation,674.33,79,False
+5233,1033,6,BLR-01-FL06-OFF,Executive & Managerial Pod - Floor 6,Private Office,138.83,17,False
+5234,1033,6,BLR-01-FL06-SMR,Huddle Meeting Room - Floor 6,Small Meeting Room,79.33,6,True
+5235,1033,6,BLR-01-FL06-LMR,Conference Room - Floor 6,Large Meeting Room,99.17,12,True
+5236,1033,6,BLR-01-FL06-FOC,Focus & Phone Booths - Floor 6,Focus Room,39.67,8,False
+5237,1033,6,BLR-01-FL06-COL,Agile Collaboration Lounge - Floor 6,Collaboration Area,39.67,8,False
+5238,1034,6,BLR-01-FL07-WKA,Open Workstation Bay A - Floor 7,Open Workstation,912.33,116,False
+5239,1034,6,BLR-01-FL07-WKB,Open Workstation Bay B - Floor 7,Open Workstation,674.33,79,False
+5240,1034,6,BLR-01-FL07-OFF,Executive & Managerial Pod - Floor 7,Private Office,138.83,17,False
+5241,1034,6,BLR-01-FL07-SMR,Huddle Meeting Room - Floor 7,Small Meeting Room,79.33,6,True
+5242,1034,6,BLR-01-FL07-LMR,Conference Room - Floor 7,Large Meeting Room,99.17,12,True
+5243,1034,6,BLR-01-FL07-FOC,Focus & Phone Booths - Floor 7,Focus Room,39.67,8,False
+5244,1034,6,BLR-01-FL07-COL,Agile Collaboration Lounge - Floor 7,Collaboration Area,39.67,8,False
+5245,1035,6,BLR-01-FL08-WKA,Open Workstation Bay A - Floor 8,Open Workstation,912.33,116,False
+5246,1035,6,BLR-01-FL08-WKB,Open Workstation Bay B - Floor 8,Open Workstation,674.33,79,False
+5247,1035,6,BLR-01-FL08-OFF,Executive & Managerial Pod - Floor 8,Private Office,138.83,17,False
+5248,1035,6,BLR-01-FL08-SMR,Huddle Meeting Room - Floor 8,Small Meeting Room,79.33,6,True
+5249,1035,6,BLR-01-FL08-LMR,Conference Room - Floor 8,Large Meeting Room,99.17,12,True
+5250,1035,6,BLR-01-FL08-FOC,Focus & Phone Booths - Floor 8,Focus Room,39.67,8,False
+5251,1035,6,BLR-01-FL08-COL,Agile Collaboration Lounge - Floor 8,Collaboration Area,39.67,8,False
+5252,1036,6,BLR-01-FL09-WKA,Open Workstation Bay A - Floor 9,Open Workstation,912.33,116,False
+5253,1036,6,BLR-01-FL09-WKB,Open Workstation Bay B - Floor 9,Open Workstation,674.33,79,False
+5254,1036,6,BLR-01-FL09-OFF,Executive & Managerial Pod - Floor 9,Private Office,138.83,17,False
+5255,1036,6,BLR-01-FL09-SMR,Huddle Meeting Room - Floor 9,Small Meeting Room,79.33,6,True
+5256,1036,6,BLR-01-FL09-LMR,Conference Room - Floor 9,Large Meeting Room,99.17,12,True
+5257,1036,6,BLR-01-FL09-FOC,Focus & Phone Booths - Floor 9,Focus Room,39.67,8,False
+5258,1036,6,BLR-01-FL09-COL,Agile Collaboration Lounge - Floor 9,Collaboration Area,39.67,8,False
+5259,1037,7,BLR-02-FL01-WKA,Open Workstation Bay A - Floor 1,Open Workstation,912.33,116,False
+5260,1037,7,BLR-02-FL01-WKB,Open Workstation Bay B - Floor 1,Open Workstation,674.33,79,False
+5261,1037,7,BLR-02-FL01-OFF,Executive & Managerial Pod - Floor 1,Private Office,138.83,17,False
+5262,1037,7,BLR-02-FL01-SMR,Huddle Meeting Room - Floor 1,Small Meeting Room,79.33,6,True
+5263,1037,7,BLR-02-FL01-LMR,Conference Room - Floor 1,Large Meeting Room,99.17,12,True
+5264,1037,7,BLR-02-FL01-FOC,Focus & Phone Booths - Floor 1,Focus Room,39.67,8,False
+5265,1037,7,BLR-02-FL01-COL,Agile Collaboration Lounge - Floor 1,Collaboration Area,39.67,8,False
+5266,1037,7,BLR-02-FL01-REC,Main Reception & Welcome Hub,Reception / Shared Support,79.33,4,False
+5267,1038,7,BLR-02-FL02-WKA,Open Workstation Bay A - Floor 2,Open Workstation,912.33,116,False
+5268,1038,7,BLR-02-FL02-WKB,Open Workstation Bay B - Floor 2,Open Workstation,674.33,79,False
+5269,1038,7,BLR-02-FL02-OFF,Executive & Managerial Pod - Floor 2,Private Office,138.83,17,False
+5270,1038,7,BLR-02-FL02-SMR,Huddle Meeting Room - Floor 2,Small Meeting Room,79.33,6,True
+5271,1038,7,BLR-02-FL02-LMR,Conference Room - Floor 2,Large Meeting Room,99.17,12,True
+5272,1038,7,BLR-02-FL02-FOC,Focus & Phone Booths - Floor 2,Focus Room,39.67,8,False
+5273,1038,7,BLR-02-FL02-COL,Agile Collaboration Lounge - Floor 2,Collaboration Area,39.67,8,False
+5274,1039,7,BLR-02-FL03-WKA,Open Workstation Bay A - Floor 3,Open Workstation,912.33,116,False
+5275,1039,7,BLR-02-FL03-WKB,Open Workstation Bay B - Floor 3,Open Workstation,674.33,79,False
+5276,1039,7,BLR-02-FL03-OFF,Executive & Managerial Pod - Floor 3,Private Office,138.83,17,False
+5277,1039,7,BLR-02-FL03-SMR,Huddle Meeting Room - Floor 3,Small Meeting Room,79.33,6,True
+5278,1039,7,BLR-02-FL03-LMR,Conference Room - Floor 3,Large Meeting Room,99.17,12,True
+5279,1039,7,BLR-02-FL03-FOC,Focus & Phone Booths - Floor 3,Focus Room,39.67,8,False
+5280,1039,7,BLR-02-FL03-COL,Agile Collaboration Lounge - Floor 3,Collaboration Area,39.67,8,False
+5281,1040,7,BLR-02-FL04-WKA,Open Workstation Bay A - Floor 4,Open Workstation,912.33,116,False
+5282,1040,7,BLR-02-FL04-WKB,Open Workstation Bay B - Floor 4,Open Workstation,674.33,79,False
+5283,1040,7,BLR-02-FL04-OFF,Executive & Managerial Pod - Floor 4,Private Office,138.83,17,False
+5284,1040,7,BLR-02-FL04-SMR,Huddle Meeting Room - Floor 4,Small Meeting Room,79.33,6,True
+5285,1040,7,BLR-02-FL04-LMR,Conference Room - Floor 4,Large Meeting Room,99.17,12,True
+5286,1040,7,BLR-02-FL04-FOC,Focus & Phone Booths - Floor 4,Focus Room,39.67,8,False
+5287,1040,7,BLR-02-FL04-COL,Agile Collaboration Lounge - Floor 4,Collaboration Area,39.67,8,False
+5288,1041,7,BLR-02-FL05-WKA,Open Workstation Bay A - Floor 5,Open Workstation,912.33,116,False
+5289,1041,7,BLR-02-FL05-WKB,Open Workstation Bay B - Floor 5,Open Workstation,674.33,79,False
+5290,1041,7,BLR-02-FL05-OFF,Executive & Managerial Pod - Floor 5,Private Office,138.83,17,False
+5291,1041,7,BLR-02-FL05-SMR,Huddle Meeting Room - Floor 5,Small Meeting Room,79.33,6,True
+5292,1041,7,BLR-02-FL05-LMR,Conference Room - Floor 5,Large Meeting Room,99.17,12,True
+5293,1041,7,BLR-02-FL05-FOC,Focus & Phone Booths - Floor 5,Focus Room,39.67,8,False
+5294,1041,7,BLR-02-FL05-COL,Agile Collaboration Lounge - Floor 5,Collaboration Area,39.67,8,False
+5295,1042,7,BLR-02-FL06-WKA,Open Workstation Bay A - Floor 6,Open Workstation,912.33,116,False
+5296,1042,7,BLR-02-FL06-WKB,Open Workstation Bay B - Floor 6,Open Workstation,674.33,79,False
+5297,1042,7,BLR-02-FL06-OFF,Executive & Managerial Pod - Floor 6,Private Office,138.83,17,False
+5298,1042,7,BLR-02-FL06-SMR,Huddle Meeting Room - Floor 6,Small Meeting Room,79.33,6,True
+5299,1042,7,BLR-02-FL06-LMR,Conference Room - Floor 6,Large Meeting Room,99.17,12,True
+5300,1042,7,BLR-02-FL06-FOC,Focus & Phone Booths - Floor 6,Focus Room,39.67,8,False
+5301,1042,7,BLR-02-FL06-COL,Agile Collaboration Lounge - Floor 6,Collaboration Area,39.67,8,False
+5302,1043,8,BLR-03-FL01-WKA,Open Workstation Bay A - Floor 1,Open Workstation,860.2,116,False
+5303,1043,8,BLR-03-FL01-WKB,Open Workstation Bay B - Floor 1,Open Workstation,635.8,79,False
+5304,1043,8,BLR-03-FL01-OFF,Executive & Managerial Pod - Floor 1,Private Office,130.9,17,False
+5305,1043,8,BLR-03-FL01-SMR,Huddle Meeting Room - Floor 1,Small Meeting Room,74.8,6,True
+5306,1043,8,BLR-03-FL01-LMR,Conference Room - Floor 1,Large Meeting Room,93.5,12,True
+5307,1043,8,BLR-03-FL01-FOC,Focus & Phone Booths - Floor 1,Focus Room,37.4,8,False
+5308,1043,8,BLR-03-FL01-COL,Agile Collaboration Lounge - Floor 1,Collaboration Area,37.4,8,False
+5309,1043,8,BLR-03-FL01-REC,Main Reception & Welcome Hub,Reception / Shared Support,74.8,4,False
+5310,1044,8,BLR-03-FL02-WKA,Open Workstation Bay A - Floor 2,Open Workstation,860.2,116,False
+5311,1044,8,BLR-03-FL02-WKB,Open Workstation Bay B - Floor 2,Open Workstation,635.8,79,False
+5312,1044,8,BLR-03-FL02-OFF,Executive & Managerial Pod - Floor 2,Private Office,130.9,17,False
+5313,1044,8,BLR-03-FL02-SMR,Huddle Meeting Room - Floor 2,Small Meeting Room,74.8,6,True
+5314,1044,8,BLR-03-FL02-LMR,Conference Room - Floor 2,Large Meeting Room,93.5,12,True
+5315,1044,8,BLR-03-FL02-FOC,Focus & Phone Booths - Floor 2,Focus Room,37.4,8,False
+5316,1044,8,BLR-03-FL02-COL,Agile Collaboration Lounge - Floor 2,Collaboration Area,37.4,8,False
+5317,1045,8,BLR-03-FL03-WKA,Open Workstation Bay A - Floor 3,Open Workstation,860.2,116,False
+5318,1045,8,BLR-03-FL03-WKB,Open Workstation Bay B - Floor 3,Open Workstation,635.8,79,False
+5319,1045,8,BLR-03-FL03-OFF,Executive & Managerial Pod - Floor 3,Private Office,130.9,17,False
+5320,1045,8,BLR-03-FL03-SMR,Huddle Meeting Room - Floor 3,Small Meeting Room,74.8,6,True
+5321,1045,8,BLR-03-FL03-LMR,Conference Room - Floor 3,Large Meeting Room,93.5,12,True
+5322,1045,8,BLR-03-FL03-FOC,Focus & Phone Booths - Floor 3,Focus Room,37.4,8,False
+5323,1045,8,BLR-03-FL03-COL,Agile Collaboration Lounge - Floor 3,Collaboration Area,37.4,8,False
+5324,1046,8,BLR-03-FL04-WKA,Open Workstation Bay A - Floor 4,Open Workstation,860.2,116,False
+5325,1046,8,BLR-03-FL04-WKB,Open Workstation Bay B - Floor 4,Open Workstation,635.8,79,False
+5326,1046,8,BLR-03-FL04-OFF,Executive & Managerial Pod - Floor 4,Private Office,130.9,17,False
+5327,1046,8,BLR-03-FL04-SMR,Huddle Meeting Room - Floor 4,Small Meeting Room,74.8,6,True
+5328,1046,8,BLR-03-FL04-LMR,Conference Room - Floor 4,Large Meeting Room,93.5,12,True
+5329,1046,8,BLR-03-FL04-FOC,Focus & Phone Booths - Floor 4,Focus Room,37.4,8,False
+5330,1046,8,BLR-03-FL04-COL,Agile Collaboration Lounge - Floor 4,Collaboration Area,37.4,8,False
+5331,1047,8,BLR-03-FL05-WKA,Open Workstation Bay A - Floor 5,Open Workstation,860.2,116,False
+5332,1047,8,BLR-03-FL05-WKB,Open Workstation Bay B - Floor 5,Open Workstation,635.8,79,False
+5333,1047,8,BLR-03-FL05-OFF,Executive & Managerial Pod - Floor 5,Private Office,130.9,17,False
+5334,1047,8,BLR-03-FL05-SMR,Huddle Meeting Room - Floor 5,Small Meeting Room,74.8,6,True
+5335,1047,8,BLR-03-FL05-LMR,Conference Room - Floor 5,Large Meeting Room,93.5,12,True
+5336,1047,8,BLR-03-FL05-FOC,Focus & Phone Booths - Floor 5,Focus Room,37.4,8,False
+5337,1047,8,BLR-03-FL05-COL,Agile Collaboration Lounge - Floor 5,Collaboration Area,37.4,8,False
+5338,1048,9,MAA-01-FL01-WKA,Open Workstation Bay A - Floor 1,Open Workstation,879.75,112,False
+5339,1048,9,MAA-01-FL01-WKB,Open Workstation Bay B - Floor 1,Open Workstation,650.25,77,False
+5340,1048,9,MAA-01-FL01-OFF,Executive & Managerial Pod - Floor 1,Private Office,133.88,17,False
+5341,1048,9,MAA-01-FL01-SMR,Huddle Meeting Room - Floor 1,Small Meeting Room,76.5,6,True
+5342,1048,9,MAA-01-FL01-LMR,Conference Room - Floor 1,Large Meeting Room,95.62,12,True
+5343,1048,9,MAA-01-FL01-FOC,Focus & Phone Booths - Floor 1,Focus Room,38.25,8,False
+5344,1048,9,MAA-01-FL01-COL,Agile Collaboration Lounge - Floor 1,Collaboration Area,38.25,8,False
+5345,1048,9,MAA-01-FL01-REC,Main Reception & Welcome Hub,Reception / Shared Support,76.5,4,False
+5346,1049,9,MAA-01-FL02-WKA,Open Workstation Bay A - Floor 2,Open Workstation,879.75,112,False
+5347,1049,9,MAA-01-FL02-WKB,Open Workstation Bay B - Floor 2,Open Workstation,650.25,77,False
+5348,1049,9,MAA-01-FL02-OFF,Executive & Managerial Pod - Floor 2,Private Office,133.88,17,False
+5349,1049,9,MAA-01-FL02-SMR,Huddle Meeting Room - Floor 2,Small Meeting Room,76.5,6,True
+5350,1049,9,MAA-01-FL02-LMR,Conference Room - Floor 2,Large Meeting Room,95.62,12,True
+5351,1049,9,MAA-01-FL02-FOC,Focus & Phone Booths - Floor 2,Focus Room,38.25,8,False
+5352,1049,9,MAA-01-FL02-COL,Agile Collaboration Lounge - Floor 2,Collaboration Area,38.25,8,False
+5353,1050,9,MAA-01-FL03-WKA,Open Workstation Bay A - Floor 3,Open Workstation,879.75,112,False
+5354,1050,9,MAA-01-FL03-WKB,Open Workstation Bay B - Floor 3,Open Workstation,650.25,76,False
+5355,1050,9,MAA-01-FL03-OFF,Executive & Managerial Pod - Floor 3,Private Office,133.88,17,False
+5356,1050,9,MAA-01-FL03-SMR,Huddle Meeting Room - Floor 3,Small Meeting Room,76.5,6,True
+5357,1050,9,MAA-01-FL03-LMR,Conference Room - Floor 3,Large Meeting Room,95.62,12,True
+5358,1050,9,MAA-01-FL03-FOC,Focus & Phone Booths - Floor 3,Focus Room,38.25,8,False
+5359,1050,9,MAA-01-FL03-COL,Agile Collaboration Lounge - Floor 3,Collaboration Area,38.25,8,False
+5360,1051,9,MAA-01-FL04-WKA,Open Workstation Bay A - Floor 4,Open Workstation,879.75,112,False
+5361,1051,9,MAA-01-FL04-WKB,Open Workstation Bay B - Floor 4,Open Workstation,650.25,76,False
+5362,1051,9,MAA-01-FL04-OFF,Executive & Managerial Pod - Floor 4,Private Office,133.88,17,False
+5363,1051,9,MAA-01-FL04-SMR,Huddle Meeting Room - Floor 4,Small Meeting Room,76.5,6,True
+5364,1051,9,MAA-01-FL04-LMR,Conference Room - Floor 4,Large Meeting Room,95.62,12,True
+5365,1051,9,MAA-01-FL04-FOC,Focus & Phone Booths - Floor 4,Focus Room,38.25,8,False
+5366,1051,9,MAA-01-FL04-COL,Agile Collaboration Lounge - Floor 4,Collaboration Area,38.25,8,False
+5367,1052,9,MAA-01-FL05-WKA,Open Workstation Bay A - Floor 5,Open Workstation,879.75,112,False
+5368,1052,9,MAA-01-FL05-WKB,Open Workstation Bay B - Floor 5,Open Workstation,650.25,76,False
+5369,1052,9,MAA-01-FL05-OFF,Executive & Managerial Pod - Floor 5,Private Office,133.88,17,False
+5370,1052,9,MAA-01-FL05-SMR,Huddle Meeting Room - Floor 5,Small Meeting Room,76.5,6,True
+5371,1052,9,MAA-01-FL05-LMR,Conference Room - Floor 5,Large Meeting Room,95.62,12,True
+5372,1052,9,MAA-01-FL05-FOC,Focus & Phone Booths - Floor 5,Focus Room,38.25,8,False
+5373,1052,9,MAA-01-FL05-COL,Agile Collaboration Lounge - Floor 5,Collaboration Area,38.25,8,False
+5374,1053,9,MAA-01-FL06-WKA,Open Workstation Bay A - Floor 6,Open Workstation,879.75,112,False
+5375,1053,9,MAA-01-FL06-WKB,Open Workstation Bay B - Floor 6,Open Workstation,650.25,76,False
+5376,1053,9,MAA-01-FL06-OFF,Executive & Managerial Pod - Floor 6,Private Office,133.88,17,False
+5377,1053,9,MAA-01-FL06-SMR,Huddle Meeting Room - Floor 6,Small Meeting Room,76.5,6,True
+5378,1053,9,MAA-01-FL06-LMR,Conference Room - Floor 6,Large Meeting Room,95.62,12,True
+5379,1053,9,MAA-01-FL06-FOC,Focus & Phone Booths - Floor 6,Focus Room,38.25,8,False
+5380,1053,9,MAA-01-FL06-COL,Agile Collaboration Lounge - Floor 6,Collaboration Area,38.25,8,False
+5381,1054,10,MAA-02-FL01-WKA,Open Workstation Bay A - Floor 1,Open Workstation,733.12,99,False
+5382,1054,10,MAA-02-FL01-WKB,Open Workstation Bay B - Floor 1,Open Workstation,541.88,67,False
+5383,1054,10,MAA-02-FL01-OFF,Executive & Managerial Pod - Floor 1,Private Office,111.56,15,False
+5384,1054,10,MAA-02-FL01-SMR,Huddle Meeting Room - Floor 1,Small Meeting Room,63.75,6,True
+5385,1054,10,MAA-02-FL01-LMR,Conference Room - Floor 1,Large Meeting Room,79.69,12,True
+5386,1054,10,MAA-02-FL01-FOC,Focus & Phone Booths - Floor 1,Focus Room,31.88,7,False
+5387,1054,10,MAA-02-FL01-COL,Agile Collaboration Lounge - Floor 1,Collaboration Area,31.88,8,False
+5388,1054,10,MAA-02-FL01-REC,Main Reception & Welcome Hub,Reception / Shared Support,63.75,4,False
+5389,1055,10,MAA-02-FL02-WKA,Open Workstation Bay A - Floor 2,Open Workstation,733.12,99,False
+5390,1055,10,MAA-02-FL02-WKB,Open Workstation Bay B - Floor 2,Open Workstation,541.88,67,False
+5391,1055,10,MAA-02-FL02-OFF,Executive & Managerial Pod - Floor 2,Private Office,111.56,15,False
+5392,1055,10,MAA-02-FL02-SMR,Huddle Meeting Room - Floor 2,Small Meeting Room,63.75,6,True
+5393,1055,10,MAA-02-FL02-LMR,Conference Room - Floor 2,Large Meeting Room,79.69,12,True
+5394,1055,10,MAA-02-FL02-FOC,Focus & Phone Booths - Floor 2,Focus Room,31.88,7,False
+5395,1055,10,MAA-02-FL02-COL,Agile Collaboration Lounge - Floor 2,Collaboration Area,31.88,8,False
+5396,1056,10,MAA-02-FL03-WKA,Open Workstation Bay A - Floor 3,Open Workstation,733.12,99,False
+5397,1056,10,MAA-02-FL03-WKB,Open Workstation Bay B - Floor 3,Open Workstation,541.88,67,False
+5398,1056,10,MAA-02-FL03-OFF,Executive & Managerial Pod - Floor 3,Private Office,111.56,14,False
+5399,1056,10,MAA-02-FL03-SMR,Huddle Meeting Room - Floor 3,Small Meeting Room,63.75,6,True
+5400,1056,10,MAA-02-FL03-LMR,Conference Room - Floor 3,Large Meeting Room,79.69,12,True
+5401,1056,10,MAA-02-FL03-FOC,Focus & Phone Booths - Floor 3,Focus Room,31.88,7,False
+5402,1056,10,MAA-02-FL03-COL,Agile Collaboration Lounge - Floor 3,Collaboration Area,31.88,8,False
+5403,1057,10,MAA-02-FL04-WKA,Open Workstation Bay A - Floor 4,Open Workstation,733.12,99,False
+5404,1057,10,MAA-02-FL04-WKB,Open Workstation Bay B - Floor 4,Open Workstation,541.88,67,False
+5405,1057,10,MAA-02-FL04-OFF,Executive & Managerial Pod - Floor 4,Private Office,111.56,14,False
+5406,1057,10,MAA-02-FL04-SMR,Huddle Meeting Room - Floor 4,Small Meeting Room,63.75,6,True
+5407,1057,10,MAA-02-FL04-LMR,Conference Room - Floor 4,Large Meeting Room,79.69,12,True
+5408,1057,10,MAA-02-FL04-FOC,Focus & Phone Booths - Floor 4,Focus Room,31.88,7,False
+5409,1057,10,MAA-02-FL04-COL,Agile Collaboration Lounge - Floor 4,Collaboration Area,31.88,8,False
+5410,1058,11,HYD-01-FL01-WKA,Open Workstation Bay A - Floor 1,Open Workstation,893.72,113,False
+5411,1058,11,HYD-01-FL01-WKB,Open Workstation Bay B - Floor 1,Open Workstation,660.57,77,False
+5412,1058,11,HYD-01-FL01-OFF,Executive & Managerial Pod - Floor 1,Private Office,136.0,17,False
+5413,1058,11,HYD-01-FL01-SMR,Huddle Meeting Room - Floor 1,Small Meeting Room,77.71,6,True
+5414,1058,11,HYD-01-FL01-LMR,Conference Room - Floor 1,Large Meeting Room,97.14,12,True
+5415,1058,11,HYD-01-FL01-FOC,Focus & Phone Booths - Floor 1,Focus Room,38.86,8,False
+5416,1058,11,HYD-01-FL01-COL,Agile Collaboration Lounge - Floor 1,Collaboration Area,38.86,8,False
+5417,1058,11,HYD-01-FL01-REC,Main Reception & Welcome Hub,Reception / Shared Support,77.71,4,False
+5418,1059,11,HYD-01-FL02-WKA,Open Workstation Bay A - Floor 2,Open Workstation,893.72,113,False
+5419,1059,11,HYD-01-FL02-WKB,Open Workstation Bay B - Floor 2,Open Workstation,660.57,77,False
+5420,1059,11,HYD-01-FL02-OFF,Executive & Managerial Pod - Floor 2,Private Office,136.0,17,False
+5421,1059,11,HYD-01-FL02-SMR,Huddle Meeting Room - Floor 2,Small Meeting Room,77.71,6,True
+5422,1059,11,HYD-01-FL02-LMR,Conference Room - Floor 2,Large Meeting Room,97.14,12,True
+5423,1059,11,HYD-01-FL02-FOC,Focus & Phone Booths - Floor 2,Focus Room,38.86,8,False
+5424,1059,11,HYD-01-FL02-COL,Agile Collaboration Lounge - Floor 2,Collaboration Area,38.86,8,False
+5425,1060,11,HYD-01-FL03-WKA,Open Workstation Bay A - Floor 3,Open Workstation,893.72,112,False
+5426,1060,11,HYD-01-FL03-WKB,Open Workstation Bay B - Floor 3,Open Workstation,660.57,77,False
+5427,1060,11,HYD-01-FL03-OFF,Executive & Managerial Pod - Floor 3,Private Office,136.0,17,False
+5428,1060,11,HYD-01-FL03-SMR,Huddle Meeting Room - Floor 3,Small Meeting Room,77.71,6,True
+5429,1060,11,HYD-01-FL03-LMR,Conference Room - Floor 3,Large Meeting Room,97.14,12,True
+5430,1060,11,HYD-01-FL03-FOC,Focus & Phone Booths - Floor 3,Focus Room,38.86,8,False
+5431,1060,11,HYD-01-FL03-COL,Agile Collaboration Lounge - Floor 3,Collaboration Area,38.86,8,False
+5432,1061,11,HYD-01-FL04-WKA,Open Workstation Bay A - Floor 4,Open Workstation,893.72,112,False
+5433,1061,11,HYD-01-FL04-WKB,Open Workstation Bay B - Floor 4,Open Workstation,660.57,77,False
+5434,1061,11,HYD-01-FL04-OFF,Executive & Managerial Pod - Floor 4,Private Office,136.0,17,False
+5435,1061,11,HYD-01-FL04-SMR,Huddle Meeting Room - Floor 4,Small Meeting Room,77.71,6,True
+5436,1061,11,HYD-01-FL04-LMR,Conference Room - Floor 4,Large Meeting Room,97.14,12,True
+5437,1061,11,HYD-01-FL04-FOC,Focus & Phone Booths - Floor 4,Focus Room,38.86,8,False
+5438,1061,11,HYD-01-FL04-COL,Agile Collaboration Lounge - Floor 4,Collaboration Area,38.86,8,False
+5439,1062,11,HYD-01-FL05-WKA,Open Workstation Bay A - Floor 5,Open Workstation,893.72,112,False
+5440,1062,11,HYD-01-FL05-WKB,Open Workstation Bay B - Floor 5,Open Workstation,660.57,77,False
+5441,1062,11,HYD-01-FL05-OFF,Executive & Managerial Pod - Floor 5,Private Office,136.0,17,False
+5442,1062,11,HYD-01-FL05-SMR,Huddle Meeting Room - Floor 5,Small Meeting Room,77.71,6,True
+5443,1062,11,HYD-01-FL05-LMR,Conference Room - Floor 5,Large Meeting Room,97.14,12,True
+5444,1062,11,HYD-01-FL05-FOC,Focus & Phone Booths - Floor 5,Focus Room,38.86,8,False
+5445,1062,11,HYD-01-FL05-COL,Agile Collaboration Lounge - Floor 5,Collaboration Area,38.86,8,False
+5446,1063,11,HYD-01-FL06-WKA,Open Workstation Bay A - Floor 6,Open Workstation,893.72,112,False
+5447,1063,11,HYD-01-FL06-WKB,Open Workstation Bay B - Floor 6,Open Workstation,660.57,77,False
+5448,1063,11,HYD-01-FL06-OFF,Executive & Managerial Pod - Floor 6,Private Office,136.0,17,False
+5449,1063,11,HYD-01-FL06-SMR,Huddle Meeting Room - Floor 6,Small Meeting Room,77.71,6,True
+5450,1063,11,HYD-01-FL06-LMR,Conference Room - Floor 6,Large Meeting Room,97.14,12,True
+5451,1063,11,HYD-01-FL06-FOC,Focus & Phone Booths - Floor 6,Focus Room,38.86,8,False
+5452,1063,11,HYD-01-FL06-COL,Agile Collaboration Lounge - Floor 6,Collaboration Area,38.86,8,False
+5453,1064,11,HYD-01-FL07-WKA,Open Workstation Bay A - Floor 7,Open Workstation,893.72,112,False
+5454,1064,11,HYD-01-FL07-WKB,Open Workstation Bay B - Floor 7,Open Workstation,660.57,77,False
+5455,1064,11,HYD-01-FL07-OFF,Executive & Managerial Pod - Floor 7,Private Office,136.0,17,False
+5456,1064,11,HYD-01-FL07-SMR,Huddle Meeting Room - Floor 7,Small Meeting Room,77.71,6,True
+5457,1064,11,HYD-01-FL07-LMR,Conference Room - Floor 7,Large Meeting Room,97.14,12,True
+5458,1064,11,HYD-01-FL07-FOC,Focus & Phone Booths - Floor 7,Focus Room,38.86,8,False
+5459,1064,11,HYD-01-FL07-COL,Agile Collaboration Lounge - Floor 7,Collaboration Area,38.86,8,False
+5460,1065,12,HYD-02-FL01-WKA,Open Workstation Bay A - Floor 1,Open Workstation,677.73,74,False
+5461,1065,12,HYD-02-FL01-WKB,Open Workstation Bay B - Floor 1,Open Workstation,500.93,50,False
+5462,1065,12,HYD-02-FL01-OFF,Executive & Managerial Pod - Floor 1,Private Office,103.13,11,False
+5463,1065,12,HYD-02-FL01-SMR,Huddle Meeting Room - Floor 1,Small Meeting Room,58.93,6,True
+5464,1065,12,HYD-02-FL01-LMR,Conference Room - Floor 1,Large Meeting Room,73.67,12,True
+5465,1065,12,HYD-02-FL01-FOC,Focus & Phone Booths - Floor 1,Focus Room,29.47,5,False
+5466,1065,12,HYD-02-FL01-COL,Agile Collaboration Lounge - Floor 1,Collaboration Area,29.47,8,False
+5467,1065,12,HYD-02-FL01-REC,Main Reception & Welcome Hub,Reception / Shared Support,58.93,4,False
+5468,1066,12,HYD-02-FL02-WKA,Open Workstation Bay A - Floor 2,Open Workstation,677.73,74,False
+5469,1066,12,HYD-02-FL02-WKB,Open Workstation Bay B - Floor 2,Open Workstation,500.93,50,False
+5470,1066,12,HYD-02-FL02-OFF,Executive & Managerial Pod - Floor 2,Private Office,103.13,11,False
+5471,1066,12,HYD-02-FL02-SMR,Huddle Meeting Room - Floor 2,Small Meeting Room,58.93,6,True
+5472,1066,12,HYD-02-FL02-LMR,Conference Room - Floor 2,Large Meeting Room,73.67,12,True
+5473,1066,12,HYD-02-FL02-FOC,Focus & Phone Booths - Floor 2,Focus Room,29.47,5,False
+5474,1066,12,HYD-02-FL02-COL,Agile Collaboration Lounge - Floor 2,Collaboration Area,29.47,8,False
+5475,1067,12,HYD-02-FL03-WKA,Open Workstation Bay A - Floor 3,Open Workstation,677.73,74,False
+5476,1067,12,HYD-02-FL03-WKB,Open Workstation Bay B - Floor 3,Open Workstation,500.93,50,False
+5477,1067,12,HYD-02-FL03-OFF,Executive & Managerial Pod - Floor 3,Private Office,103.13,11,False
+5478,1067,12,HYD-02-FL03-SMR,Huddle Meeting Room - Floor 3,Small Meeting Room,58.93,6,True
+5479,1067,12,HYD-02-FL03-LMR,Conference Room - Floor 3,Large Meeting Room,73.67,12,True
+5480,1067,12,HYD-02-FL03-FOC,Focus & Phone Booths - Floor 3,Focus Room,29.47,5,False
+5481,1067,12,HYD-02-FL03-COL,Agile Collaboration Lounge - Floor 3,Collaboration Area,29.47,8,False
+5482,1068,13,DEL-01-FL01-WKA,Open Workstation Bay A - Floor 1,Open Workstation,749.42,86,False
+5483,1068,13,DEL-01-FL01-WKB,Open Workstation Bay B - Floor 1,Open Workstation,553.92,59,False
+5484,1068,13,DEL-01-FL01-OFF,Executive & Managerial Pod - Floor 1,Private Office,114.04,13,False
+5485,1068,13,DEL-01-FL01-SMR,Huddle Meeting Room - Floor 1,Small Meeting Room,65.17,6,True
+5486,1068,13,DEL-01-FL01-LMR,Conference Room - Floor 1,Large Meeting Room,81.46,12,True
+5487,1068,13,DEL-01-FL01-FOC,Focus & Phone Booths - Floor 1,Focus Room,32.58,6,False
+5488,1068,13,DEL-01-FL01-COL,Agile Collaboration Lounge - Floor 1,Collaboration Area,32.58,8,False
+5489,1068,13,DEL-01-FL01-REC,Main Reception & Welcome Hub,Reception / Shared Support,65.17,4,False
+5490,1069,13,DEL-01-FL02-WKA,Open Workstation Bay A - Floor 2,Open Workstation,749.42,86,False
+5491,1069,13,DEL-01-FL02-WKB,Open Workstation Bay B - Floor 2,Open Workstation,553.92,59,False
+5492,1069,13,DEL-01-FL02-OFF,Executive & Managerial Pod - Floor 2,Private Office,114.04,13,False
+5493,1069,13,DEL-01-FL02-SMR,Huddle Meeting Room - Floor 2,Small Meeting Room,65.17,6,True
+5494,1069,13,DEL-01-FL02-LMR,Conference Room - Floor 2,Large Meeting Room,81.46,12,True
+5495,1069,13,DEL-01-FL02-FOC,Focus & Phone Booths - Floor 2,Focus Room,32.58,6,False
+5496,1069,13,DEL-01-FL02-COL,Agile Collaboration Lounge - Floor 2,Collaboration Area,32.58,8,False
+5497,1070,13,DEL-01-FL03-WKA,Open Workstation Bay A - Floor 3,Open Workstation,749.42,86,False
+5498,1070,13,DEL-01-FL03-WKB,Open Workstation Bay B - Floor 3,Open Workstation,553.92,58,False
+5499,1070,13,DEL-01-FL03-OFF,Executive & Managerial Pod - Floor 3,Private Office,114.04,13,False
+5500,1070,13,DEL-01-FL03-SMR,Huddle Meeting Room - Floor 3,Small Meeting Room,65.17,6,True
+5501,1070,13,DEL-01-FL03-LMR,Conference Room - Floor 3,Large Meeting Room,81.46,12,True
+5502,1070,13,DEL-01-FL03-FOC,Focus & Phone Booths - Floor 3,Focus Room,32.58,6,False
+5503,1070,13,DEL-01-FL03-COL,Agile Collaboration Lounge - Floor 3,Collaboration Area,32.58,8,False
+5504,1071,13,DEL-01-FL04-WKA,Open Workstation Bay A - Floor 4,Open Workstation,749.42,86,False
+5505,1071,13,DEL-01-FL04-WKB,Open Workstation Bay B - Floor 4,Open Workstation,553.92,58,False
+5506,1071,13,DEL-01-FL04-OFF,Executive & Managerial Pod - Floor 4,Private Office,114.04,13,False
+5507,1071,13,DEL-01-FL04-SMR,Huddle Meeting Room - Floor 4,Small Meeting Room,65.17,6,True
+5508,1071,13,DEL-01-FL04-LMR,Conference Room - Floor 4,Large Meeting Room,81.46,12,True
+5509,1071,13,DEL-01-FL04-FOC,Focus & Phone Booths - Floor 4,Focus Room,32.58,6,False
+5510,1071,13,DEL-01-FL04-COL,Agile Collaboration Lounge - Floor 4,Collaboration Area,32.58,8,False
+5511,1072,13,DEL-01-FL05-WKA,Open Workstation Bay A - Floor 5,Open Workstation,749.42,86,False
+5512,1072,13,DEL-01-FL05-WKB,Open Workstation Bay B - Floor 5,Open Workstation,553.92,58,False
+5513,1072,13,DEL-01-FL05-OFF,Executive & Managerial Pod - Floor 5,Private Office,114.04,13,False
+5514,1072,13,DEL-01-FL05-SMR,Huddle Meeting Room - Floor 5,Small Meeting Room,65.17,6,True
+5515,1072,13,DEL-01-FL05-LMR,Conference Room - Floor 5,Large Meeting Room,81.46,12,True
+5516,1072,13,DEL-01-FL05-FOC,Focus & Phone Booths - Floor 5,Focus Room,32.58,6,False
+5517,1072,13,DEL-01-FL05-COL,Agile Collaboration Lounge - Floor 5,Collaboration Area,32.58,8,False
+5518,1073,13,DEL-01-FL06-WKA,Open Workstation Bay A - Floor 6,Open Workstation,749.42,86,False
+5519,1073,13,DEL-01-FL06-WKB,Open Workstation Bay B - Floor 6,Open Workstation,553.92,58,False
+5520,1073,13,DEL-01-FL06-OFF,Executive & Managerial Pod - Floor 6,Private Office,114.04,13,False
+5521,1073,13,DEL-01-FL06-SMR,Huddle Meeting Room - Floor 6,Small Meeting Room,65.17,6,True
+5522,1073,13,DEL-01-FL06-LMR,Conference Room - Floor 6,Large Meeting Room,81.46,12,True
+5523,1073,13,DEL-01-FL06-FOC,Focus & Phone Booths - Floor 6,Focus Room,32.58,6,False
+5524,1073,13,DEL-01-FL06-COL,Agile Collaboration Lounge - Floor 6,Collaboration Area,32.58,8,False
+5525,1074,14,DEL-02-FL01-WKA,Open Workstation Bay A - Floor 1,Open Workstation,860.2,112,False
+5526,1074,14,DEL-02-FL01-WKB,Open Workstation Bay B - Floor 1,Open Workstation,635.8,76,False
+5527,1074,14,DEL-02-FL01-OFF,Executive & Managerial Pod - Floor 1,Private Office,130.9,17,False
+5528,1074,14,DEL-02-FL01-SMR,Huddle Meeting Room - Floor 1,Small Meeting Room,74.8,6,True
+5529,1074,14,DEL-02-FL01-LMR,Conference Room - Floor 1,Large Meeting Room,93.5,12,True
+5530,1074,14,DEL-02-FL01-FOC,Focus & Phone Booths - Floor 1,Focus Room,37.4,8,False
+5531,1074,14,DEL-02-FL01-COL,Agile Collaboration Lounge - Floor 1,Collaboration Area,37.4,8,False
+5532,1074,14,DEL-02-FL01-REC,Main Reception & Welcome Hub,Reception / Shared Support,74.8,4,False
+5533,1075,14,DEL-02-FL02-WKA,Open Workstation Bay A - Floor 2,Open Workstation,860.2,112,False
+5534,1075,14,DEL-02-FL02-WKB,Open Workstation Bay B - Floor 2,Open Workstation,635.8,76,False
+5535,1075,14,DEL-02-FL02-OFF,Executive & Managerial Pod - Floor 2,Private Office,130.9,17,False
+5536,1075,14,DEL-02-FL02-SMR,Huddle Meeting Room - Floor 2,Small Meeting Room,74.8,6,True
+5537,1075,14,DEL-02-FL02-LMR,Conference Room - Floor 2,Large Meeting Room,93.5,12,True
+5538,1075,14,DEL-02-FL02-FOC,Focus & Phone Booths - Floor 2,Focus Room,37.4,8,False
+5539,1075,14,DEL-02-FL02-COL,Agile Collaboration Lounge - Floor 2,Collaboration Area,37.4,8,False
+5540,1076,14,DEL-02-FL03-WKA,Open Workstation Bay A - Floor 3,Open Workstation,860.2,112,False
+5541,1076,14,DEL-02-FL03-WKB,Open Workstation Bay B - Floor 3,Open Workstation,635.8,76,False
+5542,1076,14,DEL-02-FL03-OFF,Executive & Managerial Pod - Floor 3,Private Office,130.9,16,False
+5543,1076,14,DEL-02-FL03-SMR,Huddle Meeting Room - Floor 3,Small Meeting Room,74.8,6,True
+5544,1076,14,DEL-02-FL03-LMR,Conference Room - Floor 3,Large Meeting Room,93.5,12,True
+5545,1076,14,DEL-02-FL03-FOC,Focus & Phone Booths - Floor 3,Focus Room,37.4,8,False
+5546,1076,14,DEL-02-FL03-COL,Agile Collaboration Lounge - Floor 3,Collaboration Area,37.4,8,False
+5547,1077,14,DEL-02-FL04-WKA,Open Workstation Bay A - Floor 4,Open Workstation,860.2,112,False
+5548,1077,14,DEL-02-FL04-WKB,Open Workstation Bay B - Floor 4,Open Workstation,635.8,76,False
+5549,1077,14,DEL-02-FL04-OFF,Executive & Managerial Pod - Floor 4,Private Office,130.9,16,False
+5550,1077,14,DEL-02-FL04-SMR,Huddle Meeting Room - Floor 4,Small Meeting Room,74.8,6,True
+5551,1077,14,DEL-02-FL04-LMR,Conference Room - Floor 4,Large Meeting Room,93.5,12,True
+5552,1077,14,DEL-02-FL04-FOC,Focus & Phone Booths - Floor 4,Focus Room,37.4,8,False
+5553,1077,14,DEL-02-FL04-COL,Agile Collaboration Lounge - Floor 4,Collaboration Area,37.4,8,False
+5554,1078,15,SGP-01-FL01-WKA,Open Workstation Bay A - Floor 1,Open Workstation,621.0,64,False
+5555,1078,15,SGP-01-FL01-WKB,Open Workstation Bay B - Floor 1,Open Workstation,459.0,43,False
+5556,1078,15,SGP-01-FL01-OFF,Executive & Managerial Pod - Floor 1,Private Office,94.5,9,False
+5557,1078,15,SGP-01-FL01-SMR,Huddle Meeting Room - Floor 1,Small Meeting Room,54.0,6,True
+5558,1078,15,SGP-01-FL01-LMR,Conference Room - Floor 1,Large Meeting Room,67.5,12,True
+5559,1078,15,SGP-01-FL01-FOC,Focus & Phone Booths - Floor 1,Focus Room,27.0,4,False
+5560,1078,15,SGP-01-FL01-COL,Agile Collaboration Lounge - Floor 1,Collaboration Area,27.0,8,False
+5561,1078,15,SGP-01-FL01-REC,Main Reception & Welcome Hub,Reception / Shared Support,54.0,4,False
+5562,1079,15,SGP-01-FL02-WKA,Open Workstation Bay A - Floor 2,Open Workstation,621.0,64,False
+5563,1079,15,SGP-01-FL02-WKB,Open Workstation Bay B - Floor 2,Open Workstation,459.0,43,False
+5564,1079,15,SGP-01-FL02-OFF,Executive & Managerial Pod - Floor 2,Private Office,94.5,9,False
+5565,1079,15,SGP-01-FL02-SMR,Huddle Meeting Room - Floor 2,Small Meeting Room,54.0,6,True
+5566,1079,15,SGP-01-FL02-LMR,Conference Room - Floor 2,Large Meeting Room,67.5,12,True
+5567,1079,15,SGP-01-FL02-FOC,Focus & Phone Booths - Floor 2,Focus Room,27.0,4,False
+5568,1079,15,SGP-01-FL02-COL,Agile Collaboration Lounge - Floor 2,Collaboration Area,27.0,8,False
+5569,1080,15,SGP-01-FL03-WKA,Open Workstation Bay A - Floor 3,Open Workstation,621.0,64,False
+5570,1080,15,SGP-01-FL03-WKB,Open Workstation Bay B - Floor 3,Open Workstation,459.0,43,False
+5571,1080,15,SGP-01-FL03-OFF,Executive & Managerial Pod - Floor 3,Private Office,94.5,9,False
+5572,1080,15,SGP-01-FL03-SMR,Huddle Meeting Room - Floor 3,Small Meeting Room,54.0,6,True
+5573,1080,15,SGP-01-FL03-LMR,Conference Room - Floor 3,Large Meeting Room,67.5,12,True
+5574,1080,15,SGP-01-FL03-FOC,Focus & Phone Booths - Floor 3,Focus Room,27.0,4,False
+5575,1080,15,SGP-01-FL03-COL,Agile Collaboration Lounge - Floor 3,Collaboration Area,27.0,8,False
+5576,1081,15,SGP-01-FL04-WKA,Open Workstation Bay A - Floor 4,Open Workstation,621.0,64,False
+5577,1081,15,SGP-01-FL04-WKB,Open Workstation Bay B - Floor 4,Open Workstation,459.0,43,False
+5578,1081,15,SGP-01-FL04-OFF,Executive & Managerial Pod - Floor 4,Private Office,94.5,9,False
+5579,1081,15,SGP-01-FL04-SMR,Huddle Meeting Room - Floor 4,Small Meeting Room,54.0,6,True
+5580,1081,15,SGP-01-FL04-LMR,Conference Room - Floor 4,Large Meeting Room,67.5,12,True
+5581,1081,15,SGP-01-FL04-FOC,Focus & Phone Booths - Floor 4,Focus Room,27.0,4,False
+5582,1081,15,SGP-01-FL04-COL,Agile Collaboration Lounge - Floor 4,Collaboration Area,27.0,8,False
+5583,1082,16,SGP-02-FL01-WKA,Open Workstation Bay A - Floor 1,Open Workstation,751.33,93,False
+5584,1082,16,SGP-02-FL01-WKB,Open Workstation Bay B - Floor 1,Open Workstation,555.33,62,False
+5585,1082,16,SGP-02-FL01-OFF,Executive & Managerial Pod - Floor 1,Private Office,114.33,13,False
+5586,1082,16,SGP-02-FL01-SMR,Huddle Meeting Room - Floor 1,Small Meeting Room,65.33,6,True
+5587,1082,16,SGP-02-FL01-LMR,Conference Room - Floor 1,Large Meeting Room,81.67,12,True
+5588,1082,16,SGP-02-FL01-FOC,Focus & Phone Booths - Floor 1,Focus Room,32.67,6,False
+5589,1082,16,SGP-02-FL01-COL,Agile Collaboration Lounge - Floor 1,Collaboration Area,32.67,8,False
+5590,1082,16,SGP-02-FL01-REC,Main Reception & Welcome Hub,Reception / Shared Support,65.33,4,False
+5591,1083,16,SGP-02-FL02-WKA,Open Workstation Bay A - Floor 2,Open Workstation,751.33,92,False
+5592,1083,16,SGP-02-FL02-WKB,Open Workstation Bay B - Floor 2,Open Workstation,555.33,62,False
+5593,1083,16,SGP-02-FL02-OFF,Executive & Managerial Pod - Floor 2,Private Office,114.33,13,False
+5594,1083,16,SGP-02-FL02-SMR,Huddle Meeting Room - Floor 2,Small Meeting Room,65.33,6,True
+5595,1083,16,SGP-02-FL02-LMR,Conference Room - Floor 2,Large Meeting Room,81.67,12,True
+5596,1083,16,SGP-02-FL02-FOC,Focus & Phone Booths - Floor 2,Focus Room,32.67,6,False
+5597,1083,16,SGP-02-FL02-COL,Agile Collaboration Lounge - Floor 2,Collaboration Area,32.67,8,False
+5598,1084,16,SGP-02-FL03-WKA,Open Workstation Bay A - Floor 3,Open Workstation,751.33,92,False
+5599,1084,16,SGP-02-FL03-WKB,Open Workstation Bay B - Floor 3,Open Workstation,555.33,62,False
+5600,1084,16,SGP-02-FL03-OFF,Executive & Managerial Pod - Floor 3,Private Office,114.33,13,False
+5601,1084,16,SGP-02-FL03-SMR,Huddle Meeting Room - Floor 3,Small Meeting Room,65.33,6,True
+5602,1084,16,SGP-02-FL03-LMR,Conference Room - Floor 3,Large Meeting Room,81.67,12,True
+5603,1084,16,SGP-02-FL03-FOC,Focus & Phone Booths - Floor 3,Focus Room,32.67,6,False
+5604,1084,16,SGP-02-FL03-COL,Agile Collaboration Lounge - Floor 3,Collaboration Area,32.67,8,False
+5605,1085,17,KUL-01-FL01-WKA,Open Workstation Bay A - Floor 1,Open Workstation,667.0,74,False
+5606,1085,17,KUL-01-FL01-WKB,Open Workstation Bay B - Floor 1,Open Workstation,493.0,50,False
+5607,1085,17,KUL-01-FL01-OFF,Executive & Managerial Pod - Floor 1,Private Office,101.5,11,False
+5608,1085,17,KUL-01-FL01-SMR,Huddle Meeting Room - Floor 1,Small Meeting Room,58.0,6,True
+5609,1085,17,KUL-01-FL01-LMR,Conference Room - Floor 1,Large Meeting Room,72.5,12,True
+5610,1085,17,KUL-01-FL01-FOC,Focus & Phone Booths - Floor 1,Focus Room,29.0,5,False
+5611,1085,17,KUL-01-FL01-COL,Agile Collaboration Lounge - Floor 1,Collaboration Area,29.0,8,False
+5612,1085,17,KUL-01-FL01-REC,Main Reception & Welcome Hub,Reception / Shared Support,58.0,4,False
+5613,1086,17,KUL-01-FL02-WKA,Open Workstation Bay A - Floor 2,Open Workstation,667.0,74,False
+5614,1086,17,KUL-01-FL02-WKB,Open Workstation Bay B - Floor 2,Open Workstation,493.0,50,False
+5615,1086,17,KUL-01-FL02-OFF,Executive & Managerial Pod - Floor 2,Private Office,101.5,11,False
+5616,1086,17,KUL-01-FL02-SMR,Huddle Meeting Room - Floor 2,Small Meeting Room,58.0,6,True
+5617,1086,17,KUL-01-FL02-LMR,Conference Room - Floor 2,Large Meeting Room,72.5,12,True
+5618,1086,17,KUL-01-FL02-FOC,Focus & Phone Booths - Floor 2,Focus Room,29.0,5,False
+5619,1086,17,KUL-01-FL02-COL,Agile Collaboration Lounge - Floor 2,Collaboration Area,29.0,8,False
+5620,1087,17,KUL-01-FL03-WKA,Open Workstation Bay A - Floor 3,Open Workstation,667.0,74,False
+5621,1087,17,KUL-01-FL03-WKB,Open Workstation Bay B - Floor 3,Open Workstation,493.0,50,False
+5622,1087,17,KUL-01-FL03-OFF,Executive & Managerial Pod - Floor 3,Private Office,101.5,11,False
+5623,1087,17,KUL-01-FL03-SMR,Huddle Meeting Room - Floor 3,Small Meeting Room,58.0,6,True
+5624,1087,17,KUL-01-FL03-LMR,Conference Room - Floor 3,Large Meeting Room,72.5,12,True
+5625,1087,17,KUL-01-FL03-FOC,Focus & Phone Booths - Floor 3,Focus Room,29.0,5,False
+5626,1087,17,KUL-01-FL03-COL,Agile Collaboration Lounge - Floor 3,Collaboration Area,29.0,8,False
+5627,1088,18,KUL-02-FL01-WKA,Open Workstation Bay A - Floor 1,Open Workstation,762.45,103,False
+5628,1088,18,KUL-02-FL01-WKB,Open Workstation Bay B - Floor 1,Open Workstation,563.55,70,False
+5629,1088,18,KUL-02-FL01-OFF,Executive & Managerial Pod - Floor 1,Private Office,116.03,15,False
+5630,1088,18,KUL-02-FL01-SMR,Huddle Meeting Room - Floor 1,Small Meeting Room,66.3,6,True
+5631,1088,18,KUL-02-FL01-LMR,Conference Room - Floor 1,Large Meeting Room,82.88,12,True
+5632,1088,18,KUL-02-FL01-FOC,Focus & Phone Booths - Floor 1,Focus Room,33.15,7,False
+5633,1088,18,KUL-02-FL01-COL,Agile Collaboration Lounge - Floor 1,Collaboration Area,33.15,8,False
+5634,1088,18,KUL-02-FL01-REC,Main Reception & Welcome Hub,Reception / Shared Support,66.3,4,False
+5635,1089,18,KUL-02-FL02-WKA,Open Workstation Bay A - Floor 2,Open Workstation,762.45,103,False
+5636,1089,18,KUL-02-FL02-WKB,Open Workstation Bay B - Floor 2,Open Workstation,563.55,70,False
+5637,1089,18,KUL-02-FL02-OFF,Executive & Managerial Pod - Floor 2,Private Office,116.03,15,False
+5638,1089,18,KUL-02-FL02-SMR,Huddle Meeting Room - Floor 2,Small Meeting Room,66.3,6,True
+5639,1089,18,KUL-02-FL02-LMR,Conference Room - Floor 2,Large Meeting Room,82.88,12,True
+5640,1089,18,KUL-02-FL02-FOC,Focus & Phone Booths - Floor 2,Focus Room,33.15,7,False
+5641,1089,18,KUL-02-FL02-COL,Agile Collaboration Lounge - Floor 2,Collaboration Area,33.15,8,False
+5642,1090,18,KUL-02-FL03-WKA,Open Workstation Bay A - Floor 3,Open Workstation,762.45,103,False
+5643,1090,18,KUL-02-FL03-WKB,Open Workstation Bay B - Floor 3,Open Workstation,563.55,70,False
+5644,1090,18,KUL-02-FL03-OFF,Executive & Managerial Pod - Floor 3,Private Office,116.03,15,False
+5645,1090,18,KUL-02-FL03-SMR,Huddle Meeting Room - Floor 3,Small Meeting Room,66.3,6,True
+5646,1090,18,KUL-02-FL03-LMR,Conference Room - Floor 3,Large Meeting Room,82.88,12,True
+5647,1090,18,KUL-02-FL03-FOC,Focus & Phone Booths - Floor 3,Focus Room,33.15,7,False
+5648,1090,18,KUL-02-FL03-COL,Agile Collaboration Lounge - Floor 3,Collaboration Area,33.15,8,False
+5649,1091,18,KUL-02-FL04-WKA,Open Workstation Bay A - Floor 4,Open Workstation,762.45,103,False
+5650,1091,18,KUL-02-FL04-WKB,Open Workstation Bay B - Floor 4,Open Workstation,563.55,70,False
+5651,1091,18,KUL-02-FL04-OFF,Executive & Managerial Pod - Floor 4,Private Office,116.03,15,False
+5652,1091,18,KUL-02-FL04-SMR,Huddle Meeting Room - Floor 4,Small Meeting Room,66.3,6,True
+5653,1091,18,KUL-02-FL04-LMR,Conference Room - Floor 4,Large Meeting Room,82.88,12,True
+5654,1091,18,KUL-02-FL04-FOC,Focus & Phone Booths - Floor 4,Focus Room,33.15,7,False
+5655,1091,18,KUL-02-FL04-COL,Agile Collaboration Lounge - Floor 4,Collaboration Area,33.15,8,False
+5656,1092,19,BKK-01-FL01-WKA,Open Workstation Bay A - Floor 1,Open Workstation,805.0,85,False
+5657,1092,19,BKK-01-FL01-WKB,Open Workstation Bay B - Floor 1,Open Workstation,595.0,57,False
+5658,1092,19,BKK-01-FL01-OFF,Executive & Managerial Pod - Floor 1,Private Office,122.5,12,False
+5659,1092,19,BKK-01-FL01-SMR,Huddle Meeting Room - Floor 1,Small Meeting Room,70.0,6,True
+5660,1092,19,BKK-01-FL01-LMR,Conference Room - Floor 1,Large Meeting Room,87.5,12,True
+5661,1092,19,BKK-01-FL01-FOC,Focus & Phone Booths - Floor 1,Focus Room,35.0,6,False
+5662,1092,19,BKK-01-FL01-COL,Agile Collaboration Lounge - Floor 1,Collaboration Area,35.0,8,False
+5663,1092,19,BKK-01-FL01-REC,Main Reception & Welcome Hub,Reception / Shared Support,70.0,4,False
+5664,1093,19,BKK-01-FL02-WKA,Open Workstation Bay A - Floor 2,Open Workstation,805.0,85,False
+5665,1093,19,BKK-01-FL02-WKB,Open Workstation Bay B - Floor 2,Open Workstation,595.0,57,False
+5666,1093,19,BKK-01-FL02-OFF,Executive & Managerial Pod - Floor 2,Private Office,122.5,12,False
+5667,1093,19,BKK-01-FL02-SMR,Huddle Meeting Room - Floor 2,Small Meeting Room,70.0,6,True
+5668,1093,19,BKK-01-FL02-LMR,Conference Room - Floor 2,Large Meeting Room,87.5,12,True
+5669,1093,19,BKK-01-FL02-FOC,Focus & Phone Booths - Floor 2,Focus Room,35.0,6,False
+5670,1093,19,BKK-01-FL02-COL,Agile Collaboration Lounge - Floor 2,Collaboration Area,35.0,8,False
+5671,1094,20,BKK-02-FL01-WKA,Open Workstation Bay A - Floor 1,Open Workstation,782.0,103,False
+5672,1094,20,BKK-02-FL01-WKB,Open Workstation Bay B - Floor 1,Open Workstation,578.0,69,False
+5673,1094,20,BKK-02-FL01-OFF,Executive & Managerial Pod - Floor 1,Private Office,119.0,15,False
+5674,1094,20,BKK-02-FL01-SMR,Huddle Meeting Room - Floor 1,Small Meeting Room,68.0,6,True
+5675,1094,20,BKK-02-FL01-LMR,Conference Room - Floor 1,Large Meeting Room,85.0,12,True
+5676,1094,20,BKK-02-FL01-FOC,Focus & Phone Booths - Floor 1,Focus Room,34.0,7,False
+5677,1094,20,BKK-02-FL01-COL,Agile Collaboration Lounge - Floor 1,Collaboration Area,34.0,8,False
+5678,1094,20,BKK-02-FL01-REC,Main Reception & Welcome Hub,Reception / Shared Support,68.0,4,False
+5679,1095,20,BKK-02-FL02-WKA,Open Workstation Bay A - Floor 2,Open Workstation,782.0,102,False
+5680,1095,20,BKK-02-FL02-WKB,Open Workstation Bay B - Floor 2,Open Workstation,578.0,69,False
+5681,1095,20,BKK-02-FL02-OFF,Executive & Managerial Pod - Floor 2,Private Office,119.0,15,False
+5682,1095,20,BKK-02-FL02-SMR,Huddle Meeting Room - Floor 2,Small Meeting Room,68.0,6,True
+5683,1095,20,BKK-02-FL02-LMR,Conference Room - Floor 2,Large Meeting Room,85.0,12,True
+5684,1095,20,BKK-02-FL02-FOC,Focus & Phone Booths - Floor 2,Focus Room,34.0,7,False
+5685,1095,20,BKK-02-FL02-COL,Agile Collaboration Lounge - Floor 2,Collaboration Area,34.0,8,False
+5686,1096,20,BKK-02-FL03-WKA,Open Workstation Bay A - Floor 3,Open Workstation,782.0,102,False
+5687,1096,20,BKK-02-FL03-WKB,Open Workstation Bay B - Floor 3,Open Workstation,578.0,69,False
+5688,1096,20,BKK-02-FL03-OFF,Executive & Managerial Pod - Floor 3,Private Office,119.0,15,False
+5689,1096,20,BKK-02-FL03-SMR,Huddle Meeting Room - Floor 3,Small Meeting Room,68.0,6,True
+5690,1096,20,BKK-02-FL03-LMR,Conference Room - Floor 3,Large Meeting Room,85.0,12,True
+5691,1096,20,BKK-02-FL03-FOC,Focus & Phone Booths - Floor 3,Focus Room,34.0,7,False
+5692,1096,20,BKK-02-FL03-COL,Agile Collaboration Lounge - Floor 3,Collaboration Area,34.0,8,False
+5693,1097,21,JKT-01-FL01-WKA,Open Workstation Bay A - Floor 1,Open Workstation,621.0,67,False
+5694,1097,21,JKT-01-FL01-WKB,Open Workstation Bay B - Floor 1,Open Workstation,459.0,45,False
+5695,1097,21,JKT-01-FL01-OFF,Executive & Managerial Pod - Floor 1,Private Office,94.5,10,False
+5696,1097,21,JKT-01-FL01-SMR,Huddle Meeting Room - Floor 1,Small Meeting Room,54.0,6,True
+5697,1097,21,JKT-01-FL01-LMR,Conference Room - Floor 1,Large Meeting Room,67.5,12,True
+5698,1097,21,JKT-01-FL01-FOC,Focus & Phone Booths - Floor 1,Focus Room,27.0,5,False
+5699,1097,21,JKT-01-FL01-COL,Agile Collaboration Lounge - Floor 1,Collaboration Area,27.0,8,False
+5700,1097,21,JKT-01-FL01-REC,Main Reception & Welcome Hub,Reception / Shared Support,54.0,4,False
+5701,1098,21,JKT-01-FL02-WKA,Open Workstation Bay A - Floor 2,Open Workstation,621.0,67,False
+5702,1098,21,JKT-01-FL02-WKB,Open Workstation Bay B - Floor 2,Open Workstation,459.0,45,False
+5703,1098,21,JKT-01-FL02-OFF,Executive & Managerial Pod - Floor 2,Private Office,94.5,10,False
+5704,1098,21,JKT-01-FL02-SMR,Huddle Meeting Room - Floor 2,Small Meeting Room,54.0,6,True
+5705,1098,21,JKT-01-FL02-LMR,Conference Room - Floor 2,Large Meeting Room,67.5,12,True
+5706,1098,21,JKT-01-FL02-FOC,Focus & Phone Booths - Floor 2,Focus Room,27.0,5,False
+5707,1098,21,JKT-01-FL02-COL,Agile Collaboration Lounge - Floor 2,Collaboration Area,27.0,8,False
+5708,1099,21,JKT-01-FL03-WKA,Open Workstation Bay A - Floor 3,Open Workstation,621.0,66,False
+5709,1099,21,JKT-01-FL03-WKB,Open Workstation Bay B - Floor 3,Open Workstation,459.0,45,False
+5710,1099,21,JKT-01-FL03-OFF,Executive & Managerial Pod - Floor 3,Private Office,94.5,10,False
+5711,1099,21,JKT-01-FL03-SMR,Huddle Meeting Room - Floor 3,Small Meeting Room,54.0,6,True
+5712,1099,21,JKT-01-FL03-LMR,Conference Room - Floor 3,Large Meeting Room,67.5,12,True
+5713,1099,21,JKT-01-FL03-FOC,Focus & Phone Booths - Floor 3,Focus Room,27.0,5,False
+5714,1099,21,JKT-01-FL03-COL,Agile Collaboration Lounge - Floor 3,Collaboration Area,27.0,8,False
+5715,1100,22,JKT-02-FL01-WKA,Open Workstation Bay A - Floor 1,Open Workstation,703.8,91,False
+5716,1100,22,JKT-02-FL01-WKB,Open Workstation Bay B - Floor 1,Open Workstation,520.2,63,False
+5717,1100,22,JKT-02-FL01-OFF,Executive & Managerial Pod - Floor 1,Private Office,107.1,14,False
+5718,1100,22,JKT-02-FL01-SMR,Huddle Meeting Room - Floor 1,Small Meeting Room,61.2,6,True
+5719,1100,22,JKT-02-FL01-LMR,Conference Room - Floor 1,Large Meeting Room,76.5,12,True
+5720,1100,22,JKT-02-FL01-FOC,Focus & Phone Booths - Floor 1,Focus Room,30.6,7,False
+5721,1100,22,JKT-02-FL01-COL,Agile Collaboration Lounge - Floor 1,Collaboration Area,30.6,8,False
+5722,1100,22,JKT-02-FL01-REC,Main Reception & Welcome Hub,Reception / Shared Support,61.2,4,False
+5723,1101,22,JKT-02-FL02-WKA,Open Workstation Bay A - Floor 2,Open Workstation,703.8,91,False
+5724,1101,22,JKT-02-FL02-WKB,Open Workstation Bay B - Floor 2,Open Workstation,520.2,63,False
+5725,1101,22,JKT-02-FL02-OFF,Executive & Managerial Pod - Floor 2,Private Office,107.1,14,False
+5726,1101,22,JKT-02-FL02-SMR,Huddle Meeting Room - Floor 2,Small Meeting Room,61.2,6,True
+5727,1101,22,JKT-02-FL02-LMR,Conference Room - Floor 2,Large Meeting Room,76.5,12,True
+5728,1101,22,JKT-02-FL02-FOC,Focus & Phone Booths - Floor 2,Focus Room,30.6,7,False
+5729,1101,22,JKT-02-FL02-COL,Agile Collaboration Lounge - Floor 2,Collaboration Area,30.6,8,False
+5730,1102,22,JKT-02-FL03-WKA,Open Workstation Bay A - Floor 3,Open Workstation,703.8,91,False
+5731,1102,22,JKT-02-FL03-WKB,Open Workstation Bay B - Floor 3,Open Workstation,520.2,63,False
+5732,1102,22,JKT-02-FL03-OFF,Executive & Managerial Pod - Floor 3,Private Office,107.1,14,False
+5733,1102,22,JKT-02-FL03-SMR,Huddle Meeting Room - Floor 3,Small Meeting Room,61.2,6,True
+5734,1102,22,JKT-02-FL03-LMR,Conference Room - Floor 3,Large Meeting Room,76.5,12,True
+5735,1102,22,JKT-02-FL03-FOC,Focus & Phone Booths - Floor 3,Focus Room,30.6,7,False
+5736,1102,22,JKT-02-FL03-COL,Agile Collaboration Lounge - Floor 3,Collaboration Area,30.6,8,False
+5737,1103,22,JKT-02-FL04-WKA,Open Workstation Bay A - Floor 4,Open Workstation,703.8,91,False
+5738,1103,22,JKT-02-FL04-WKB,Open Workstation Bay B - Floor 4,Open Workstation,520.2,63,False
+5739,1103,22,JKT-02-FL04-OFF,Executive & Managerial Pod - Floor 4,Private Office,107.1,14,False
+5740,1103,22,JKT-02-FL04-SMR,Huddle Meeting Room - Floor 4,Small Meeting Room,61.2,6,True
+5741,1103,22,JKT-02-FL04-LMR,Conference Room - Floor 4,Large Meeting Room,76.5,12,True
+5742,1103,22,JKT-02-FL04-FOC,Focus & Phone Booths - Floor 4,Focus Room,30.6,7,False
+5743,1103,22,JKT-02-FL04-COL,Agile Collaboration Lounge - Floor 4,Collaboration Area,30.6,8,False
+5744,1104,23,SYD-01-FL01-WKA,Open Workstation Bay A - Floor 1,Open Workstation,649.75,67,False
+5745,1104,23,SYD-01-FL01-WKB,Open Workstation Bay B - Floor 1,Open Workstation,480.25,46,False
+5746,1104,23,SYD-01-FL01-OFF,Executive & Managerial Pod - Floor 1,Private Office,98.88,10,False
+5747,1104,23,SYD-01-FL01-SMR,Huddle Meeting Room - Floor 1,Small Meeting Room,56.5,6,True
+5748,1104,23,SYD-01-FL01-LMR,Conference Room - Floor 1,Large Meeting Room,70.62,12,True
+5749,1104,23,SYD-01-FL01-FOC,Focus & Phone Booths - Floor 1,Focus Room,28.25,5,False
+5750,1104,23,SYD-01-FL01-COL,Agile Collaboration Lounge - Floor 1,Collaboration Area,28.25,8,False
+5751,1104,23,SYD-01-FL01-REC,Main Reception & Welcome Hub,Reception / Shared Support,56.5,4,False
+5752,1105,23,SYD-01-FL02-WKA,Open Workstation Bay A - Floor 2,Open Workstation,649.75,67,False
+5753,1105,23,SYD-01-FL02-WKB,Open Workstation Bay B - Floor 2,Open Workstation,480.25,46,False
+5754,1105,23,SYD-01-FL02-OFF,Executive & Managerial Pod - Floor 2,Private Office,98.88,10,False
+5755,1105,23,SYD-01-FL02-SMR,Huddle Meeting Room - Floor 2,Small Meeting Room,56.5,6,True
+5756,1105,23,SYD-01-FL02-LMR,Conference Room - Floor 2,Large Meeting Room,70.62,12,True
+5757,1105,23,SYD-01-FL02-FOC,Focus & Phone Booths - Floor 2,Focus Room,28.25,5,False
+5758,1105,23,SYD-01-FL02-COL,Agile Collaboration Lounge - Floor 2,Collaboration Area,28.25,8,False
+5759,1106,23,SYD-01-FL03-WKA,Open Workstation Bay A - Floor 3,Open Workstation,649.75,67,False
+5760,1106,23,SYD-01-FL03-WKB,Open Workstation Bay B - Floor 3,Open Workstation,480.25,45,False
+5761,1106,23,SYD-01-FL03-OFF,Executive & Managerial Pod - Floor 3,Private Office,98.88,10,False
+5762,1106,23,SYD-01-FL03-SMR,Huddle Meeting Room - Floor 3,Small Meeting Room,56.5,6,True
+5763,1106,23,SYD-01-FL03-LMR,Conference Room - Floor 3,Large Meeting Room,70.62,12,True
+5764,1106,23,SYD-01-FL03-FOC,Focus & Phone Booths - Floor 3,Focus Room,28.25,5,False
+5765,1106,23,SYD-01-FL03-COL,Agile Collaboration Lounge - Floor 3,Collaboration Area,28.25,8,False
+5766,1107,23,SYD-01-FL04-WKA,Open Workstation Bay A - Floor 4,Open Workstation,649.75,67,False
+5767,1107,23,SYD-01-FL04-WKB,Open Workstation Bay B - Floor 4,Open Workstation,480.25,45,False
+5768,1107,23,SYD-01-FL04-OFF,Executive & Managerial Pod - Floor 4,Private Office,98.88,10,False
+5769,1107,23,SYD-01-FL04-SMR,Huddle Meeting Room - Floor 4,Small Meeting Room,56.5,6,True
+5770,1107,23,SYD-01-FL04-LMR,Conference Room - Floor 4,Large Meeting Room,70.62,12,True
+5771,1107,23,SYD-01-FL04-FOC,Focus & Phone Booths - Floor 4,Focus Room,28.25,5,False
+5772,1107,23,SYD-01-FL04-COL,Agile Collaboration Lounge - Floor 4,Collaboration Area,28.25,8,False
+5773,1108,24,SYD-02-FL01-WKA,Open Workstation Bay A - Floor 1,Open Workstation,713.0,85,False
+5774,1108,24,SYD-02-FL01-WKB,Open Workstation Bay B - Floor 1,Open Workstation,527.0,57,False
+5775,1108,24,SYD-02-FL01-OFF,Executive & Managerial Pod - Floor 1,Private Office,108.5,12,False
+5776,1108,24,SYD-02-FL01-SMR,Huddle Meeting Room - Floor 1,Small Meeting Room,62.0,6,True
+5777,1108,24,SYD-02-FL01-LMR,Conference Room - Floor 1,Large Meeting Room,77.5,12,True
+5778,1108,24,SYD-02-FL01-FOC,Focus & Phone Booths - Floor 1,Focus Room,31.0,6,False
+5779,1108,24,SYD-02-FL01-COL,Agile Collaboration Lounge - Floor 1,Collaboration Area,31.0,8,False
+5780,1108,24,SYD-02-FL01-REC,Main Reception & Welcome Hub,Reception / Shared Support,62.0,4,False
+5781,1109,24,SYD-02-FL02-WKA,Open Workstation Bay A - Floor 2,Open Workstation,713.0,85,False
+5782,1109,24,SYD-02-FL02-WKB,Open Workstation Bay B - Floor 2,Open Workstation,527.0,57,False
+5783,1109,24,SYD-02-FL02-OFF,Executive & Managerial Pod - Floor 2,Private Office,108.5,12,False
+5784,1109,24,SYD-02-FL02-SMR,Huddle Meeting Room - Floor 2,Small Meeting Room,62.0,6,True
+5785,1109,24,SYD-02-FL02-LMR,Conference Room - Floor 2,Large Meeting Room,77.5,12,True
+5786,1109,24,SYD-02-FL02-FOC,Focus & Phone Booths - Floor 2,Focus Room,31.0,6,False
+5787,1109,24,SYD-02-FL02-COL,Agile Collaboration Lounge - Floor 2,Collaboration Area,31.0,8,False
+5788,1110,24,SYD-02-FL03-WKA,Open Workstation Bay A - Floor 3,Open Workstation,713.0,85,False
+5789,1110,24,SYD-02-FL03-WKB,Open Workstation Bay B - Floor 3,Open Workstation,527.0,57,False
+5790,1110,24,SYD-02-FL03-OFF,Executive & Managerial Pod - Floor 3,Private Office,108.5,12,False
+5791,1110,24,SYD-02-FL03-SMR,Huddle Meeting Room - Floor 3,Small Meeting Room,62.0,6,True
+5792,1110,24,SYD-02-FL03-LMR,Conference Room - Floor 3,Large Meeting Room,77.5,12,True
+5793,1110,24,SYD-02-FL03-FOC,Focus & Phone Booths - Floor 3,Focus Room,31.0,6,False
+5794,1110,24,SYD-02-FL03-COL,Agile Collaboration Lounge - Floor 3,Collaboration Area,31.0,8,False
+5795,1111,25,PNQ-03-FL01-WKA,Open Workstation Bay A - Floor 1,Open Workstation,736.0,82,False
+5796,1111,25,PNQ-03-FL01-WKB,Open Workstation Bay B - Floor 1,Open Workstation,544.0,55,False
+5797,1111,25,PNQ-03-FL01-OFF,Executive & Managerial Pod - Floor 1,Private Office,112.0,12,False
+5798,1111,25,PNQ-03-FL01-SMR,Huddle Meeting Room - Floor 1,Small Meeting Room,64.0,6,True
+5799,1111,25,PNQ-03-FL01-LMR,Conference Room - Floor 1,Large Meeting Room,80.0,12,True
+5800,1111,25,PNQ-03-FL01-FOC,Focus & Phone Booths - Floor 1,Focus Room,32.0,6,False
+5801,1111,25,PNQ-03-FL01-COL,Agile Collaboration Lounge - Floor 1,Collaboration Area,32.0,8,False
+5802,1111,25,PNQ-03-FL01-REC,Main Reception & Welcome Hub,Reception / Shared Support,64.0,4,False
+5803,1112,25,PNQ-03-FL02-WKA,Open Workstation Bay A - Floor 2,Open Workstation,736.0,82,False
+5804,1112,25,PNQ-03-FL02-WKB,Open Workstation Bay B - Floor 2,Open Workstation,544.0,55,False
+5805,1112,25,PNQ-03-FL02-OFF,Executive & Managerial Pod - Floor 2,Private Office,112.0,12,False
+5806,1112,25,PNQ-03-FL02-SMR,Huddle Meeting Room - Floor 2,Small Meeting Room,64.0,6,True
+5807,1112,25,PNQ-03-FL02-LMR,Conference Room - Floor 2,Large Meeting Room,80.0,12,True
+5808,1112,25,PNQ-03-FL02-FOC,Focus & Phone Booths - Floor 2,Focus Room,32.0,6,False
+5809,1112,25,PNQ-03-FL02-COL,Agile Collaboration Lounge - Floor 2,Collaboration Area,32.0,8,False

@@ -1,0 +1,45 @@
+issue_id,table_name,record_identifier,issue_type,expected_rule,injected_value,expected_correct_value,severity
+DQ-ISS-001,raw_properties,PROP-BOM-01,DQ009,City must not be null or blank,,Mumbai,Medium
+DQ-ISS-002,raw_properties,PROP-BLR-02,DQ005,City must map to valid country,Australia,India,High
+DQ-ISS-003,raw_properties,PROP-PNQ-03,DQ005,City name must be properly capitalized and trimmed,PUNE ,Pune,Medium
+DQ-ISS-004,raw_properties,PROP-MAA-02,DQ006,Usable area cannot exceed rentable area,8500.0,6375.0,High
+DQ-ISS-005,raw_properties,PROP-BOM-02,DQ001,Property code must be unique,Duplicate Record Injected,Single Unique Record,Critical
+DQ-ISS-006,raw_leases,LSE-DEL-01-2021,DQ004,Lease end date cannot precede lease start date,"Start: 2027-06-30, End: 2021-07-01","Start: 2021-07-01, End: 2027-06-30",Critical
+DQ-ISS-007,raw_leases,LSE-KUL-02-2023,DQ004,Lease end date cannot precede lease start date,"Start: 2028-12-31, End: 2023-01-01","Start: 2023-01-01, End: 2028-12-31",Critical
+DQ-ISS-008,raw_leases,LSE-BKK-02-2023,DQ009,Lease end date must not be null or empty,,2029-03-31,High
+DQ-ISS-009,raw_property_costs,COST-3045,DQ008,Operating cost values cannot be negative,-3825000.0,3825000.0,High
+DQ-ISS-010,raw_property_costs,COST-3120,DQ008,Energy cost cannot be negative,-740353.81,740353.81,High
+DQ-ISS-011,raw_property_costs,COST-3280,DQ008,Facilities cost cannot be negative,-625594.69,625594.69,High
+DQ-ISS-012,raw_spaces,SP-5015,DQ009,Space type must not be blank,,Collaboration Area,Medium
+DQ-ISS-013,raw_spaces,SP-5120,DQ005,Space type must follow standard title case classification,open_workstation,Open Workstation,Medium
+DQ-ISS-014,raw_utilization,UTIL-1000106,DQ003,Utilization rate must be between 0% and 100%,1.3800,0.8835,Critical
+DQ-ISS-015,raw_utilization,UTIL-1000521,DQ003,Utilization rate must be between 0% and 100%,1.3800,0.8575,Critical
+DQ-ISS-016,raw_utilization,UTIL-1001421,DQ003,Utilization rate must be between 0% and 100%,1.3800,0.4524,Critical
+DQ-ISS-017,raw_utilization,UTIL-1002891,DQ003,Utilization rate must be between 0% and 100%,1.3800,0.5183,Critical
+DQ-ISS-018,raw_utilization,UTIL-1004511,DQ003,Utilization rate must be between 0% and 100%,1.3800,0.504,Critical
+DQ-ISS-019,raw_utilization,UTIL-1008921,DQ003,Utilization rate must be between 0% and 100%,1.3800,0.6475,Critical
+DQ-ISS-020,raw_utilization,UTIL-1015301,DQ003,Utilization rate must be between 0% and 100%,1.3800,0.3733,Critical
+DQ-ISS-021,raw_utilization,UTIL-1024101,DQ003,Utilization rate must be between 0% and 100%,1.3800,0.7911,Critical
+DQ-ISS-022,raw_utilization,UTIL-1038501,DQ003,Utilization rate must be between 0% and 100%,1.3800,0.6102,Critical
+DQ-ISS-023,raw_utilization,UTIL-1052101,DQ003,Utilization rate must be between 0% and 100%,1.3800,0.47,Critical
+DQ-ISS-024,raw_utilization,UTIL-1071201,DQ003,Utilization rate must be between 0% and 100%,1.3800,0.6117,Critical
+DQ-ISS-025,raw_utilization,UTIL-1089401,DQ003,Utilization rate must be between 0% and 100%,1.3800,0.6431,Critical
+DQ-ISS-026,raw_utilization,UTIL-1102301,DQ003,Utilization rate must be between 0% and 100%,1.3800,0.6605,Critical
+DQ-ISS-027,raw_utilization,UTIL-1115001,DQ003,Utilization rate must be between 0% and 100%,1.3800,0.4299,Critical
+DQ-ISS-028,raw_utilization,UTIL-1000301,DQ009,Average occupancy must not be null,NaN / NULL,68.67,High
+DQ-ISS-029,raw_utilization,UTIL-1001201,DQ009,Average occupancy must not be null,NaN / NULL,40.6,High
+DQ-ISS-030,raw_utilization,UTIL-1007801,DQ009,Average occupancy must not be null,NaN / NULL,50.35,High
+DQ-ISS-031,raw_utilization,UTIL-1019401,DQ009,Average occupancy must not be null,NaN / NULL,7.46,High
+DQ-ISS-032,raw_utilization,UTIL-1033101,DQ009,Average occupancy must not be null,NaN / NULL,64.78,High
+DQ-ISS-033,raw_utilization,UTIL-1047801,DQ009,Average occupancy must not be null,NaN / NULL,76.35,High
+DQ-ISS-034,raw_utilization,UTIL-1068901,DQ009,Average occupancy must not be null,NaN / NULL,5.21,High
+DQ-ISS-035,raw_utilization,UTIL-1095401,DQ009,Average occupancy must not be null,NaN / NULL,53.73,High
+DQ-ISS-036,raw_utilization,UTIL-1000151,DQ010,Only one observation per space per date,Duplicate Observation Row,Single Valid Record,High
+DQ-ISS-037,raw_utilization,UTIL-1004501,DQ010,Only one observation per space per date,Duplicate Observation Row,Single Valid Record,High
+DQ-ISS-038,raw_utilization,UTIL-1025001,DQ010,Only one observation per space per date,Duplicate Observation Row,Single Valid Record,High
+DQ-ISS-039,raw_utilization,UTIL-1060001,DQ010,Only one observation per space per date,Duplicate Observation Row,Single Valid Record,High
+DQ-ISS-040,raw_room_utilization,ROOM-70046,DQ011,Attended bookings cannot exceed total scheduled bookings,6,3,Medium
+DQ-ISS-041,raw_room_utilization,ROOM-70891,DQ011,Attended bookings cannot exceed total scheduled bookings,6,3,Medium
+DQ-ISS-042,raw_room_utilization,ROOM-73421,DQ011,Attended bookings cannot exceed total scheduled bookings,10,7,Medium
+DQ-ISS-043,raw_room_utilization,ROOM-82501,DQ011,Attended bookings cannot exceed total scheduled bookings,8,5,Medium
+DQ-ISS-044,raw_room_utilization,ROOM-98401,DQ011,Attended bookings cannot exceed total scheduled bookings,10,7,Medium
