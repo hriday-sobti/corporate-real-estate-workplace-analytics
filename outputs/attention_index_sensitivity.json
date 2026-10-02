@@ -32,49 +32,49 @@
   },
   "rank_correlations_vs_baseline": {
     "Equal Weighting (20% Each)": {
-      "spearman_rho": 0.9977,
+      "spearman_rho": 0.9708,
       "p_value": 0.0,
       "interpretation": "High rank stability"
     },
     "Cost-Dominant Strategy": {
-      "spearman_rho": 0.9746,
+      "spearman_rho": 0.9685,
       "p_value": 0.0,
       "interpretation": "High rank stability"
     },
     "Operational-Dominant Strategy": {
-      "spearman_rho": 0.9962,
+      "spearman_rho": 0.95,
       "p_value": 0.0,
       "interpretation": "High rank stability"
     }
   },
   "top_5_properties_under_schemes": {
     "Baseline (Recommended)": [
-      "PROP-BLR-01 (Whitefield Innovatio... - Rank 1, Score 312.75)",
-      "PROP-PNQ-01 (Hinjawadi Tech Campu... - Rank 2, Score 224.53)",
-      "PROP-HYD-01 (HITEC City Cyber Hor... - Rank 3, Score 218.85)",
-      "PROP-DEL-01 (Gurugram Cyber City ... - Rank 4, Score 196.17)",
-      "PROP-BLR-02 (Outer Ring Road Alph... - Rank 5, Score 194.19)"
+      "PROP-BOM-01 (Nariman Point Busine... - Rank 1, Score 64.02)",
+      "PROP-SGP-01 (Marina Bay Financial... - Rank 2, Score 60.17)",
+      "PROP-BKK-01 (Sathorn Square Tower... - Rank 3, Score 57.67)",
+      "PROP-SYD-01 (Barangaroo Internati... - Rank 4, Score 56.06)",
+      "PROP-KUL-01 (KL Sentral Corporate... - Rank 5, Score 50.52)"
     ],
     "Equal Weighting (20% Each)": [
-      "PROP-BLR-01 (Whitefield Innovatio... - Rank 1, Score 405.0)",
-      "PROP-PNQ-01 (Hinjawadi Tech Campu... - Rank 2, Score 291.92)",
-      "PROP-HYD-01 (HITEC City Cyber Hor... - Rank 3, Score 283.36)",
-      "PROP-BLR-02 (Outer Ring Road Alph... - Rank 4, Score 247.95)",
-      "PROP-DEL-01 (Gurugram Cyber City ... - Rank 5, Score 245.87)"
+      "PROP-BOM-01 (Nariman Point Busine... - Rank 1, Score 64.27)",
+      "PROP-SGP-01 (Marina Bay Financial... - Rank 2, Score 61.27)",
+      "PROP-SYD-01 (Barangaroo Internati... - Rank 3, Score 56.05)",
+      "PROP-BKK-01 (Sathorn Square Tower... - Rank 4, Score 55.79)",
+      "PROP-JKT-01 (Sudirman SCBD One Pa... - Rank 5, Score 49.72)"
     ],
     "Cost-Dominant Strategy": [
-      "PROP-BLR-01 (Whitefield Innovatio... - Rank 1, Score 221.48)",
-      "PROP-HYD-01 (HITEC City Cyber Hor... - Rank 2, Score 154.38)",
-      "PROP-PNQ-01 (Hinjawadi Tech Campu... - Rank 3, Score 152.23)",
-      "PROP-DEL-01 (Gurugram Cyber City ... - Rank 4, Score 149.55)",
-      "PROP-BOM-01 (Nariman Point Busine... - Rank 5, Score 147.22)"
+      "PROP-BOM-01 (Nariman Point Busine... - Rank 1, Score 74.03)",
+      "PROP-SGP-01 (Marina Bay Financial... - Rank 2, Score 73.44)",
+      "PROP-BKK-01 (Sathorn Square Tower... - Rank 3, Score 70.12)",
+      "PROP-SYD-01 (Barangaroo Internati... - Rank 4, Score 69.04)",
+      "PROP-SYD-02 (Macquarie Park Tech ... - Rank 5, Score 62.24)"
     ],
     "Operational-Dominant Strategy": [
-      "PROP-BLR-01 (Whitefield Innovatio... - Rank 1, Score 498.01)",
-      "PROP-PNQ-01 (Hinjawadi Tech Campu... - Rank 2, Score 368.59)",
-      "PROP-HYD-01 (HITEC City Cyber Hor... - Rank 3, Score 353.17)",
-      "PROP-BLR-02 (Outer Ring Road Alph... - Rank 4, Score 301.56)",
-      "PROP-DEL-01 (Gurugram Cyber City ... - Rank 5, Score 297.52)"
+      "PROP-BOM-01 (Nariman Point Busine... - Rank 1, Score 58.89)",
+      "PROP-SGP-01 (Marina Bay Financial... - Rank 2, Score 55.8)",
+      "PROP-BKK-01 (Sathorn Square Tower... - Rank 3, Score 54.32)",
+      "PROP-SYD-01 (Barangaroo Internati... - Rank 4, Score 52.84)",
+      "PROP-KUL-01 (KL Sentral Corporate... - Rank 5, Score 50.28)"
     ]
   },
   "key_takeaway": "The top attention candidates (e.g. Marina Bay Singapore, Nariman Point Mumbai, Barangaroo Sydney, Guindy Chennai) remain stable across weighting variations (Spearman rho > 0.88), confirming that operational priority is driven by fundamental portfolio attributes rather than arbitrary weight selection."

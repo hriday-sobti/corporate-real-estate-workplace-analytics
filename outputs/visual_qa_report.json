@@ -40,7 +40,7 @@
         "page_number": 5,
         "width_px": 1224,
         "height_px": 1584,
-        "file_size_kb": 267.0,
+        "file_size_kb": 268.3,
         "image_path": "outputs/qa_renders/pdf/page_05.png",
         "status": "RENDERED_CLEAN"
       },
@@ -56,7 +56,7 @@
         "page_number": 7,
         "width_px": 1224,
         "height_px": 1584,
-        "file_size_kb": 195.5,
+        "file_size_kb": 221.7,
         "image_path": "outputs/qa_renders/pdf/page_07.png",
         "status": "RENDERED_CLEAN"
       },

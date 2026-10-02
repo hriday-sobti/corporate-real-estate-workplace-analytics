@@ -22,8 +22,8 @@
       "portfolio_cost_reduction_pct": 1.3,
       "baseline_portfolio_avg_utilization_pct": 59.38,
       "projected_portfolio_avg_utilization_pct": 61.5,
-      "target_assets_exceeding_85pct_peak_buffer": 0,
-      "analyst_interpretation": "Under Scenario 1: Conservative Adjustment, surrendering 710 seats (6,372 m\u00b2) yields an illustrative estimated annual saving of \u20b97.77 Cr, lifting overall portfolio utilization from 59.38% to 61.5%. Importantly, 0 target asset(s) would breach the 85% peak choke point, indicating that consolidation must be paired with mid-week hoteling smoothing."
+      "target_assets_exceeding_85pct_peak_buffer": 3,
+      "analyst_interpretation": "Under Scenario 1: Conservative Adjustment, surrendering 710 seats (6,372 m\u00b2) yields an illustrative estimated annual saving of \u20b97.77 Cr, lifting overall portfolio utilization from 59.38% to 61.5%. Importantly, 3 target asset(s) would breach the 85% peak choke point, indicating that consolidation must be paired with mid-week hoteling smoothing."
     },
     {
       "scenario_name": "Scenario 2: Balanced Agile Optimization",
@@ -40,8 +40,8 @@
       "portfolio_cost_reduction_pct": 1.95,
       "baseline_portfolio_avg_utilization_pct": 59.38,
       "projected_portfolio_avg_utilization_pct": 62.62,
-      "target_assets_exceeding_85pct_peak_buffer": 2,
-      "analyst_interpretation": "Under Scenario 2: Balanced Agile Optimization, surrendering 1,064 seats (9,550 m\u00b2) yields an illustrative estimated annual saving of \u20b911.64 Cr, lifting overall portfolio utilization from 59.38% to 62.62%. Importantly, 2 target asset(s) would breach the 85% peak choke point, indicating that consolidation must be paired with mid-week hoteling smoothing."
+      "target_assets_exceeding_85pct_peak_buffer": 5,
+      "analyst_interpretation": "Under Scenario 2: Balanced Agile Optimization, surrendering 1,064 seats (9,550 m\u00b2) yields an illustrative estimated annual saving of \u20b911.64 Cr, lifting overall portfolio utilization from 59.38% to 62.62%. Importantly, 5 target asset(s) would breach the 85% peak choke point, indicating that consolidation must be paired with mid-week hoteling smoothing."
     },
     {
       "scenario_name": "Scenario 3: Strategic Footprint Rationalization",
@@ -58,8 +58,8 @@
       "portfolio_cost_reduction_pct": 2.6,
       "baseline_portfolio_avg_utilization_pct": 59.38,
       "projected_portfolio_avg_utilization_pct": 63.79,
-      "target_assets_exceeding_85pct_peak_buffer": 3,
-      "analyst_interpretation": "Under Scenario 3: Strategic Footprint Rationalization, surrendering 1,420 seats (12,745 m\u00b2) yields an illustrative estimated annual saving of \u20b915.53 Cr, lifting overall portfolio utilization from 59.38% to 63.79%. Importantly, 3 target asset(s) would breach the 85% peak choke point, indicating that consolidation must be paired with mid-week hoteling smoothing."
+      "target_assets_exceeding_85pct_peak_buffer": 7,
+      "analyst_interpretation": "Under Scenario 3: Strategic Footprint Rationalization, surrendering 1,420 seats (12,745 m\u00b2) yields an illustrative estimated annual saving of \u20b915.53 Cr, lifting overall portfolio utilization from 59.38% to 63.79%. Importantly, 7 target asset(s) would breach the 85% peak choke point, indicating that consolidation must be paired with mid-week hoteling smoothing."
     }
   ]
 }

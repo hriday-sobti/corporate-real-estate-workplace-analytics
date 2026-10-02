@@ -223,12 +223,19 @@ def clean_and_transform_pipeline() -> Tuple[Dict[str, pd.DataFrame], Dict[str, p
     df_util_clean["MonthDateKey"] = df_util_clean["DateKey"].astype(str).str[:6] + "01"
     df_util_clean["MonthDateKey"] = df_util_clean["MonthDateKey"].astype(int)
 
-    util_prop_month = df_util_clean.groupby(["PropertyKey", "MonthDateKey"]).agg(
-        TotalOccupiedHours=("OccupiedHours", "sum"),
-        TotalAvailableHours=("AvailableHours", "sum"),
-        PeakDailyUtilization=("PeakUtilizationRate", "max"),
-        WorkingDayCount=("DateKey", "nunique"),
-        DaysUnderPressure=("PeakUtilizationRate", lambda s: (s >= 0.85).sum())
+    # Calculate daily property-level aggregated utilization first
+    daily_prop = df_util_clean.groupby(["PropertyKey", "DateKey", "MonthDateKey"]).agg(
+        PropertyPeakRate=("PeakUtilizationRate", "max"),
+        PropertyOccupiedHours=("OccupiedHours", "sum"),
+        PropertyAvailableHours=("AvailableHours", "sum")
+    ).reset_index()
+
+    util_prop_month = daily_prop.groupby(["PropertyKey", "MonthDateKey"]).agg(
+        TotalOccupiedHours=("PropertyOccupiedHours", "sum"),
+        TotalAvailableHours=("PropertyAvailableHours", "sum"),
+        PeakDailyUtilization=("PropertyPeakRate", "max"),
+        WorkingDayCount=("DateKey", "count"),
+        DaysUnderPressure=("PropertyPeakRate", lambda s: int((s >= 0.85).sum()))
     ).reset_index()
 
     util_prop_month["AverageUtilizationRate"] = round(
@@ -275,13 +282,13 @@ def clean_and_transform_pipeline() -> Tuple[Dict[str, pd.DataFrame], Dict[str, p
     )
 
     # B. mart_workplace_pressure_matrix (Property-level overall aggregation)
-    prop_overall = df_util_clean.groupby("PropertyKey").agg(
-        TotalOccupiedHours=("OccupiedHours", "sum"),
-        TotalAvailableHours=("AvailableHours", "sum"),
-        MaxPeakUtilizationRate=("PeakUtilizationRate", "max"),
-        AvgPeakUtilizationRate=("PeakUtilizationRate", "mean"),
-        WorkingDaysCount=("DateKey", "nunique"),
-        DaysUnderPressure=("PeakUtilizationRate", lambda s: (s >= 0.85).sum())
+    prop_overall = daily_prop.groupby("PropertyKey").agg(
+        TotalOccupiedHours=("PropertyOccupiedHours", "sum"),
+        TotalAvailableHours=("PropertyAvailableHours", "sum"),
+        MaxPeakUtilizationRate=("PropertyPeakRate", "max"),
+        AvgPeakUtilizationRate=("PropertyPeakRate", "mean"),
+        WorkingDaysCount=("DateKey", "count"),
+        DaysUnderPressure=("PropertyPeakRate", lambda s: int((s >= 0.85).sum()))
     ).reset_index()
 
     prop_overall["AverageUtilizationPct"] = round(
@@ -291,7 +298,6 @@ def clean_and_transform_pipeline() -> Tuple[Dict[str, pd.DataFrame], Dict[str, p
     prop_overall["CapacityPressurePct"] = round(
         (prop_overall["DaysUnderPressure"] / prop_overall["WorkingDaysCount"]) * 100, 2
     )
-
     # Quadrant Classification: Average threshold 55%, Peak threshold 80%
     def assign_quadrant(row):
         avg = row["AverageUtilizationPct"]
