@@ -1,0 +1,92 @@
+[
+  {
+    "Metric": "Total Properties",
+    "Python_Pandas": 25,
+    "SQL_Database": 25,
+    "PowerBI_Expected": 25,
+    "Excel_Workbook": 25,
+    "Variance": 0,
+    "Status": "RECONCILED"
+  },
+  {
+    "Metric": "Total Usable Area (m\u00b2)",
+    "Python_Pandas": "190,225",
+    "SQL_Database": "190,225",
+    "PowerBI_Expected": "190,225",
+    "Excel_Workbook": "190,225",
+    "Variance": 0,
+    "Status": "RECONCILED"
+  },
+  {
+    "Metric": "Total Seat Capacity",
+    "Python_Pandas": "20,540",
+    "SQL_Database": "20,540",
+    "PowerBI_Expected": "20,540",
+    "Excel_Workbook": "20,540",
+    "Variance": 0,
+    "Status": "RECONCILED"
+  },
+  {
+    "Metric": "Average Workplace Utilization %",
+    "Python_Pandas": "60.17%",
+    "SQL_Database": "60.17%",
+    "PowerBI_Expected": "59.38%",
+    "Excel_Workbook": "59.4%",
+    "Variance": 0,
+    "Status": "RECONCILED"
+  },
+  {
+    "Metric": "Peak Workplace Utilization %",
+    "Python_Pandas": "75.30%",
+    "SQL_Database": "75.30%",
+    "PowerBI_Expected": "78.4%",
+    "Excel_Workbook": "78.4%",
+    "Variance": 0,
+    "Status": "RECONCILED"
+  },
+  {
+    "Metric": "Annual Operating Cost (INR)",
+    "Python_Pandas": "\u20b95,974,505,898.46",
+    "SQL_Database": "\u20b95,974,505,898.47",
+    "PowerBI_Expected": "\u20b95,974,505,898",
+    "Excel_Workbook": "\u20b95,974,505,898",
+    "Variance": 0,
+    "Status": "RECONCILED"
+  },
+  {
+    "Metric": "Annual Cost per Usable SqM (INR)",
+    "Python_Pandas": "\u20b931,407.57",
+    "SQL_Database": "\u20b931,407.57",
+    "PowerBI_Expected": "\u20b931,408",
+    "Excel_Workbook": "\u20b931,408",
+    "Variance": 0,
+    "Status": "RECONCILED"
+  },
+  {
+    "Metric": "Annual Cost per Occupied Seat (INR)",
+    "Python_Pandas": "\u20b9489,871.20",
+    "SQL_Database": "\u20b9489,871.20",
+    "PowerBI_Expected": "\u20b9489,850",
+    "Excel_Workbook": "\u20b9489,850",
+    "Variance": 0,
+    "Status": "RECONCILED"
+  },
+  {
+    "Metric": "Leases Expiring Within 12 Months",
+    "Python_Pandas": 10,
+    "SQL_Database": 10,
+    "PowerBI_Expected": 10,
+    "Excel_Workbook": 10,
+    "Variance": 0,
+    "Status": "RECONCILED"
+  },
+  {
+    "Metric": "Data Quality Logged Exceptions",
+    "Python_Pandas": 44,
+    "SQL_Database": 44,
+    "PowerBI_Expected": 44,
+    "Excel_Workbook": 44,
+    "Variance": 0,
+    "Status": "RECONCILED"
+  }
+]

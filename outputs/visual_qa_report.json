@@ -1,0 +1,196 @@
+{
+  "status": "PASSED",
+  "pdf_audit": {
+    "total_pages": 10,
+    "expected_pages": 10,
+    "page_renders": [
+      {
+        "page_number": 1,
+        "width_px": 1224,
+        "height_px": 1584,
+        "file_size_kb": 253.9,
+        "image_path": "outputs/qa_renders/pdf/page_01.png",
+        "status": "RENDERED_CLEAN"
+      },
+      {
+        "page_number": 2,
+        "width_px": 1224,
+        "height_px": 1584,
+        "file_size_kb": 389.8,
+        "image_path": "outputs/qa_renders/pdf/page_02.png",
+        "status": "RENDERED_CLEAN"
+      },
+      {
+        "page_number": 3,
+        "width_px": 1224,
+        "height_px": 1584,
+        "file_size_kb": 233.3,
+        "image_path": "outputs/qa_renders/pdf/page_03.png",
+        "status": "RENDERED_CLEAN"
+      },
+      {
+        "page_number": 4,
+        "width_px": 1224,
+        "height_px": 1584,
+        "file_size_kb": 252.4,
+        "image_path": "outputs/qa_renders/pdf/page_04.png",
+        "status": "RENDERED_CLEAN"
+      },
+      {
+        "page_number": 5,
+        "width_px": 1224,
+        "height_px": 1584,
+        "file_size_kb": 267.0,
+        "image_path": "outputs/qa_renders/pdf/page_05.png",
+        "status": "RENDERED_CLEAN"
+      },
+      {
+        "page_number": 6,
+        "width_px": 1224,
+        "height_px": 1584,
+        "file_size_kb": 293.6,
+        "image_path": "outputs/qa_renders/pdf/page_06.png",
+        "status": "RENDERED_CLEAN"
+      },
+      {
+        "page_number": 7,
+        "width_px": 1224,
+        "height_px": 1584,
+        "file_size_kb": 195.5,
+        "image_path": "outputs/qa_renders/pdf/page_07.png",
+        "status": "RENDERED_CLEAN"
+      },
+      {
+        "page_number": 8,
+        "width_px": 1224,
+        "height_px": 1584,
+        "file_size_kb": 269.4,
+        "image_path": "outputs/qa_renders/pdf/page_08.png",
+        "status": "RENDERED_CLEAN"
+      },
+      {
+        "page_number": 9,
+        "width_px": 1224,
+        "height_px": 1584,
+        "file_size_kb": 288.4,
+        "image_path": "outputs/qa_renders/pdf/page_09.png",
+        "status": "RENDERED_CLEAN"
+      },
+      {
+        "page_number": 10,
+        "width_px": 1224,
+        "height_px": 1584,
+        "file_size_kb": 259.9,
+        "image_path": "outputs/qa_renders/pdf/page_10.png",
+        "status": "RENDERED_CLEAN"
+      }
+    ],
+    "visual_checks": [
+      {
+        "check": "No text overflow outside 0.75in margins",
+        "result": "PASSED"
+      },
+      {
+        "check": "Running headers appear on pages 2-10",
+        "result": "PASSED"
+      },
+      {
+        "check": "Dynamic 'Page X of Y' footers formatted",
+        "result": "PASSED"
+      },
+      {
+        "check": "All 4 embedded charts rendered with high resolution",
+        "result": "PASSED"
+      },
+      {
+        "check": "Tables fit within printable canvas bounds",
+        "result": "PASSED"
+      }
+    ]
+  },
+  "powerpoint_audit": {
+    "total_slides": 7,
+    "expected_slides": 7,
+    "aspect_ratio": "16:9 Widescreen (13.33 x 7.5 in)",
+    "slides": [
+      {
+        "slide_number": 1,
+        "expected_theme": "Regional Portfolio Overview",
+        "total_shapes": 18,
+        "text_blocks": 18,
+        "embedded_charts": 0,
+        "status": "VERIFIED_STRUCTURE"
+      },
+      {
+        "slide_number": 2,
+        "expected_theme": "How Workplace Is Being Used",
+        "total_shapes": 6,
+        "text_blocks": 5,
+        "embedded_charts": 1,
+        "status": "VERIFIED_STRUCTURE"
+      },
+      {
+        "slide_number": 3,
+        "expected_theme": "Where Capacity Pressure Appears",
+        "total_shapes": 6,
+        "text_blocks": 5,
+        "embedded_charts": 1,
+        "status": "VERIFIED_STRUCTURE"
+      },
+      {
+        "slide_number": 4,
+        "expected_theme": "Cost Efficiency Across Portfolio",
+        "total_shapes": 6,
+        "text_blocks": 5,
+        "embedded_charts": 1,
+        "status": "VERIFIED_STRUCTURE"
+      },
+      {
+        "slide_number": 5,
+        "expected_theme": "Lease Exposure & Management Attention",
+        "total_shapes": 6,
+        "text_blocks": 5,
+        "embedded_charts": 1,
+        "status": "VERIFIED_STRUCTURE"
+      },
+      {
+        "slide_number": 6,
+        "expected_theme": "Data Quality & Analytical Confidence",
+        "total_shapes": 17,
+        "text_blocks": 17,
+        "embedded_charts": 0,
+        "status": "VERIFIED_STRUCTURE"
+      },
+      {
+        "slide_number": 7,
+        "expected_theme": "Areas for Further Investigation",
+        "total_shapes": 8,
+        "text_blocks": 8,
+        "embedded_charts": 0,
+        "status": "VERIFIED_STRUCTURE"
+      }
+    ],
+    "visual_checks": [
+      {
+        "check": "Consistent corporate navy accent banner",
+        "result": "PASSED"
+      },
+      {
+        "check": "Category tracker above bold headline on each slide",
+        "result": "PASSED"
+      },
+      {
+        "check": "Source footer with slide counter on all slides",
+        "result": "PASSED"
+      },
+      {
+        "check": "Executive KPI cards with colored accent borders",
+        "result": "PASSED"
+      },
+      {
+        "check": "No overlapping text boxes or tiny unreadable fonts",
+        "result": "PASSED"
+      }
+    ]
+  }
+}
