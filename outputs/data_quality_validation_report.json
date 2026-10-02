@@ -1,0 +1,355 @@
+{
+  "summary": {
+    "status": "COMPLETED",
+    "total_evaluated_records": 282584,
+    "total_exceptions_detected": 64,
+    "injected_manifest_defects": 44,
+    "overall_data_quality_pass_rate_pct": 99.98,
+    "severity_breakdown": {
+      "Critical": 32,
+      "High": 22,
+      "Medium": 10,
+      "Warning": 0
+    },
+    "rule_breakdown": {
+      "DQ001": 2,
+      "DQ002": 14,
+      "DQ003": 14,
+      "DQ004": 2,
+      "DQ005": 4,
+      "DQ006": 1,
+      "DQ008": 3,
+      "DQ009": 11,
+      "DQ010": 8,
+      "DQ011": 5
+    },
+    "table_stats": {
+      "raw_properties": {
+        "records": 26,
+        "failures": 6
+      },
+      "raw_leases": {
+        "records": 25,
+        "failures": 3
+      },
+      "raw_spaces": {
+        "records": 809,
+        "failures": 3
+      },
+      "raw_property_costs": {
+        "records": 600,
+        "failures": 3
+      },
+      "raw_utilization": {
+        "records": 168676,
+        "failures": 44
+      },
+      "raw_room_utilization": {
+        "records": 112448,
+        "failures": 5
+      }
+    }
+  },
+  "sample_exceptions": [
+    {
+      "rule_id": "DQ001",
+      "dimension": "Uniqueness",
+      "table_name": "raw_properties",
+      "record_identifier": "PROP-BOM-02",
+      "column": "PropertyCode",
+      "severity": "Critical",
+      "message": "Duplicate property code found: PROP-BOM-02",
+      "value": "PROP-BOM-02"
+    },
+    {
+      "rule_id": "DQ001",
+      "dimension": "Uniqueness",
+      "table_name": "raw_properties",
+      "record_identifier": "PROP-BOM-02",
+      "column": "PropertyCode",
+      "severity": "Critical",
+      "message": "Duplicate property code found: PROP-BOM-02",
+      "value": "PROP-BOM-02"
+    },
+    {
+      "rule_id": "DQ002",
+      "dimension": "Validity",
+      "table_name": "raw_utilization",
+      "record_identifier": "UTIL-1000106",
+      "column": "ActualOccupants",
+      "severity": "Critical",
+      "message": "Actual occupants (168) exceeds capacity (116)",
+      "value": "168 > 116"
+    },
+    {
+      "rule_id": "DQ002",
+      "dimension": "Validity",
+      "table_name": "raw_utilization",
+      "record_identifier": "UTIL-1000521",
+      "column": "ActualOccupants",
+      "severity": "Critical",
+      "message": "Actual occupants (111) exceeds capacity (77)",
+      "value": "111 > 77"
+    },
+    {
+      "rule_id": "DQ002",
+      "dimension": "Validity",
+      "table_name": "raw_utilization",
+      "record_identifier": "UTIL-1001421",
+      "column": "ActualOccupants",
+      "severity": "Critical",
+      "message": "Actual occupants (98) exceeds capacity (68)",
+      "value": "98 > 68"
+    },
+    {
+      "rule_id": "DQ002",
+      "dimension": "Validity",
+      "table_name": "raw_utilization",
+      "record_identifier": "UTIL-1002891",
+      "column": "ActualOccupants",
+      "severity": "Critical",
+      "message": "Actual occupants (85) exceeds capacity (59)",
+      "value": "85 > 59"
+    },
+    {
+      "rule_id": "DQ002",
+      "dimension": "Validity",
+      "table_name": "raw_utilization",
+      "record_identifier": "UTIL-1004511",
+      "column": "ActualOccupants",
+      "severity": "Critical",
+      "message": "Actual occupants (111) exceeds capacity (77)",
+      "value": "111 > 77"
+    },
+    {
+      "rule_id": "DQ002",
+      "dimension": "Validity",
+      "table_name": "raw_utilization",
+      "record_identifier": "UTIL-1008921",
+      "column": "ActualOccupants",
+      "severity": "Critical",
+      "message": "Actual occupants (111) exceeds capacity (77)",
+      "value": "111 > 77"
+    },
+    {
+      "rule_id": "DQ002",
+      "dimension": "Validity",
+      "table_name": "raw_utilization",
+      "record_identifier": "UTIL-1015301",
+      "column": "ActualOccupants",
+      "severity": "Critical",
+      "message": "Actual occupants (162) exceeds capacity (112)",
+      "value": "162 > 112"
+    },
+    {
+      "rule_id": "DQ002",
+      "dimension": "Validity",
+      "table_name": "raw_utilization",
+      "record_identifier": "UTIL-1024101",
+      "column": "ActualOccupants",
+      "severity": "Critical",
+      "message": "Actual occupants (89) exceeds capacity (62)",
+      "value": "89 > 62"
+    },
+    {
+      "rule_id": "DQ002",
+      "dimension": "Validity",
+      "table_name": "raw_utilization",
+      "record_identifier": "UTIL-1038501",
+      "column": "ActualOccupants",
+      "severity": "Critical",
+      "message": "Actual occupants (72) exceeds capacity (50)",
+      "value": "72 > 50"
+    },
+    {
+      "rule_id": "DQ002",
+      "dimension": "Validity",
+      "table_name": "raw_utilization",
+      "record_identifier": "UTIL-1052101",
+      "column": "ActualOccupants",
+      "severity": "Critical",
+      "message": "Actual occupants (13) exceeds capacity (9)",
+      "value": "13 > 9"
+    },
+    {
+      "rule_id": "DQ002",
+      "dimension": "Validity",
+      "table_name": "raw_utilization",
+      "record_identifier": "UTIL-1071201",
+      "column": "ActualOccupants",
+      "severity": "Critical",
+      "message": "Actual occupants (91) exceeds capacity (63)",
+      "value": "91 > 63"
+    },
+    {
+      "rule_id": "DQ002",
+      "dimension": "Validity",
+      "table_name": "raw_utilization",
+      "record_identifier": "UTIL-1089401",
+      "column": "ActualOccupants",
+      "severity": "Critical",
+      "message": "Actual occupants (159) exceeds capacity (110)",
+      "value": "159 > 110"
+    },
+    {
+      "rule_id": "DQ002",
+      "dimension": "Validity",
+      "table_name": "raw_utilization",
+      "record_identifier": "UTIL-1102301",
+      "column": "ActualOccupants",
+      "severity": "Critical",
+      "message": "Actual occupants (162) exceeds capacity (112)",
+      "value": "162 > 112"
+    },
+    {
+      "rule_id": "DQ002",
+      "dimension": "Validity",
+      "table_name": "raw_utilization",
+      "record_identifier": "UTIL-1115001",
+      "column": "ActualOccupants",
+      "severity": "Critical",
+      "message": "Actual occupants (114) exceeds capacity (79)",
+      "value": "114 > 79"
+    },
+    {
+      "rule_id": "DQ003",
+      "dimension": "Validity",
+      "table_name": "raw_utilization",
+      "record_identifier": "UTIL-1000106",
+      "column": "UtilizationRate",
+      "severity": "Critical",
+      "message": "Utilization rate 1.3800 is outside feasible [0.0, 1.0] range",
+      "value": "1.38"
+    },
+    {
+      "rule_id": "DQ003",
+      "dimension": "Validity",
+      "table_name": "raw_utilization",
+      "record_identifier": "UTIL-1000521",
+      "column": "UtilizationRate",
+      "severity": "Critical",
+      "message": "Utilization rate 1.3800 is outside feasible [0.0, 1.0] range",
+      "value": "1.38"
+    },
+    {
+      "rule_id": "DQ003",
+      "dimension": "Validity",
+      "table_name": "raw_utilization",
+      "record_identifier": "UTIL-1001421",
+      "column": "UtilizationRate",
+      "severity": "Critical",
+      "message": "Utilization rate 1.3800 is outside feasible [0.0, 1.0] range",
+      "value": "1.38"
+    },
+    {
+      "rule_id": "DQ003",
+      "dimension": "Validity",
+      "table_name": "raw_utilization",
+      "record_identifier": "UTIL-1002891",
+      "column": "UtilizationRate",
+      "severity": "Critical",
+      "message": "Utilization rate 1.3800 is outside feasible [0.0, 1.0] range",
+      "value": "1.38"
+    },
+    {
+      "rule_id": "DQ003",
+      "dimension": "Validity",
+      "table_name": "raw_utilization",
+      "record_identifier": "UTIL-1004511",
+      "column": "UtilizationRate",
+      "severity": "Critical",
+      "message": "Utilization rate 1.3800 is outside feasible [0.0, 1.0] range",
+      "value": "1.38"
+    },
+    {
+      "rule_id": "DQ003",
+      "dimension": "Validity",
+      "table_name": "raw_utilization",
+      "record_identifier": "UTIL-1008921",
+      "column": "UtilizationRate",
+      "severity": "Critical",
+      "message": "Utilization rate 1.3800 is outside feasible [0.0, 1.0] range",
+      "value": "1.38"
+    },
+    {
+      "rule_id": "DQ003",
+      "dimension": "Validity",
+      "table_name": "raw_utilization",
+      "record_identifier": "UTIL-1015301",
+      "column": "UtilizationRate",
+      "severity": "Critical",
+      "message": "Utilization rate 1.3800 is outside feasible [0.0, 1.0] range",
+      "value": "1.38"
+    },
+    {
+      "rule_id": "DQ003",
+      "dimension": "Validity",
+      "table_name": "raw_utilization",
+      "record_identifier": "UTIL-1024101",
+      "column": "UtilizationRate",
+      "severity": "Critical",
+      "message": "Utilization rate 1.3800 is outside feasible [0.0, 1.0] range",
+      "value": "1.38"
+    },
+    {
+      "rule_id": "DQ003",
+      "dimension": "Validity",
+      "table_name": "raw_utilization",
+      "record_identifier": "UTIL-1038501",
+      "column": "UtilizationRate",
+      "severity": "Critical",
+      "message": "Utilization rate 1.3800 is outside feasible [0.0, 1.0] range",
+      "value": "1.38"
+    },
+    {
+      "rule_id": "DQ003",
+      "dimension": "Validity",
+      "table_name": "raw_utilization",
+      "record_identifier": "UTIL-1052101",
+      "column": "UtilizationRate",
+      "severity": "Critical",
+      "message": "Utilization rate 1.3800 is outside feasible [0.0, 1.0] range",
+      "value": "1.38"
+    },
+    {
+      "rule_id": "DQ003",
+      "dimension": "Validity",
+      "table_name": "raw_utilization",
+      "record_identifier": "UTIL-1071201",
+      "column": "UtilizationRate",
+      "severity": "Critical",
+      "message": "Utilization rate 1.3800 is outside feasible [0.0, 1.0] range",
+      "value": "1.38"
+    },
+    {
+      "rule_id": "DQ003",
+      "dimension": "Validity",
+      "table_name": "raw_utilization",
+      "record_identifier": "UTIL-1089401",
+      "column": "UtilizationRate",
+      "severity": "Critical",
+      "message": "Utilization rate 1.3800 is outside feasible [0.0, 1.0] range",
+      "value": "1.38"
+    },
+    {
+      "rule_id": "DQ003",
+      "dimension": "Validity",
+      "table_name": "raw_utilization",
+      "record_identifier": "UTIL-1102301",
+      "column": "UtilizationRate",
+      "severity": "Critical",
+      "message": "Utilization rate 1.3800 is outside feasible [0.0, 1.0] range",
+      "value": "1.38"
+    },
+    {
+      "rule_id": "DQ003",
+      "dimension": "Validity",
+      "table_name": "raw_utilization",
+      "record_identifier": "UTIL-1115001",
+      "column": "UtilizationRate",
+      "severity": "Critical",
+      "message": "Utilization rate 1.3800 is outside feasible [0.0, 1.0] range",
+      "value": "1.38"
+    }
+  ]
+}

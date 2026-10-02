@@ -1,0 +1,5 @@
+FacilityTypeKey,FacilityTypeCode,FacilityTypeName,PrimaryPurpose,TargetDensitySqM
+1,REG_HQ,Regional Headquarters,"Executive Leadership, Regional Governance & Client Engagement",12.0
+2,TECH_HUB,Technology & Engineering Campus,"Software Engineering, Cloud Infrastructure & Product R&D",9.0
+3,OPS_CENTER,Business Operations Center,"Shared Services, Operational Processing & Customer Support",8.0
+4,SALES_CLIENT,Regional Sales & Client Office,"Commercial Sales, Enterprise Accounts & Field Advisory",11.0

@@ -1,0 +1,12 @@
+GeographyKey,Region,Country,CountryCode,City,MarketClassification,LocalCurrency,FixedFXToINR
+101,India,India,IND,Mumbai,Tier-1 Financial Metro,INR,1.0
+102,India,India,IND,Pune,Tier-1 Technology Metro,INR,1.0
+103,India,India,IND,Bengaluru,Tier-1 Technology Metro,INR,1.0
+104,India,India,IND,Chennai,Tier-1 Industrial/Tech Metro,INR,1.0
+105,India,India,IND,Hyderabad,Tier-1 Technology Metro,INR,1.0
+106,India,India,IND,Delhi NCR,Tier-1 National Capital Metro,INR,1.0
+201,Asia-Pacific,Singapore,SGP,Singapore,Global Financial Gateway,SGD,63.5
+202,Asia-Pacific,Malaysia,MYS,Kuala Lumpur,Regional Operating Hub,MYR,18.2
+203,Asia-Pacific,Thailand,THA,Bangkok,Regional Commercial Hub,THB,2.35
+204,Asia-Pacific,Indonesia,IDN,Jakarta,High-Growth Emerging Metro,IDR,0.0053
+205,Asia-Pacific,Australia,AUS,Sydney,Developed Financial Center,AUD,55.2

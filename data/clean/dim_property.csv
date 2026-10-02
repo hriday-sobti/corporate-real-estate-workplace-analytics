@@ -1,0 +1,26 @@
+PropertyKey,PropertyCode,PropertyName,GeographyKey,FacilityTypeKey,OwnershipType,PropertyStatus,OpeningYear,RentableAreaSqM,UsableAreaSqM,CapacitySeats,AssignedHeadcount,FloorCount,MeetingRoomCount,BaseRentAnnualINR
+1,PROP-BOM-01,Nariman Point Business Centre,101,1,Leased,Operational,2017,8200.0,6800.0,620,820,5,10,204000000.0
+2,PROP-BOM-02,BKC Central Tower B,101,4,Leased,Operational,2020,4500.0,3750.0,340,480,3,6,126000000.0
+3,PROP-BOM-03,Powai Horizon Office Park,101,3,Leased,Operational,2018,12500.0,10600.0,1250,1450,6,12,178000000.0
+4,PROP-PNQ-01,Hinjawadi Tech Campus A,102,2,Owned,Operational,2016,18000.0,15500.0,1720,2150,8,16,0.0
+5,PROP-PNQ-02,Magarpatta Enterprise Park,102,3,Leased,Operational,2019,9200.0,7800.0,950,1050,5,10,74880000.0
+6,PROP-BLR-01,Whitefield Innovation Campus Tower 1,103,2,Leased,Operational,2018,21000.0,17850.0,1980,2600,9,18,235620000.0
+7,PROP-BLR-02,Outer Ring Road Alpha Center,103,2,Leased,Operational,2021,14000.0,11900.0,1320,1700,6,12,171360000.0
+8,PROP-BLR-03,Electronic City Systems Hub,103,3,Owned,Operational,2015,11000.0,9350.0,1100,1250,5,10,0.0
+9,PROP-MAA-01,OMR Cyber Gateway,104,2,Leased,Operational,2019,13500.0,11475.0,1280,1500,6,12,123930000.0
+10,PROP-MAA-02,Guindy Industrial Square,104,3,Leased,Operational,2018,7500.0,6375.0,750,820,4,8,65025000.0
+11,PROP-HYD-01,HITEC City Cyber Horizon,105,2,Leased,Operational,2020,16000.0,13600.0,1500,1950,7,14,163200000.0
+12,PROP-HYD-02,Gachibowli Financial Hub,105,4,Leased,Operational,2021,5200.0,4420.0,420,520,3,6,58344000.0
+13,PROP-DEL-01,Gurugram Cyber City Tower 8,106,1,Leased,Operational,2019,11500.0,9775.0,980,1300,6,12,175950000.0
+14,PROP-DEL-02,Noida Express Commercial Tower,106,3,Leased,Operational,2018,8800.0,7480.0,850,920,4,8,71808000.0
+15,PROP-SGP-01,Marina Bay Financial Centre Tower 2,201,1,Leased,Operational,2017,6500.0,5400.0,480,680,4,8,617220000.0
+16,PROP-SGP-02,Changi Business Hub,201,2,Leased,Operational,2020,5800.0,4900.0,520,650,3,6,261366000.0
+17,PROP-KUL-01,KL Sentral Corporate Suites,202,1,Leased,Operational,2018,5200.0,4350.0,420,530,3,6,76003200.0
+18,PROP-KUL-02,Bangsar South Tech Centre,202,3,Leased,Operational,2021,7800.0,6630.0,780,890,4,8,86879520.0
+19,PROP-BKK-01,Sathorn Square Tower,203,4,Leased,Operational,2019,4200.0,3500.0,320,420,2,4,98700000.0
+20,PROP-BKK-02,Asoke Exchange Office Suites,203,3,Leased,Operational,2020,6000.0,5100.0,580,640,3,6,107865000.0
+21,PROP-JKT-01,Sudirman SCBD One Pacific,204,4,Leased,Operational,2019,4800.0,4050.0,380,510,3,6,77274000.0
+22,PROP-JKT-02,Kuningan Tech Office Hub,204,3,Leased,Operational,2021,7200.0,6120.0,700,780,4,8,97308000.0
+23,PROP-SYD-01,Barangaroo International Tower 3,205,1,Leased,Operational,2018,6800.0,5650.0,510,690,4,8,486532800.0
+24,PROP-SYD-02,Macquarie Park Tech Pavilion,205,2,Leased,Operational,2020,5500.0,4650.0,480,580,3,6,246412800.0
+25,PROP-PNQ-03,Kalyani Nagar Gateway,102,4,Leased,Operational,2022,3800.0,3200.0,310,390,2,4,32640000.0

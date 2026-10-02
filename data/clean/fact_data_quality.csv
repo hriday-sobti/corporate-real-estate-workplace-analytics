@@ -1,0 +1,45 @@
+DQFactKey,IssueID,RuleID,TableName,RecordIdentifier,Severity,ExpectedRule,InjectedValue,CorrectedValue,RemediationStatus,DetectionDate
+901,DQ-ISS-001,DQ009,raw_properties,PROP-BOM-01,Medium,City must not be null or blank,nan,Mumbai,Remediated in Clean Layer,2026-09-30
+902,DQ-ISS-002,DQ005,raw_properties,PROP-BLR-02,High,City must map to valid country,Australia,India,Remediated in Clean Layer,2026-09-30
+903,DQ-ISS-003,DQ005,raw_properties,PROP-PNQ-03,Medium,City name must be properly capitalized and trimmed,PUNE ,Pune,Remediated in Clean Layer,2026-09-30
+904,DQ-ISS-004,DQ006,raw_properties,PROP-MAA-02,High,Usable area cannot exceed rentable area,8500.0,6375.0,Remediated in Clean Layer,2026-09-30
+905,DQ-ISS-005,DQ001,raw_properties,PROP-BOM-02,Critical,Property code must be unique,Duplicate Record Injected,Single Unique Record,Remediated in Clean Layer,2026-09-30
+906,DQ-ISS-006,DQ004,raw_leases,LSE-DEL-01-2021,Critical,Lease end date cannot precede lease start date,"Start: 2027-06-30, End: 2021-07-01","Start: 2021-07-01, End: 2027-06-30",Remediated in Clean Layer,2026-09-30
+907,DQ-ISS-007,DQ004,raw_leases,LSE-KUL-02-2023,Critical,Lease end date cannot precede lease start date,"Start: 2028-12-31, End: 2023-01-01","Start: 2023-01-01, End: 2028-12-31",Remediated in Clean Layer,2026-09-30
+908,DQ-ISS-008,DQ009,raw_leases,LSE-BKK-02-2023,High,Lease end date must not be null or empty,nan,2029-03-31,Remediated in Clean Layer,2026-09-30
+909,DQ-ISS-009,DQ008,raw_property_costs,COST-3045,High,Operating cost values cannot be negative,-3825000.0,3825000.0,Remediated in Clean Layer,2026-09-30
+910,DQ-ISS-010,DQ008,raw_property_costs,COST-3120,High,Energy cost cannot be negative,-740353.81,740353.81,Remediated in Clean Layer,2026-09-30
+911,DQ-ISS-011,DQ008,raw_property_costs,COST-3280,High,Facilities cost cannot be negative,-625594.69,625594.69,Remediated in Clean Layer,2026-09-30
+912,DQ-ISS-012,DQ009,raw_spaces,SP-5015,Medium,Space type must not be blank,nan,Collaboration Area,Remediated in Clean Layer,2026-09-30
+913,DQ-ISS-013,DQ005,raw_spaces,SP-5120,Medium,Space type must follow standard title case classification,open_workstation,Open Workstation,Remediated in Clean Layer,2026-09-30
+914,DQ-ISS-014,DQ003,raw_utilization,UTIL-1000106,Critical,Utilization rate must be between 0% and 100%,1.3800,0.8835,Remediated in Clean Layer,2026-09-30
+915,DQ-ISS-015,DQ003,raw_utilization,UTIL-1000521,Critical,Utilization rate must be between 0% and 100%,1.3800,0.8575,Remediated in Clean Layer,2026-09-30
+916,DQ-ISS-016,DQ003,raw_utilization,UTIL-1001421,Critical,Utilization rate must be between 0% and 100%,1.3800,0.4524,Remediated in Clean Layer,2026-09-30
+917,DQ-ISS-017,DQ003,raw_utilization,UTIL-1002891,Critical,Utilization rate must be between 0% and 100%,1.3800,0.5183,Remediated in Clean Layer,2026-09-30
+918,DQ-ISS-018,DQ003,raw_utilization,UTIL-1004511,Critical,Utilization rate must be between 0% and 100%,1.3800,0.504,Remediated in Clean Layer,2026-09-30
+919,DQ-ISS-019,DQ003,raw_utilization,UTIL-1008921,Critical,Utilization rate must be between 0% and 100%,1.3800,0.6475,Remediated in Clean Layer,2026-09-30
+920,DQ-ISS-020,DQ003,raw_utilization,UTIL-1015301,Critical,Utilization rate must be between 0% and 100%,1.3800,0.3733,Remediated in Clean Layer,2026-09-30
+921,DQ-ISS-021,DQ003,raw_utilization,UTIL-1024101,Critical,Utilization rate must be between 0% and 100%,1.3800,0.7911,Remediated in Clean Layer,2026-09-30
+922,DQ-ISS-022,DQ003,raw_utilization,UTIL-1038501,Critical,Utilization rate must be between 0% and 100%,1.3800,0.6102,Remediated in Clean Layer,2026-09-30
+923,DQ-ISS-023,DQ003,raw_utilization,UTIL-1052101,Critical,Utilization rate must be between 0% and 100%,1.3800,0.47,Remediated in Clean Layer,2026-09-30
+924,DQ-ISS-024,DQ003,raw_utilization,UTIL-1071201,Critical,Utilization rate must be between 0% and 100%,1.3800,0.6117,Remediated in Clean Layer,2026-09-30
+925,DQ-ISS-025,DQ003,raw_utilization,UTIL-1089401,Critical,Utilization rate must be between 0% and 100%,1.3800,0.6431,Remediated in Clean Layer,2026-09-30
+926,DQ-ISS-026,DQ003,raw_utilization,UTIL-1102301,Critical,Utilization rate must be between 0% and 100%,1.3800,0.6605,Remediated in Clean Layer,2026-09-30
+927,DQ-ISS-027,DQ003,raw_utilization,UTIL-1115001,Critical,Utilization rate must be between 0% and 100%,1.3800,0.4299,Remediated in Clean Layer,2026-09-30
+928,DQ-ISS-028,DQ009,raw_utilization,UTIL-1000301,High,Average occupancy must not be null,NaN / NULL,68.67,Remediated in Clean Layer,2026-09-30
+929,DQ-ISS-029,DQ009,raw_utilization,UTIL-1001201,High,Average occupancy must not be null,NaN / NULL,40.6,Remediated in Clean Layer,2026-09-30
+930,DQ-ISS-030,DQ009,raw_utilization,UTIL-1007801,High,Average occupancy must not be null,NaN / NULL,50.35,Remediated in Clean Layer,2026-09-30
+931,DQ-ISS-031,DQ009,raw_utilization,UTIL-1019401,High,Average occupancy must not be null,NaN / NULL,7.46,Remediated in Clean Layer,2026-09-30
+932,DQ-ISS-032,DQ009,raw_utilization,UTIL-1033101,High,Average occupancy must not be null,NaN / NULL,64.78,Remediated in Clean Layer,2026-09-30
+933,DQ-ISS-033,DQ009,raw_utilization,UTIL-1047801,High,Average occupancy must not be null,NaN / NULL,76.35,Remediated in Clean Layer,2026-09-30
+934,DQ-ISS-034,DQ009,raw_utilization,UTIL-1068901,High,Average occupancy must not be null,NaN / NULL,5.21,Remediated in Clean Layer,2026-09-30
+935,DQ-ISS-035,DQ009,raw_utilization,UTIL-1095401,High,Average occupancy must not be null,NaN / NULL,53.73,Remediated in Clean Layer,2026-09-30
+936,DQ-ISS-036,DQ010,raw_utilization,UTIL-1000151,High,Only one observation per space per date,Duplicate Observation Row,Single Valid Record,Remediated in Clean Layer,2026-09-30
+937,DQ-ISS-037,DQ010,raw_utilization,UTIL-1004501,High,Only one observation per space per date,Duplicate Observation Row,Single Valid Record,Remediated in Clean Layer,2026-09-30
+938,DQ-ISS-038,DQ010,raw_utilization,UTIL-1025001,High,Only one observation per space per date,Duplicate Observation Row,Single Valid Record,Remediated in Clean Layer,2026-09-30
+939,DQ-ISS-039,DQ010,raw_utilization,UTIL-1060001,High,Only one observation per space per date,Duplicate Observation Row,Single Valid Record,Remediated in Clean Layer,2026-09-30
+940,DQ-ISS-040,DQ011,raw_room_utilization,ROOM-70046,Medium,Attended bookings cannot exceed total scheduled bookings,6,3,Remediated in Clean Layer,2026-09-30
+941,DQ-ISS-041,DQ011,raw_room_utilization,ROOM-70891,Medium,Attended bookings cannot exceed total scheduled bookings,6,3,Remediated in Clean Layer,2026-09-30
+942,DQ-ISS-042,DQ011,raw_room_utilization,ROOM-73421,Medium,Attended bookings cannot exceed total scheduled bookings,10,7,Remediated in Clean Layer,2026-09-30
+943,DQ-ISS-043,DQ011,raw_room_utilization,ROOM-82501,Medium,Attended bookings cannot exceed total scheduled bookings,8,5,Remediated in Clean Layer,2026-09-30
+944,DQ-ISS-044,DQ011,raw_room_utilization,ROOM-98401,Medium,Attended bookings cannot exceed total scheduled bookings,10,7,Remediated in Clean Layer,2026-09-30
