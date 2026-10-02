@@ -1,0 +1,23 @@
+Workstream,TaskID,Task,Owner,Status,Priority,StartDate,DueDate,Dependency,ProgressPct,Notes,LastUpdated
+Data,DAT-01,Inspect local environment and configure dependencies,Lead Analyst,Complete,Critical,2026-09-15,2026-09-16,None,100,Verified Python 3.14 openpyxl duckdb reportlab pptx,2026-09-16
+Data,DAT-02,Conduct commercial real estate domain and benchmark research,Lead Analyst,Complete,High,2026-09-16,2026-09-18,DAT-01,100,Authored docs/research_notes.md covering 20 CRE topics,2026-09-18
+Data,DAT-03,Define portfolio star schema and data dictionary,Lead Analyst,Complete,Critical,2026-09-18,2026-09-19,DAT-02,100,Authored data and metric dictionaries with strict constraints,2026-09-19
+Data,DAT-04,Build deterministic synthetic data generation engine,Lead Analyst,Complete,Critical,2026-09-19,2026-09-22,DAT-03,100,Generated 25 properties 112 floors 809 spaces and 282k fact rows,2026-09-22
+Data Quality,DQ-01,Inject controlled operational defects and build manifest,Data Quality Engineer,Complete,High,2026-09-22,2026-09-23,DAT-04,100,Injected 44 realistic defects across 6 dimensions into raw layer,2026-09-23
+Data Quality,DQ-02,Build automated data quality validation engine,Data Quality Engineer,Complete,Critical,2026-09-23,2026-09-24,DQ-01,100,Codified rules DQ001 to DQ012 with 99.98% pass rate verification,2026-09-24
+Data Quality,DQ-03,Build data cleaning and standardization pipeline,Data Quality Engineer,Complete,Critical,2026-09-24,2026-09-25,DQ-02,100,Standardized geocoding and resolved all 44 manifest issues,2026-09-25
+Analytics,ANA-01,Deploy relational DDL schema and load clean tables,SQL Developer,Complete,High,2026-09-25,2026-09-26,DQ-03,100,Loaded 12 tables into relational DB with 0 FK violations,2026-09-26
+Analytics,ANA-02,Develop analytical SQL query and views library,SQL Developer,Complete,High,2026-09-26,2026-09-27,ANA-01,100,Implemented 16 business queries and 7 analytical reporting views,2026-09-27
+Analytics,ANA-03,Execute exploratory analysis and render diagnostic charts,BI Analyst,Complete,High,2026-09-27,2026-09-28,ANA-02,100,Generated 5 publication charts for weekday matrix cost and PAI,2026-09-28
+Analytics,ANA-04,Compute Portfolio Attention Index and sensitivity analysis,BI Analyst,Complete,Critical,2026-09-28,2026-09-29,ANA-03,100,Validated 5-factor PAI with Spearman rho > 0.97 across 4 schemes,2026-09-29
+Analytics,ANA-05,Build capacity consolidation decision scenario model,Lead Analyst,Complete,Medium,2026-09-29,2026-09-30,ANA-04,100,Modeled 10% 15% and 20% seat surrender scenarios with cost elasticity,2026-09-30
+Dashboard,DSH-01,Construct Power BI Tabular Model schema and DAX measures,BI Developer,Complete,Critical,2026-09-30,2026-10-01,ANA-05,100,Created Model.bim theme.json and 31 explicit DAX measures,2026-10-01
+Dashboard,DSH-02,Design 6 core dashboard pages and drill-through spec,BI Developer,Complete,High,2026-10-01,2026-10-01,DSH-01,100,Specified executive layout pressure matrix and drill-through views,2026-10-01
+Dashboard,DSH-03,Build interactive dashboard web preview application,Front-End / BI Developer,Complete,High,2026-10-01,2026-10-02,DSH-02,100,Deployed zero-dependency interactive dashboard with working slicers,2026-10-02
+Reporting,REP-01,Construct multi-tab formula-driven Excel management workbook,Financial Analyst,Complete,Critical,2026-10-02,2026-10-02,DSH-03,100,Built 8-sheet workbook with live formulas formatting and freeze panes,2026-10-02
+Reporting,REP-02,Author and typeset 10-page executive management PDF report,Report Designer,Complete,Critical,2026-10-02,2026-10-02,REP-01,100,Typeset publication-grade PDF with embedded charts and evidence,2026-10-02
+Presentation,PRS-01,Build 7-slide executive review PowerPoint presentation,Presentation Specialist,Complete,Critical,2026-10-02,2026-10-02,REP-02,100,Designed corporate PPTX deck with message headlines and callouts,2026-10-02
+QA,QA-01,Build automated test suite and regression tests,QA Engineer,Complete,Critical,2026-10-02,2026-10-02,PRS-01,100,Implemented pytest suite verifying constraints and calculations,2026-10-02
+QA,QA-02,Execute cross-tool analytical reconciliation audit,Lead Analyst,Complete,Critical,2026-10-02,2026-10-02,QA-01,100,Reconciled totals across Python SQL Power BI and Excel,2026-10-02
+QA,QA-03,Conduct visual QA and rendering inspection on PDF and deck,Lead Designer,Complete,High,2026-10-02,2026-10-02,QA-02,100,Rendered PDF and slides to images and verified visual bounds,2026-10-02
+Documentation,DOC-01,Perform humanization audit and finalize README portfolio,Lead Analyst,Complete,Critical,2026-10-02,2026-10-02,QA-03,100,Removed generic AI buzzwords and finalized GitHub portfolio structure,2026-10-02
