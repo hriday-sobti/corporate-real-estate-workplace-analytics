@@ -1,0 +1,16 @@
+# Corporate Real Estate Portfolio & Workplace Analytics
+# Core pipeline dependencies
+
+pandas>=2.2.0
+numpy>=1.26.0
+openpyxl>=3.1.2
+xlsxwriter>=3.2.0
+reportlab>=4.1.0
+python-pptx>=1.0.0
+duckdb>=1.1.0
+matplotlib>=3.8.0
+seaborn>=0.13.0
+pypdfium2>=4.30.0
+pytest>=8.0.0
+sqlalchemy>=2.0.0
+psycopg>=3.1.0
