@@ -1,0 +1,1634 @@
+{
+  "name": "CorporateRealEstateAnalytics",
+  "compatibilityLevel": 1567,
+  "model": {
+    "culture": "en-US",
+    "dataAccessOptions": {
+      "legacyRedirectsEnabled": false,
+      "returnErrorValuesAsNull": false
+    },
+    "defaultPowerBIDataSourceVersion": "powerBI_V3",
+    "sourceQueryCulture": "en-US",
+    "tables": [
+      {
+        "name": "dim_date",
+        "columns": [
+          {
+            "name": "DateKey",
+            "dataType": "int64",
+            "sourceColumn": "DateKey"
+          },
+          {
+            "name": "FullDate",
+            "dataType": "string",
+            "sourceColumn": "FullDate"
+          },
+          {
+            "name": "Year",
+            "dataType": "int64",
+            "sourceColumn": "Year"
+          },
+          {
+            "name": "Quarter",
+            "dataType": "int64",
+            "sourceColumn": "Quarter"
+          },
+          {
+            "name": "QuarterName",
+            "dataType": "string",
+            "sourceColumn": "QuarterName"
+          },
+          {
+            "name": "Month",
+            "dataType": "int64",
+            "sourceColumn": "Month"
+          },
+          {
+            "name": "MonthName",
+            "dataType": "string",
+            "sourceColumn": "MonthName"
+          },
+          {
+            "name": "MonthYear",
+            "dataType": "string",
+            "sourceColumn": "MonthYear"
+          },
+          {
+            "name": "WeekOfYear",
+            "dataType": "int64",
+            "sourceColumn": "WeekOfYear"
+          },
+          {
+            "name": "DayOfWeek",
+            "dataType": "int64",
+            "sourceColumn": "DayOfWeek"
+          },
+          {
+            "name": "DayName",
+            "dataType": "string",
+            "sourceColumn": "DayName"
+          },
+          {
+            "name": "IsWeekday",
+            "dataType": "boolean",
+            "sourceColumn": "IsWeekday"
+          },
+          {
+            "name": "IsWorkingDay",
+            "dataType": "boolean",
+            "sourceColumn": "IsWorkingDay"
+          },
+          {
+            "name": "HolidayName",
+            "dataType": "string",
+            "sourceColumn": "HolidayName"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "Partition_dim_date",
+            "mode": "import",
+            "source": {
+              "type": "m",
+              "expression": "let\n    Source = Csv.Document(File.Contents(\"data/analytical/dim_date.csv\"),[Delimiter=\",\", Encoding=65001]),\n    #\"Promoted Headers\" = Table.PromoteHeaders(Source, [PromoteAllScalars=true])\nin\n    #\"Promoted Headers\""
+            }
+          }
+        ]
+      },
+      {
+        "name": "dim_geography",
+        "columns": [
+          {
+            "name": "GeographyKey",
+            "dataType": "int64",
+            "sourceColumn": "GeographyKey"
+          },
+          {
+            "name": "Region",
+            "dataType": "string",
+            "sourceColumn": "Region"
+          },
+          {
+            "name": "Country",
+            "dataType": "string",
+            "sourceColumn": "Country"
+          },
+          {
+            "name": "CountryCode",
+            "dataType": "string",
+            "sourceColumn": "CountryCode"
+          },
+          {
+            "name": "City",
+            "dataType": "string",
+            "sourceColumn": "City"
+          },
+          {
+            "name": "MarketClassification",
+            "dataType": "string",
+            "sourceColumn": "MarketClassification"
+          },
+          {
+            "name": "LocalCurrency",
+            "dataType": "string",
+            "sourceColumn": "LocalCurrency"
+          },
+          {
+            "name": "FixedFXToINR",
+            "dataType": "double",
+            "sourceColumn": "FixedFXToINR"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "Partition_dim_geography",
+            "mode": "import",
+            "source": {
+              "type": "m",
+              "expression": "let\n    Source = Csv.Document(File.Contents(\"data/analytical/dim_geography.csv\"),[Delimiter=\",\", Encoding=65001]),\n    #\"Promoted Headers\" = Table.PromoteHeaders(Source, [PromoteAllScalars=true])\nin\n    #\"Promoted Headers\""
+            }
+          }
+        ]
+      },
+      {
+        "name": "dim_facility_type",
+        "columns": [
+          {
+            "name": "FacilityTypeKey",
+            "dataType": "int64",
+            "sourceColumn": "FacilityTypeKey"
+          },
+          {
+            "name": "FacilityTypeCode",
+            "dataType": "string",
+            "sourceColumn": "FacilityTypeCode"
+          },
+          {
+            "name": "FacilityTypeName",
+            "dataType": "string",
+            "sourceColumn": "FacilityTypeName"
+          },
+          {
+            "name": "PrimaryPurpose",
+            "dataType": "string",
+            "sourceColumn": "PrimaryPurpose"
+          },
+          {
+            "name": "TargetDensitySqM",
+            "dataType": "double",
+            "sourceColumn": "TargetDensitySqM"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "Partition_dim_facility_type",
+            "mode": "import",
+            "source": {
+              "type": "m",
+              "expression": "let\n    Source = Csv.Document(File.Contents(\"data/analytical/dim_facility_type.csv\"),[Delimiter=\",\", Encoding=65001]),\n    #\"Promoted Headers\" = Table.PromoteHeaders(Source, [PromoteAllScalars=true])\nin\n    #\"Promoted Headers\""
+            }
+          }
+        ]
+      },
+      {
+        "name": "dim_property",
+        "columns": [
+          {
+            "name": "PropertyKey",
+            "dataType": "int64",
+            "sourceColumn": "PropertyKey"
+          },
+          {
+            "name": "PropertyCode",
+            "dataType": "string",
+            "sourceColumn": "PropertyCode"
+          },
+          {
+            "name": "PropertyName",
+            "dataType": "string",
+            "sourceColumn": "PropertyName"
+          },
+          {
+            "name": "GeographyKey",
+            "dataType": "int64",
+            "sourceColumn": "GeographyKey"
+          },
+          {
+            "name": "FacilityTypeKey",
+            "dataType": "int64",
+            "sourceColumn": "FacilityTypeKey"
+          },
+          {
+            "name": "OwnershipType",
+            "dataType": "string",
+            "sourceColumn": "OwnershipType"
+          },
+          {
+            "name": "PropertyStatus",
+            "dataType": "string",
+            "sourceColumn": "PropertyStatus"
+          },
+          {
+            "name": "OpeningYear",
+            "dataType": "int64",
+            "sourceColumn": "OpeningYear"
+          },
+          {
+            "name": "RentableAreaSqM",
+            "dataType": "double",
+            "sourceColumn": "RentableAreaSqM"
+          },
+          {
+            "name": "UsableAreaSqM",
+            "dataType": "double",
+            "sourceColumn": "UsableAreaSqM"
+          },
+          {
+            "name": "CapacitySeats",
+            "dataType": "int64",
+            "sourceColumn": "CapacitySeats"
+          },
+          {
+            "name": "AssignedHeadcount",
+            "dataType": "int64",
+            "sourceColumn": "AssignedHeadcount"
+          },
+          {
+            "name": "FloorCount",
+            "dataType": "int64",
+            "sourceColumn": "FloorCount"
+          },
+          {
+            "name": "MeetingRoomCount",
+            "dataType": "int64",
+            "sourceColumn": "MeetingRoomCount"
+          },
+          {
+            "name": "BaseRentAnnualINR",
+            "dataType": "double",
+            "sourceColumn": "BaseRentAnnualINR"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "Partition_dim_property",
+            "mode": "import",
+            "source": {
+              "type": "m",
+              "expression": "let\n    Source = Csv.Document(File.Contents(\"data/analytical/dim_property.csv\"),[Delimiter=\",\", Encoding=65001]),\n    #\"Promoted Headers\" = Table.PromoteHeaders(Source, [PromoteAllScalars=true])\nin\n    #\"Promoted Headers\""
+            }
+          }
+        ]
+      },
+      {
+        "name": "dim_floor",
+        "columns": [
+          {
+            "name": "FloorKey",
+            "dataType": "int64",
+            "sourceColumn": "FloorKey"
+          },
+          {
+            "name": "PropertyKey",
+            "dataType": "int64",
+            "sourceColumn": "PropertyKey"
+          },
+          {
+            "name": "FloorNumber",
+            "dataType": "int64",
+            "sourceColumn": "FloorNumber"
+          },
+          {
+            "name": "FloorCode",
+            "dataType": "string",
+            "sourceColumn": "FloorCode"
+          },
+          {
+            "name": "FloorName",
+            "dataType": "string",
+            "sourceColumn": "FloorName"
+          },
+          {
+            "name": "UsableAreaSqM",
+            "dataType": "double",
+            "sourceColumn": "UsableAreaSqM"
+          },
+          {
+            "name": "CapacitySeats",
+            "dataType": "int64",
+            "sourceColumn": "CapacitySeats"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "Partition_dim_floor",
+            "mode": "import",
+            "source": {
+              "type": "m",
+              "expression": "let\n    Source = Csv.Document(File.Contents(\"data/analytical/dim_floor.csv\"),[Delimiter=\",\", Encoding=65001]),\n    #\"Promoted Headers\" = Table.PromoteHeaders(Source, [PromoteAllScalars=true])\nin\n    #\"Promoted Headers\""
+            }
+          }
+        ]
+      },
+      {
+        "name": "dim_space",
+        "columns": [
+          {
+            "name": "SpaceKey",
+            "dataType": "int64",
+            "sourceColumn": "SpaceKey"
+          },
+          {
+            "name": "FloorKey",
+            "dataType": "int64",
+            "sourceColumn": "FloorKey"
+          },
+          {
+            "name": "PropertyKey",
+            "dataType": "int64",
+            "sourceColumn": "PropertyKey"
+          },
+          {
+            "name": "SpaceCode",
+            "dataType": "string",
+            "sourceColumn": "SpaceCode"
+          },
+          {
+            "name": "SpaceName",
+            "dataType": "string",
+            "sourceColumn": "SpaceName"
+          },
+          {
+            "name": "SpaceType",
+            "dataType": "string",
+            "sourceColumn": "SpaceType"
+          },
+          {
+            "name": "AreaSqM",
+            "dataType": "double",
+            "sourceColumn": "AreaSqM"
+          },
+          {
+            "name": "Capacity",
+            "dataType": "int64",
+            "sourceColumn": "Capacity"
+          },
+          {
+            "name": "IsBookable",
+            "dataType": "boolean",
+            "sourceColumn": "IsBookable"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "Partition_dim_space",
+            "mode": "import",
+            "source": {
+              "type": "m",
+              "expression": "let\n    Source = Csv.Document(File.Contents(\"data/analytical/dim_space.csv\"),[Delimiter=\",\", Encoding=65001]),\n    #\"Promoted Headers\" = Table.PromoteHeaders(Source, [PromoteAllScalars=true])\nin\n    #\"Promoted Headers\""
+            }
+          }
+        ]
+      },
+      {
+        "name": "dim_lease",
+        "columns": [
+          {
+            "name": "LeaseKey",
+            "dataType": "int64",
+            "sourceColumn": "LeaseKey"
+          },
+          {
+            "name": "PropertyKey",
+            "dataType": "int64",
+            "sourceColumn": "PropertyKey"
+          },
+          {
+            "name": "LeaseContractNumber",
+            "dataType": "string",
+            "sourceColumn": "LeaseContractNumber"
+          },
+          {
+            "name": "LeaseStartDate",
+            "dataType": "string",
+            "sourceColumn": "LeaseStartDate"
+          },
+          {
+            "name": "LeaseEndDate",
+            "dataType": "string",
+            "sourceColumn": "LeaseEndDate"
+          },
+          {
+            "name": "LeaseType",
+            "dataType": "string",
+            "sourceColumn": "LeaseType"
+          },
+          {
+            "name": "RenewalOption",
+            "dataType": "string",
+            "sourceColumn": "RenewalOption"
+          },
+          {
+            "name": "NoticePeriodMonths",
+            "dataType": "int64",
+            "sourceColumn": "NoticePeriodMonths"
+          },
+          {
+            "name": "AnnualRentINR",
+            "dataType": "double",
+            "sourceColumn": "AnnualRentINR"
+          },
+          {
+            "name": "LeaseStatus",
+            "dataType": "string",
+            "sourceColumn": "LeaseStatus"
+          },
+          {
+            "name": "ExpiryHorizonCategory",
+            "dataType": "string",
+            "sourceColumn": "ExpiryHorizonCategory"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "Partition_dim_lease",
+            "mode": "import",
+            "source": {
+              "type": "m",
+              "expression": "let\n    Source = Csv.Document(File.Contents(\"data/analytical/dim_lease.csv\"),[Delimiter=\",\", Encoding=65001]),\n    #\"Promoted Headers\" = Table.PromoteHeaders(Source, [PromoteAllScalars=true])\nin\n    #\"Promoted Headers\""
+            }
+          }
+        ]
+      },
+      {
+        "name": "fact_daily_workplace_utilization",
+        "columns": [
+          {
+            "name": "UtilizationFactKey",
+            "dataType": "int64",
+            "sourceColumn": "UtilizationFactKey"
+          },
+          {
+            "name": "DateKey",
+            "dataType": "int64",
+            "sourceColumn": "DateKey"
+          },
+          {
+            "name": "PropertyKey",
+            "dataType": "int64",
+            "sourceColumn": "PropertyKey"
+          },
+          {
+            "name": "FloorKey",
+            "dataType": "int64",
+            "sourceColumn": "FloorKey"
+          },
+          {
+            "name": "SpaceKey",
+            "dataType": "int64",
+            "sourceColumn": "SpaceKey"
+          },
+          {
+            "name": "Capacity",
+            "dataType": "int64",
+            "sourceColumn": "Capacity"
+          },
+          {
+            "name": "AssignedCapacity",
+            "dataType": "int64",
+            "sourceColumn": "AssignedCapacity"
+          },
+          {
+            "name": "ActualOccupants",
+            "dataType": "int64",
+            "sourceColumn": "ActualOccupants"
+          },
+          {
+            "name": "AverageOccupancy",
+            "dataType": "double",
+            "sourceColumn": "AverageOccupancy"
+          },
+          {
+            "name": "PeakOccupants",
+            "dataType": "int64",
+            "sourceColumn": "PeakOccupants"
+          },
+          {
+            "name": "AvailableHours",
+            "dataType": "double",
+            "sourceColumn": "AvailableHours"
+          },
+          {
+            "name": "OccupiedHours",
+            "dataType": "double",
+            "sourceColumn": "OccupiedHours"
+          },
+          {
+            "name": "UtilizationRate",
+            "dataType": "double",
+            "sourceColumn": "UtilizationRate"
+          },
+          {
+            "name": "PeakUtilizationRate",
+            "dataType": "double",
+            "sourceColumn": "PeakUtilizationRate"
+          },
+          {
+            "name": "ObservationSource",
+            "dataType": "string",
+            "sourceColumn": "ObservationSource"
+          },
+          {
+            "name": "MonthDateKey",
+            "dataType": "int64",
+            "sourceColumn": "MonthDateKey"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "Partition_fact_daily_workplace_utilization",
+            "mode": "import",
+            "source": {
+              "type": "m",
+              "expression": "let\n    Source = Csv.Document(File.Contents(\"data/analytical/fact_daily_workplace_utilization.csv\"),[Delimiter=\",\", Encoding=65001]),\n    #\"Promoted Headers\" = Table.PromoteHeaders(Source, [PromoteAllScalars=true])\nin\n    #\"Promoted Headers\""
+            }
+          }
+        ]
+      },
+      {
+        "name": "fact_room_utilization",
+        "columns": [
+          {
+            "name": "RoomFactKey",
+            "dataType": "int64",
+            "sourceColumn": "RoomFactKey"
+          },
+          {
+            "name": "DateKey",
+            "dataType": "int64",
+            "sourceColumn": "DateKey"
+          },
+          {
+            "name": "PropertyKey",
+            "dataType": "int64",
+            "sourceColumn": "PropertyKey"
+          },
+          {
+            "name": "SpaceKey",
+            "dataType": "int64",
+            "sourceColumn": "SpaceKey"
+          },
+          {
+            "name": "RoomType",
+            "dataType": "string",
+            "sourceColumn": "RoomType"
+          },
+          {
+            "name": "RoomCapacity",
+            "dataType": "int64",
+            "sourceColumn": "RoomCapacity"
+          },
+          {
+            "name": "BookingCount",
+            "dataType": "int64",
+            "sourceColumn": "BookingCount"
+          },
+          {
+            "name": "AttendedBookingCount",
+            "dataType": "int64",
+            "sourceColumn": "AttendedBookingCount"
+          },
+          {
+            "name": "BookedHours",
+            "dataType": "double",
+            "sourceColumn": "BookedHours"
+          },
+          {
+            "name": "OccupiedHours",
+            "dataType": "double",
+            "sourceColumn": "OccupiedHours"
+          },
+          {
+            "name": "AverageAttendees",
+            "dataType": "double",
+            "sourceColumn": "AverageAttendees"
+          },
+          {
+            "name": "PeakAttendees",
+            "dataType": "int64",
+            "sourceColumn": "PeakAttendees"
+          },
+          {
+            "name": "NoShowCount",
+            "dataType": "int64",
+            "sourceColumn": "NoShowCount"
+          },
+          {
+            "name": "RoomUtilizationRate",
+            "dataType": "double",
+            "sourceColumn": "RoomUtilizationRate"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "Partition_fact_room_utilization",
+            "mode": "import",
+            "source": {
+              "type": "m",
+              "expression": "let\n    Source = Csv.Document(File.Contents(\"data/analytical/fact_room_utilization.csv\"),[Delimiter=\",\", Encoding=65001]),\n    #\"Promoted Headers\" = Table.PromoteHeaders(Source, [PromoteAllScalars=true])\nin\n    #\"Promoted Headers\""
+            }
+          }
+        ]
+      },
+      {
+        "name": "fact_monthly_property_cost",
+        "columns": [
+          {
+            "name": "CostFactKey",
+            "dataType": "int64",
+            "sourceColumn": "CostFactKey"
+          },
+          {
+            "name": "MonthDateKey",
+            "dataType": "int64",
+            "sourceColumn": "MonthDateKey"
+          },
+          {
+            "name": "PropertyKey",
+            "dataType": "int64",
+            "sourceColumn": "PropertyKey"
+          },
+          {
+            "name": "OriginalCurrency",
+            "dataType": "string",
+            "sourceColumn": "OriginalCurrency"
+          },
+          {
+            "name": "RentCost",
+            "dataType": "double",
+            "sourceColumn": "RentCost"
+          },
+          {
+            "name": "ServiceCharge",
+            "dataType": "double",
+            "sourceColumn": "ServiceCharge"
+          },
+          {
+            "name": "EnergyCost",
+            "dataType": "double",
+            "sourceColumn": "EnergyCost"
+          },
+          {
+            "name": "FacilitiesCost",
+            "dataType": "double",
+            "sourceColumn": "FacilitiesCost"
+          },
+          {
+            "name": "MaintenanceCost",
+            "dataType": "double",
+            "sourceColumn": "MaintenanceCost"
+          },
+          {
+            "name": "OtherOperatingCost",
+            "dataType": "double",
+            "sourceColumn": "OtherOperatingCost"
+          },
+          {
+            "name": "TotalOperatingCostLocal",
+            "dataType": "double",
+            "sourceColumn": "TotalOperatingCostLocal"
+          },
+          {
+            "name": "FXRateToINR",
+            "dataType": "double",
+            "sourceColumn": "FXRateToINR"
+          },
+          {
+            "name": "TotalOperatingCostINR",
+            "dataType": "double",
+            "sourceColumn": "TotalOperatingCostINR"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "Partition_fact_monthly_property_cost",
+            "mode": "import",
+            "source": {
+              "type": "m",
+              "expression": "let\n    Source = Csv.Document(File.Contents(\"data/analytical/fact_monthly_property_cost.csv\"),[Delimiter=\",\", Encoding=65001]),\n    #\"Promoted Headers\" = Table.PromoteHeaders(Source, [PromoteAllScalars=true])\nin\n    #\"Promoted Headers\""
+            }
+          }
+        ]
+      },
+      {
+        "name": "fact_headcount",
+        "columns": [
+          {
+            "name": "HeadcountFactKey",
+            "dataType": "int64",
+            "sourceColumn": "HeadcountFactKey"
+          },
+          {
+            "name": "MonthDateKey",
+            "dataType": "int64",
+            "sourceColumn": "MonthDateKey"
+          },
+          {
+            "name": "PropertyKey",
+            "dataType": "int64",
+            "sourceColumn": "PropertyKey"
+          },
+          {
+            "name": "AssignedHeadcount",
+            "dataType": "int64",
+            "sourceColumn": "AssignedHeadcount"
+          },
+          {
+            "name": "AverageDailyPresence",
+            "dataType": "double",
+            "sourceColumn": "AverageDailyPresence"
+          },
+          {
+            "name": "PeakDailyPresence",
+            "dataType": "int64",
+            "sourceColumn": "PeakDailyPresence"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "Partition_fact_headcount",
+            "mode": "import",
+            "source": {
+              "type": "m",
+              "expression": "let\n    Source = Csv.Document(File.Contents(\"data/analytical/fact_headcount.csv\"),[Delimiter=\",\", Encoding=65001]),\n    #\"Promoted Headers\" = Table.PromoteHeaders(Source, [PromoteAllScalars=true])\nin\n    #\"Promoted Headers\""
+            }
+          }
+        ]
+      },
+      {
+        "name": "fact_data_quality",
+        "columns": [
+          {
+            "name": "DQFactKey",
+            "dataType": "int64",
+            "sourceColumn": "DQFactKey"
+          },
+          {
+            "name": "IssueID",
+            "dataType": "string",
+            "sourceColumn": "IssueID"
+          },
+          {
+            "name": "RuleID",
+            "dataType": "string",
+            "sourceColumn": "RuleID"
+          },
+          {
+            "name": "TableName",
+            "dataType": "string",
+            "sourceColumn": "TableName"
+          },
+          {
+            "name": "RecordIdentifier",
+            "dataType": "string",
+            "sourceColumn": "RecordIdentifier"
+          },
+          {
+            "name": "Severity",
+            "dataType": "string",
+            "sourceColumn": "Severity"
+          },
+          {
+            "name": "ExpectedRule",
+            "dataType": "string",
+            "sourceColumn": "ExpectedRule"
+          },
+          {
+            "name": "InjectedValue",
+            "dataType": "string",
+            "sourceColumn": "InjectedValue"
+          },
+          {
+            "name": "CorrectedValue",
+            "dataType": "string",
+            "sourceColumn": "CorrectedValue"
+          },
+          {
+            "name": "RemediationStatus",
+            "dataType": "string",
+            "sourceColumn": "RemediationStatus"
+          },
+          {
+            "name": "DetectionDate",
+            "dataType": "string",
+            "sourceColumn": "DetectionDate"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "Partition_fact_data_quality",
+            "mode": "import",
+            "source": {
+              "type": "m",
+              "expression": "let\n    Source = Csv.Document(File.Contents(\"data/analytical/fact_data_quality.csv\"),[Delimiter=\",\", Encoding=65001]),\n    #\"Promoted Headers\" = Table.PromoteHeaders(Source, [PromoteAllScalars=true])\nin\n    #\"Promoted Headers\""
+            }
+          }
+        ]
+      },
+      {
+        "name": "mart_workplace_pressure_matrix",
+        "columns": [
+          {
+            "name": "PropertyKey",
+            "dataType": "int64",
+            "sourceColumn": "PropertyKey"
+          },
+          {
+            "name": "PropertyCode",
+            "dataType": "string",
+            "sourceColumn": "PropertyCode"
+          },
+          {
+            "name": "PropertyName",
+            "dataType": "string",
+            "sourceColumn": "PropertyName"
+          },
+          {
+            "name": "GeographyKey",
+            "dataType": "int64",
+            "sourceColumn": "GeographyKey"
+          },
+          {
+            "name": "FacilityTypeKey",
+            "dataType": "int64",
+            "sourceColumn": "FacilityTypeKey"
+          },
+          {
+            "name": "OwnershipType",
+            "dataType": "string",
+            "sourceColumn": "OwnershipType"
+          },
+          {
+            "name": "PropertyStatus",
+            "dataType": "string",
+            "sourceColumn": "PropertyStatus"
+          },
+          {
+            "name": "OpeningYear",
+            "dataType": "int64",
+            "sourceColumn": "OpeningYear"
+          },
+          {
+            "name": "RentableAreaSqM",
+            "dataType": "double",
+            "sourceColumn": "RentableAreaSqM"
+          },
+          {
+            "name": "UsableAreaSqM",
+            "dataType": "double",
+            "sourceColumn": "UsableAreaSqM"
+          },
+          {
+            "name": "CapacitySeats",
+            "dataType": "int64",
+            "sourceColumn": "CapacitySeats"
+          },
+          {
+            "name": "AssignedHeadcount",
+            "dataType": "int64",
+            "sourceColumn": "AssignedHeadcount"
+          },
+          {
+            "name": "FloorCount",
+            "dataType": "int64",
+            "sourceColumn": "FloorCount"
+          },
+          {
+            "name": "MeetingRoomCount",
+            "dataType": "int64",
+            "sourceColumn": "MeetingRoomCount"
+          },
+          {
+            "name": "BaseRentAnnualINR",
+            "dataType": "double",
+            "sourceColumn": "BaseRentAnnualINR"
+          },
+          {
+            "name": "TotalOccupiedHours",
+            "dataType": "double",
+            "sourceColumn": "TotalOccupiedHours"
+          },
+          {
+            "name": "TotalAvailableHours",
+            "dataType": "double",
+            "sourceColumn": "TotalAvailableHours"
+          },
+          {
+            "name": "MaxPeakUtilizationRate",
+            "dataType": "double",
+            "sourceColumn": "MaxPeakUtilizationRate"
+          },
+          {
+            "name": "AvgPeakUtilizationRate",
+            "dataType": "double",
+            "sourceColumn": "AvgPeakUtilizationRate"
+          },
+          {
+            "name": "WorkingDaysCount",
+            "dataType": "int64",
+            "sourceColumn": "WorkingDaysCount"
+          },
+          {
+            "name": "DaysUnderPressure",
+            "dataType": "int64",
+            "sourceColumn": "DaysUnderPressure"
+          },
+          {
+            "name": "AverageUtilizationPct",
+            "dataType": "double",
+            "sourceColumn": "AverageUtilizationPct"
+          },
+          {
+            "name": "PeakUtilizationPct",
+            "dataType": "double",
+            "sourceColumn": "PeakUtilizationPct"
+          },
+          {
+            "name": "CapacityPressurePct",
+            "dataType": "double",
+            "sourceColumn": "CapacityPressurePct"
+          },
+          {
+            "name": "PressureQuadrant",
+            "dataType": "string",
+            "sourceColumn": "PressureQuadrant"
+          },
+          {
+            "name": "Region",
+            "dataType": "string",
+            "sourceColumn": "Region"
+          },
+          {
+            "name": "Country",
+            "dataType": "string",
+            "sourceColumn": "Country"
+          },
+          {
+            "name": "City",
+            "dataType": "string",
+            "sourceColumn": "City"
+          },
+          {
+            "name": "AnnualOperatingCostINR",
+            "dataType": "double",
+            "sourceColumn": "AnnualOperatingCostINR"
+          },
+          {
+            "name": "AverageDailyPresence",
+            "dataType": "double",
+            "sourceColumn": "AverageDailyPresence"
+          },
+          {
+            "name": "LeaseEndDate",
+            "dataType": "string",
+            "sourceColumn": "LeaseEndDate"
+          },
+          {
+            "name": "ExpiryHorizonCategory",
+            "dataType": "string",
+            "sourceColumn": "ExpiryHorizonCategory"
+          },
+          {
+            "name": "AnnualCostPerSeatINR",
+            "dataType": "double",
+            "sourceColumn": "AnnualCostPerSeatINR"
+          },
+          {
+            "name": "AnnualCostPerOccupiedSeatINR",
+            "dataType": "double",
+            "sourceColumn": "AnnualCostPerOccupiedSeatINR"
+          },
+          {
+            "name": "AnnualCostPerSqMINR",
+            "dataType": "double",
+            "sourceColumn": "AnnualCostPerSqMINR"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "Partition_mart_workplace_pressure_matrix",
+            "mode": "import",
+            "source": {
+              "type": "m",
+              "expression": "let\n    Source = Csv.Document(File.Contents(\"data/analytical/mart_workplace_pressure_matrix.csv\"),[Delimiter=\",\", Encoding=65001]),\n    #\"Promoted Headers\" = Table.PromoteHeaders(Source, [PromoteAllScalars=true])\nin\n    #\"Promoted Headers\""
+            }
+          }
+        ]
+      },
+      {
+        "name": "mart_portfolio_attention_index",
+        "columns": [
+          {
+            "name": "PropertyKey",
+            "dataType": "int64",
+            "sourceColumn": "PropertyKey"
+          },
+          {
+            "name": "PropertyCode",
+            "dataType": "string",
+            "sourceColumn": "PropertyCode"
+          },
+          {
+            "name": "PropertyName",
+            "dataType": "string",
+            "sourceColumn": "PropertyName"
+          },
+          {
+            "name": "GeographyKey",
+            "dataType": "int64",
+            "sourceColumn": "GeographyKey"
+          },
+          {
+            "name": "FacilityTypeKey",
+            "dataType": "int64",
+            "sourceColumn": "FacilityTypeKey"
+          },
+          {
+            "name": "OwnershipType",
+            "dataType": "string",
+            "sourceColumn": "OwnershipType"
+          },
+          {
+            "name": "PropertyStatus",
+            "dataType": "string",
+            "sourceColumn": "PropertyStatus"
+          },
+          {
+            "name": "OpeningYear",
+            "dataType": "int64",
+            "sourceColumn": "OpeningYear"
+          },
+          {
+            "name": "RentableAreaSqM",
+            "dataType": "double",
+            "sourceColumn": "RentableAreaSqM"
+          },
+          {
+            "name": "UsableAreaSqM",
+            "dataType": "double",
+            "sourceColumn": "UsableAreaSqM"
+          },
+          {
+            "name": "CapacitySeats",
+            "dataType": "int64",
+            "sourceColumn": "CapacitySeats"
+          },
+          {
+            "name": "AssignedHeadcount",
+            "dataType": "int64",
+            "sourceColumn": "AssignedHeadcount"
+          },
+          {
+            "name": "FloorCount",
+            "dataType": "int64",
+            "sourceColumn": "FloorCount"
+          },
+          {
+            "name": "MeetingRoomCount",
+            "dataType": "int64",
+            "sourceColumn": "MeetingRoomCount"
+          },
+          {
+            "name": "BaseRentAnnualINR",
+            "dataType": "double",
+            "sourceColumn": "BaseRentAnnualINR"
+          },
+          {
+            "name": "TotalOccupiedHours",
+            "dataType": "double",
+            "sourceColumn": "TotalOccupiedHours"
+          },
+          {
+            "name": "TotalAvailableHours",
+            "dataType": "double",
+            "sourceColumn": "TotalAvailableHours"
+          },
+          {
+            "name": "MaxPeakUtilizationRate",
+            "dataType": "double",
+            "sourceColumn": "MaxPeakUtilizationRate"
+          },
+          {
+            "name": "AvgPeakUtilizationRate",
+            "dataType": "double",
+            "sourceColumn": "AvgPeakUtilizationRate"
+          },
+          {
+            "name": "WorkingDaysCount",
+            "dataType": "int64",
+            "sourceColumn": "WorkingDaysCount"
+          },
+          {
+            "name": "DaysUnderPressure",
+            "dataType": "int64",
+            "sourceColumn": "DaysUnderPressure"
+          },
+          {
+            "name": "AverageUtilizationPct",
+            "dataType": "double",
+            "sourceColumn": "AverageUtilizationPct"
+          },
+          {
+            "name": "PeakUtilizationPct",
+            "dataType": "double",
+            "sourceColumn": "PeakUtilizationPct"
+          },
+          {
+            "name": "CapacityPressurePct",
+            "dataType": "double",
+            "sourceColumn": "CapacityPressurePct"
+          },
+          {
+            "name": "PressureQuadrant",
+            "dataType": "string",
+            "sourceColumn": "PressureQuadrant"
+          },
+          {
+            "name": "Region",
+            "dataType": "string",
+            "sourceColumn": "Region"
+          },
+          {
+            "name": "Country",
+            "dataType": "string",
+            "sourceColumn": "Country"
+          },
+          {
+            "name": "City",
+            "dataType": "string",
+            "sourceColumn": "City"
+          },
+          {
+            "name": "AnnualOperatingCostINR",
+            "dataType": "double",
+            "sourceColumn": "AnnualOperatingCostINR"
+          },
+          {
+            "name": "AverageDailyPresence",
+            "dataType": "double",
+            "sourceColumn": "AverageDailyPresence"
+          },
+          {
+            "name": "LeaseEndDate",
+            "dataType": "string",
+            "sourceColumn": "LeaseEndDate"
+          },
+          {
+            "name": "ExpiryHorizonCategory",
+            "dataType": "string",
+            "sourceColumn": "ExpiryHorizonCategory"
+          },
+          {
+            "name": "AnnualCostPerSeatINR",
+            "dataType": "double",
+            "sourceColumn": "AnnualCostPerSeatINR"
+          },
+          {
+            "name": "AnnualCostPerOccupiedSeatINR",
+            "dataType": "double",
+            "sourceColumn": "AnnualCostPerOccupiedSeatINR"
+          },
+          {
+            "name": "AnnualCostPerSqMINR",
+            "dataType": "double",
+            "sourceColumn": "AnnualCostPerSqMINR"
+          },
+          {
+            "name": "Score_UtilizationInefficiency",
+            "dataType": "double",
+            "sourceColumn": "Score_UtilizationInefficiency"
+          },
+          {
+            "name": "Score_CostIntensity",
+            "dataType": "double",
+            "sourceColumn": "Score_CostIntensity"
+          },
+          {
+            "name": "Score_LeaseExposure",
+            "dataType": "double",
+            "sourceColumn": "Score_LeaseExposure"
+          },
+          {
+            "name": "Score_CapacityPressure",
+            "dataType": "double",
+            "sourceColumn": "Score_CapacityPressure"
+          },
+          {
+            "name": "Score_DataQualityRisk",
+            "dataType": "double",
+            "sourceColumn": "Score_DataQualityRisk"
+          },
+          {
+            "name": "PortfolioAttentionIndex",
+            "dataType": "double",
+            "sourceColumn": "PortfolioAttentionIndex"
+          },
+          {
+            "name": "PrimaryAttentionDriver",
+            "dataType": "string",
+            "sourceColumn": "PrimaryAttentionDriver"
+          },
+          {
+            "name": "AttentionRank",
+            "dataType": "int64",
+            "sourceColumn": "AttentionRank"
+          },
+          {
+            "name": "AttentionTier",
+            "dataType": "string",
+            "sourceColumn": "AttentionTier"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "Partition_mart_portfolio_attention_index",
+            "mode": "import",
+            "source": {
+              "type": "m",
+              "expression": "let\n    Source = Csv.Document(File.Contents(\"data/analytical/mart_portfolio_attention_index.csv\"),[Delimiter=\",\", Encoding=65001]),\n    #\"Promoted Headers\" = Table.PromoteHeaders(Source, [PromoteAllScalars=true])\nin\n    #\"Promoted Headers\""
+            }
+          }
+        ]
+      },
+      {
+        "name": "_Measures",
+        "columns": [
+          {
+            "name": "MeasureId",
+            "dataType": "int64",
+            "isHidden": true,
+            "sourceColumn": "MeasureId"
+          }
+        ],
+        "measures": [
+          {
+            "name": "Total Properties",
+            "expression": "DISTINCTCOUNT('dim_property'[PropertyKey])",
+            "formatString": "#,##0",
+            "displayFolder": "01 Portfolio Scale"
+          },
+          {
+            "name": "Total Usable Area",
+            "expression": "SUM('dim_property'[UsableAreaSqM])",
+            "formatString": "#,##0 sqm",
+            "displayFolder": "01 Portfolio Scale"
+          },
+          {
+            "name": "Total Rentable Area",
+            "expression": "SUM('dim_property'[RentableAreaSqM])",
+            "formatString": "#,##0 sqm",
+            "displayFolder": "01 Portfolio Scale"
+          },
+          {
+            "name": "Total Seat Capacity",
+            "expression": "SUM('dim_property'[CapacitySeats])",
+            "formatString": "#,##0",
+            "displayFolder": "01 Portfolio Scale"
+          },
+          {
+            "name": "Assigned Headcount",
+            "expression": "SUM('dim_property'[AssignedHeadcount])",
+            "formatString": "#,##0",
+            "displayFolder": "01 Portfolio Scale"
+          },
+          {
+            "name": "Desk Sharing Ratio",
+            "expression": "DIVIDE([Assigned Headcount], [Total Seat Capacity], 0)",
+            "formatString": "0.00",
+            "displayFolder": "01 Portfolio Scale"
+          },
+          {
+            "name": "Average Density SqM",
+            "expression": "DIVIDE([Total Usable Area], [Total Seat Capacity], 0)",
+            "formatString": "0.0 sqm/seat",
+            "displayFolder": "01 Portfolio Scale"
+          },
+          {
+            "name": "Average Daily Presence",
+            "expression": "AVERAGE('fact_headcount'[AverageDailyPresence])",
+            "formatString": "#,##0",
+            "displayFolder": "02 Utilization & Presence"
+          },
+          {
+            "name": "Total Vacant Capacity",
+            "expression": "[Total Seat Capacity] - [Average Daily Presence]",
+            "formatString": "#,##0 seats",
+            "displayFolder": "02 Utilization & Presence"
+          },
+          {
+            "name": "Average Utilization %",
+            "expression": "DIVIDE(SUM('fact_daily_workplace_utilization'[OccupiedHours]), SUM('fact_daily_workplace_utilization'[AvailableHours]), 0)",
+            "formatString": "0.0%",
+            "displayFolder": "02 Utilization & Presence"
+          },
+          {
+            "name": "Peak Utilization %",
+            "expression": "AVERAGE('fact_daily_workplace_utilization'[PeakUtilizationRate])",
+            "formatString": "0.0%",
+            "displayFolder": "02 Utilization & Presence"
+          },
+          {
+            "name": "Max Peak Utilization %",
+            "expression": "MAX('fact_daily_workplace_utilization'[PeakUtilizationRate])",
+            "formatString": "0.0%",
+            "displayFolder": "02 Utilization & Presence"
+          },
+          {
+            "name": "Capacity Pressure %",
+            "expression": "DIVIDE(CALCULATE(COUNTROWS('fact_daily_workplace_utilization'), 'fact_daily_workplace_utilization'[PeakUtilizationRate] >= 0.85), COUNTROWS('fact_daily_workplace_utilization'), 0)",
+            "formatString": "0.0%",
+            "displayFolder": "02 Utilization & Presence"
+          },
+          {
+            "name": "Total Operating Cost INR",
+            "expression": "SUM('fact_monthly_property_cost'[TotalOperatingCostINR])",
+            "formatString": "\u20b9#,##0",
+            "displayFolder": "03 Financial Efficiency"
+          },
+          {
+            "name": "Annual Operating Cost INR",
+            "expression": "DIVIDE([Total Operating Cost INR], 2.0, 0)",
+            "formatString": "\u20b9#,##0",
+            "displayFolder": "03 Financial Efficiency"
+          },
+          {
+            "name": "Cost per SqM",
+            "expression": "DIVIDE([Annual Operating Cost INR], [Total Usable Area], 0)",
+            "formatString": "\u20b9#,##0/sqm",
+            "displayFolder": "03 Financial Efficiency"
+          },
+          {
+            "name": "Cost per Seat",
+            "expression": "DIVIDE([Annual Operating Cost INR], [Total Seat Capacity], 0)",
+            "formatString": "\u20b9#,##0",
+            "displayFolder": "03 Financial Efficiency"
+          },
+          {
+            "name": "Cost per Occupied Seat",
+            "expression": "DIVIDE([Annual Operating Cost INR], [Average Daily Presence], 0)",
+            "formatString": "\u20b9#,##0",
+            "displayFolder": "03 Financial Efficiency"
+          },
+          {
+            "name": "Utilization Cost Premium",
+            "expression": "[Cost per Occupied Seat] - [Cost per Seat]",
+            "formatString": "\u20b9#,##0",
+            "displayFolder": "03 Financial Efficiency"
+          },
+          {
+            "name": "Total Room Bookings",
+            "expression": "SUM('fact_room_utilization'[BookingCount])",
+            "formatString": "#,##0",
+            "displayFolder": "04 Room Dynamics"
+          },
+          {
+            "name": "Room No-Show Rate %",
+            "expression": "DIVIDE(SUM('fact_room_utilization'[NoShowCount]), SUM('fact_room_utilization'[BookingCount]), 0)",
+            "formatString": "0.0%",
+            "displayFolder": "04 Room Dynamics"
+          },
+          {
+            "name": "Average Room Utilization %",
+            "expression": "AVERAGE('fact_room_utilization'[RoomUtilizationRate])",
+            "formatString": "0.0%",
+            "displayFolder": "04 Room Dynamics"
+          },
+          {
+            "name": "Average Meeting Attendees",
+            "expression": "AVERAGE('fact_room_utilization'[AverageAttendees])",
+            "formatString": "0.0",
+            "displayFolder": "04 Room Dynamics"
+          },
+          {
+            "name": "Lease Expiring Within 6 Months",
+            "expression": "CALCULATE(COUNTROWS('dim_lease'), 'dim_lease'[ExpiryHorizonCategory] = \"Expiring <= 6M\")",
+            "formatString": "#,##0",
+            "displayFolder": "05 Lease & Governance"
+          },
+          {
+            "name": "Lease Expiring Within 12 Months",
+            "expression": "CALCULATE(COUNTROWS('dim_lease'), 'dim_lease'[ExpiryHorizonCategory] IN {\"Expiring <= 6M\", \"Expiring 6-12M\"})",
+            "formatString": "#,##0",
+            "displayFolder": "05 Lease & Governance"
+          },
+          {
+            "name": "Lease Expiring Within 24 Months",
+            "expression": "CALCULATE(COUNTROWS('dim_lease'), 'dim_lease'[ExpiryHorizonCategory] IN {\"Expiring <= 6M\", \"Expiring 6-12M\", \"Expiring 12-24M\"})",
+            "formatString": "#,##0",
+            "displayFolder": "05 Lease & Governance"
+          },
+          {
+            "name": "Expiring Rent Exposure INR",
+            "expression": "CALCULATE(SUM('dim_lease'[AnnualRentINR]), 'dim_lease'[ExpiryHorizonCategory] IN {\"Expiring <= 6M\", \"Expiring 6-12M\"})",
+            "formatString": "\u20b9#,##0",
+            "displayFolder": "05 Lease & Governance"
+          },
+          {
+            "name": "Data Quality Exception Count",
+            "expression": "COUNTROWS('fact_data_quality')",
+            "formatString": "#,##0",
+            "displayFolder": "06 Data Quality & Risk"
+          },
+          {
+            "name": "Data Quality Pass Rate %",
+            "expression": "DIVIDE(282584 - [Data Quality Exception Count], 282584, 1.0)",
+            "formatString": "0.00%",
+            "displayFolder": "06 Data Quality & Risk"
+          },
+          {
+            "name": "Critical Exceptions Count",
+            "expression": "CALCULATE(COUNTROWS('fact_data_quality'), 'fact_data_quality'[Severity] = \"Critical\")",
+            "formatString": "#,##0",
+            "displayFolder": "06 Data Quality & Risk"
+          },
+          {
+            "name": "Portfolio Attention Count",
+            "expression": "CALCULATE(COUNTROWS('dim_property'), RELATED('mart_portfolio_attention_index'[AttentionTier]) = \"Immediate Attention\")",
+            "formatString": "#,##0",
+            "displayFolder": "06 Data Quality & Risk"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "Partition__Measures",
+            "mode": "import",
+            "source": {
+              "type": "m",
+              "expression": "let Source = Table.FromRows(Json.Document(Binary.Decompress(Binary.FromText(\"i44FAA==\", BinaryEncoding.Base64), Compression.Deflate)), let _t = ((type nullable text) meta [Serialized.Text = true]) in type table [MeasureId = _t]) in Source"
+            }
+          }
+        ]
+      }
+    ],
+    "relationships": [
+      {
+        "name": "Rel_fact_daily_workplace_utilization_dim_date_DateKey",
+        "fromTable": "fact_daily_workplace_utilization",
+        "fromColumn": "DateKey",
+        "toTable": "dim_date",
+        "toColumn": "DateKey",
+        "crossFilteringBehavior": "singleDirection"
+      },
+      {
+        "name": "Rel_fact_daily_workplace_utilization_dim_property_PropertyKey",
+        "fromTable": "fact_daily_workplace_utilization",
+        "fromColumn": "PropertyKey",
+        "toTable": "dim_property",
+        "toColumn": "PropertyKey",
+        "crossFilteringBehavior": "singleDirection"
+      },
+      {
+        "name": "Rel_fact_daily_workplace_utilization_dim_floor_FloorKey",
+        "fromTable": "fact_daily_workplace_utilization",
+        "fromColumn": "FloorKey",
+        "toTable": "dim_floor",
+        "toColumn": "FloorKey",
+        "crossFilteringBehavior": "singleDirection"
+      },
+      {
+        "name": "Rel_fact_daily_workplace_utilization_dim_space_SpaceKey",
+        "fromTable": "fact_daily_workplace_utilization",
+        "fromColumn": "SpaceKey",
+        "toTable": "dim_space",
+        "toColumn": "SpaceKey",
+        "crossFilteringBehavior": "singleDirection"
+      },
+      {
+        "name": "Rel_fact_room_utilization_dim_date_DateKey",
+        "fromTable": "fact_room_utilization",
+        "fromColumn": "DateKey",
+        "toTable": "dim_date",
+        "toColumn": "DateKey",
+        "crossFilteringBehavior": "singleDirection"
+      },
+      {
+        "name": "Rel_fact_room_utilization_dim_property_PropertyKey",
+        "fromTable": "fact_room_utilization",
+        "fromColumn": "PropertyKey",
+        "toTable": "dim_property",
+        "toColumn": "PropertyKey",
+        "crossFilteringBehavior": "singleDirection"
+      },
+      {
+        "name": "Rel_fact_room_utilization_dim_space_SpaceKey",
+        "fromTable": "fact_room_utilization",
+        "fromColumn": "SpaceKey",
+        "toTable": "dim_space",
+        "toColumn": "SpaceKey",
+        "crossFilteringBehavior": "singleDirection"
+      },
+      {
+        "name": "Rel_fact_monthly_property_cost_dim_date_MonthDateKey",
+        "fromTable": "fact_monthly_property_cost",
+        "fromColumn": "MonthDateKey",
+        "toTable": "dim_date",
+        "toColumn": "DateKey",
+        "crossFilteringBehavior": "singleDirection"
+      },
+      {
+        "name": "Rel_fact_monthly_property_cost_dim_property_PropertyKey",
+        "fromTable": "fact_monthly_property_cost",
+        "fromColumn": "PropertyKey",
+        "toTable": "dim_property",
+        "toColumn": "PropertyKey",
+        "crossFilteringBehavior": "singleDirection"
+      },
+      {
+        "name": "Rel_fact_headcount_dim_date_MonthDateKey",
+        "fromTable": "fact_headcount",
+        "fromColumn": "MonthDateKey",
+        "toTable": "dim_date",
+        "toColumn": "DateKey",
+        "crossFilteringBehavior": "singleDirection"
+      },
+      {
+        "name": "Rel_fact_headcount_dim_property_PropertyKey",
+        "fromTable": "fact_headcount",
+        "fromColumn": "PropertyKey",
+        "toTable": "dim_property",
+        "toColumn": "PropertyKey",
+        "crossFilteringBehavior": "singleDirection"
+      },
+      {
+        "name": "Rel_dim_property_dim_geography_GeographyKey",
+        "fromTable": "dim_property",
+        "fromColumn": "GeographyKey",
+        "toTable": "dim_geography",
+        "toColumn": "GeographyKey",
+        "crossFilteringBehavior": "singleDirection"
+      },
+      {
+        "name": "Rel_dim_property_dim_facility_type_FacilityTypeKey",
+        "fromTable": "dim_property",
+        "fromColumn": "FacilityTypeKey",
+        "toTable": "dim_facility_type",
+        "toColumn": "FacilityTypeKey",
+        "crossFilteringBehavior": "singleDirection"
+      },
+      {
+        "name": "Rel_dim_floor_dim_property_PropertyKey",
+        "fromTable": "dim_floor",
+        "fromColumn": "PropertyKey",
+        "toTable": "dim_property",
+        "toColumn": "PropertyKey",
+        "crossFilteringBehavior": "singleDirection"
+      },
+      {
+        "name": "Rel_dim_space_dim_floor_FloorKey",
+        "fromTable": "dim_space",
+        "fromColumn": "FloorKey",
+        "toTable": "dim_floor",
+        "toColumn": "FloorKey",
+        "crossFilteringBehavior": "singleDirection"
+      },
+      {
+        "name": "Rel_dim_space_dim_property_PropertyKey",
+        "fromTable": "dim_space",
+        "fromColumn": "PropertyKey",
+        "toTable": "dim_property",
+        "toColumn": "PropertyKey",
+        "crossFilteringBehavior": "singleDirection"
+      },
+      {
+        "name": "Rel_dim_lease_dim_property_PropertyKey",
+        "fromTable": "dim_lease",
+        "fromColumn": "PropertyKey",
+        "toTable": "dim_property",
+        "toColumn": "PropertyKey",
+        "crossFilteringBehavior": "singleDirection"
+      },
+      {
+        "name": "Rel_mart_workplace_pressure_matrix_dim_property_PropertyKey",
+        "fromTable": "mart_workplace_pressure_matrix",
+        "fromColumn": "PropertyKey",
+        "toTable": "dim_property",
+        "toColumn": "PropertyKey",
+        "crossFilteringBehavior": "singleDirection"
+      },
+      {
+        "name": "Rel_mart_portfolio_attention_index_dim_property_PropertyKey",
+        "fromTable": "mart_portfolio_attention_index",
+        "fromColumn": "PropertyKey",
+        "toTable": "dim_property",
+        "toColumn": "PropertyKey",
+        "crossFilteringBehavior": "singleDirection"
+      }
+    ],
+    "annotations": [
+      {
+        "name": "ClientCompatibilityLevel",
+        "value": "700"
+      }
+    ]
+  }
+}

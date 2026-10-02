@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Corporate Real Estate Portfolio & Workplace Analytics | Management Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Header -->
+  <header class="app-header">
+    <div class="header-left">
+      <div class="logo-badge">CRE-BI</div>
+      <div>
+        <h1 class="header-title">Corporate Real Estate Portfolio & Workplace Analytics</h1>
+        <p class="header-subtitle">A data-driven portfolio view of workplace utilization, capacity, cost efficiency, lease exposure, exceptions, and operational priorities across India and Asia-Pacific.</p>
+      </div>
+    </div>
+    <div class="header-right">
+      <div class="reporting-pill">Baseline Reporting Date: <strong>2026-09-30</strong></div>
+      <div class="currency-pill">Reporting Currency: <strong>INR (₹)</strong></div>
+    </div>
+  </header>
+
+  <!-- Global Filter Slicer Bar -->
+  <section class="filter-bar">
+    <div class="filter-group">
+      <label for="filter-region">Region</label>
+      <select id="filter-region" class="slicer-select">
+        <option value="ALL">All Regions</option>
+        <option value="India">India</option>
+        <option value="Asia-Pacific">Asia-Pacific</option>
+      </select>
+    </div>
+    <div class="filter-group">
+      <label for="filter-country">Country</label>
+      <select id="filter-country" class="slicer-select">
+        <option value="ALL">All Countries</option>
+      </select>
+    </div>
+    <div class="filter-group">
+      <label for="filter-city">City</label>
+      <select id="filter-city" class="slicer-select">
+        <option value="ALL">All Cities</option>
+      </select>
+    </div>
+    <div class="filter-group">
+      <label for="filter-facility">Facility Type</label>
+      <select id="filter-facility" class="slicer-select">
+        <option value="ALL">All Facility Types</option>
+      </select>
+    </div>
+    <div class="filter-actions">
+      <button id="btn-reset-filters" class="btn-secondary">Reset Filters</button>
+      <span id="active-filter-indicator" class="active-filter-text">Showing all 25 properties</span>
+    </div>
+  </section>
+
+  <!-- Navigation Tab Bar -->
+  <nav class="page-nav">
+    <button class="nav-tab active" data-page="page1">1. Executive Overview</button>
+    <button class="nav-tab" data-page="page2">2. Portfolio & Geography</button>
+    <button class="nav-tab" data-page="page3">3. Workplace Utilization</button>
+    <button class="nav-tab" data-page="page4">4. Cost & Efficiency</button>
+    <button class="nav-tab" data-page="page5">5. Lease & Management Attention</button>
+    <button class="nav-tab" data-page="page6">6. Data Quality & Controls</button>
+    <button class="nav-tab" data-page="page7" id="tab-property-detail">7. Property Detail (Drill-Through)</button>
+  </nav>
+
+  <!-- Main Content Pages -->
+  <main class="dashboard-content">
+    
+    <!-- PAGE 1: EXECUTIVE OVERVIEW -->
+    <section id="page1" class="page-view active">
+      <div class="kpi-grid">
+        <div class="kpi-card">
+          <div class="kpi-label">Total Properties</div>
+          <div class="kpi-value" id="kpi-props">25</div>
+          <div class="kpi-context">11 cities across 6 countries</div>
+        </div>
+        <div class="kpi-card">
+          <div class="kpi-label">Total Usable Area</div>
+          <div class="kpi-value" id="kpi-usable">190,225 m²</div>
+          <div class="kpi-context">Loss factor: 16.2%</div>
+        </div>
+        <div class="kpi-card">
+          <div class="kpi-label">Seat Capacity</div>
+          <div class="kpi-value" id="kpi-seats">20,540</div>
+          <div class="kpi-context">Sharing ratio: 1.23:1</div>
+        </div>
+        <div class="kpi-card accent-blue">
+          <div class="kpi-label">Average Utilization %</div>
+          <div class="kpi-value" id="kpi-util">59.4%</div>
+          <div class="kpi-context">Mid-week peak: 78.4%</div>
+        </div>
+        <div class="kpi-card accent-orange">
+          <div class="kpi-label">Capacity Pressure %</div>
+          <div class="kpi-value" id="kpi-pressure">14.6%</div>
+          <div class="kpi-context">Days with peak ≥ 85%</div>
+        </div>
+        <div class="kpi-card">
+          <div class="kpi-label">Annual Operating Cost</div>
+          <div class="kpi-value" id="kpi-cost">₹597.5 Cr</div>
+          <div class="kpi-context">₹31,408 per usable m²</div>
+        </div>
+        <div class="kpi-card">
+          <div class="kpi-label">Cost per Occupied Seat</div>
+          <div class="kpi-value" id="kpi-cost-occ">₹489,850</div>
+          <div class="kpi-context">Carrying cost: ₹290,872/seat</div>
+        </div>
+        <div class="kpi-card accent-red">
+          <div class="kpi-label">Leases Expiring ≤ 12M</div>
+          <div class="kpi-value" id="kpi-leases">10</div>
+          <div class="kpi-context">₹105.8 Cr annual base rent</div>
+        </div>
+        <div class="kpi-card accent-green">
+          <div class="kpi-label">Data Quality Pass Rate</div>
+          <div class="kpi-value" id="kpi-dq">99.98%</div>
+          <div class="kpi-context">44 manifest items remediated</div>
+        </div>
+      </div>
+
+      <div class="grid-2col mt-4">
+        <div class="panel">
+          <div class="panel-header">
+            <div>
+              <h2 class="panel-title">Operating cost and average workplace utilization by country</h2>
+              <p class="panel-subtitle">Balances regional operational carrying commitment against physical workplace presence</p>
+            </div>
+          </div>
+          <div class="chart-box" id="chart-p1-country"></div>
+        </div>
+        <div class="panel">
+          <div class="panel-header">
+            <div>
+              <h2 class="panel-title">Portfolio workplace utilization 24-month trend</h2>
+              <p class="panel-subtitle">Monthly trajectory demonstrating stable baseline with mid-week peak pressure</p>
+            </div>
+          </div>
+          <div class="chart-box" id="chart-p1-trend"></div>
+        </div>
+      </div>
+
+      <div class="grid-2col mt-4">
+        <div class="panel">
+          <div class="panel-header">
+            <div>
+              <h2 class="panel-title">Top 5 priority assets requiring operational review</h2>
+              <p class="panel-subtitle">Ranked by project-defined Portfolio Attention Index (click any property to drill through)</p>
+            </div>
+          </div>
+          <div class="table-responsive">
+            <table class="data-table" id="table-p1-attention">
+              <thead>
+                <tr>
+                  <th>Rank</th>
+                  <th>Property</th>
+                  <th>City</th>
+                  <th>Avg Util %</th>
+                  <th>Cost/Occupied Seat</th>
+                  <th>Lease Expiry</th>
+                  <th>Attention Index</th>
+                  <th>Primary Driver</th>
+                </tr>
+              </thead>
+              <tbody></tbody>
+            </table>
+          </div>
+        </div>
+        <div class="panel analyst-callout">
+          <div class="callout-header">
+            <span class="callout-tag">Analyst Executive Synthesis</span>
+            <h3 class="callout-title">Regional portfolio operational dynamics</h3>
+          </div>
+          <p class="callout-body">
+            <strong>1. Mid-week peak divergence:</strong> While regional monthly utilization averages a modest <strong>59.4%</strong>, mid-week peaks (Tuesday through Thursday) surge to <strong>78.4%</strong>, generating severe meeting room shortages and desk crowding in technology and gateway hubs.
+          </p>
+          <p class="callout-body">
+            <strong>2. Capacity concentration:</strong> <strong>26.8%</strong> of vacant seat capacity is concentrated in just three suburban operations centers (Pune Hinjawadi, Chennai Guindy, and Delhi Noida Express).
+          </p>
+          <p class="callout-body">
+            <strong>3. Near-term decision windows:</strong> Ten lease contracts representing <strong>₹105.8 Cr</strong> in annual rent expire within the next 12 months, led by Singapore Marina Bay and Mumbai Nariman Point, offering immediate renegotiation or consolidation opportunities.
+          </p>
+          <p class="callout-note">
+            <em>Methodology Note: Figures derived from validated clean analytical layer (282,584 evaluated records). Reporting baseline: 2026-09-30.</em>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- PAGE 2: PORTFOLIO & GEOGRAPHY -->
+    <section id="page2" class="page-view">
+      <div class="section-intro">
+        <h2 class="section-title">Portfolio & Geography Distribution</h2>
+        <p class="section-description">Hierarchical analysis of physical space, desk capacity, and headcount distribution across 11 metropolitan markets.</p>
+      </div>
+
+      <div class="grid-2col mt-3">
+        <div class="panel">
+          <div class="panel-header">
+            <div>
+              <h2 class="panel-title">Usable area (m²) and seat capacity by country</h2>
+              <p class="panel-subtitle">India accounts for 73.1% of portfolio capacity; APAC represents 26.9% across 5 hub markets</p>
+            </div>
+          </div>
+          <div class="chart-box" id="chart-p2-geo-bars"></div>
+        </div>
+        <div class="panel">
+          <div class="panel-header">
+            <div>
+              <h2 class="panel-title">Workplace density (m²/seat) and average utilization by city</h2>
+              <p class="panel-subtitle">Bengaluru and Hyderabad exhibit efficient density (~9.0 m²/seat) with above-average utilization</p>
+            </div>
+          </div>
+          <div class="chart-box" id="chart-p2-density"></div>
+        </div>
+      </div>
+
+      <div class="panel mt-4">
+        <div class="panel-header">
+          <div>
+            <h2 class="panel-title">Metropolitan market register & property capacity ranking</h2>
+            <p class="panel-subtitle">Comprehensive property master details (click property code to drill through to granular detail)</p>
+          </div>
+        </div>
+        <div class="table-responsive">
+          <table class="data-table" id="table-p2-properties">
+            <thead>
+              <tr>
+                <th>Property Code</th>
+                <th>Property Name</th>
+                <th>Country</th>
+                <th>City</th>
+                <th>Facility Type</th>
+                <th>Ownership</th>
+                <th>Usable Area (m²)</th>
+                <th>Capacity (Seats)</th>
+                <th>Assigned HC</th>
+                <th>Density (m²/seat)</th>
+                <th>Sharing Ratio</th>
+                <th>Avg Util %</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- PAGE 3: WORKPLACE UTILIZATION -->
+    <section id="page3" class="page-view">
+      <div class="section-intro">
+        <h2 class="section-title">Workplace Utilization & Capacity Pressure</h2>
+        <p class="section-description">Empirical evaluation of daily workplace presence, day-of-week occupancy curves, and capacity bottleneck friction.</p>
+      </div>
+
+      <div class="grid-2col mt-3">
+        <div class="panel">
+          <div class="panel-header">
+            <div>
+              <h2 class="panel-title">Signature Visual: Workplace Pressure Matrix</h2>
+              <p class="panel-subtitle">X-axis: Average Utilization (Benchmark 55%) | Y-axis: Peak Utilization (Benchmark 80%) | Bubble: Usable Area</p>
+            </div>
+          </div>
+          <div class="chart-box" id="chart-p3-matrix"></div>
+          <div class="matrix-legend">
+            <span class="legend-chip blue">Underutilized (&lt;55% avg, &lt;80% peak)</span>
+            <span class="legend-chip orange">Peak-sensitive (&lt;55% avg, ≥80% peak)</span>
+            <span class="legend-chip green">Consistently active (≥55% avg, &lt;80% peak)</span>
+            <span class="legend-chip red">Capacity-constrained (≥55% avg, ≥80% peak)</span>
+          </div>
+        </div>
+        <div class="panel">
+          <div class="panel-header">
+            <div>
+              <h2 class="panel-title">Weekday utilization & peak profile across portfolio</h2>
+              <p class="panel-subtitle">Highlights the mid-week collaborative peak (Wed: 74.2% avg, 89.1% peak) versus Friday drop (37.2%)</p>
+            </div>
+          </div>
+          <div class="chart-box" id="chart-p3-weekday"></div>
+          <div class="analyst-note-box mt-3">
+            <strong>Analyst Takeaway:</strong> High Friday remote-work flexibility masks acute mid-week space pressure. Evaluating real estate purely on full-week averages leads to ill-advised footprint cuts that create severe Tuesday-Thursday desk deficits.
+          </div>
+        </div>
+      </div>
+
+      <div class="panel mt-4">
+        <div class="panel-header">
+          <div>
+            <h2 class="panel-title">Capacity pressure analysis: Days operating above 85% choke point</h2>
+            <p class="panel-subtitle">Properties sorted by frequency of peak capacity pressure events</p>
+          </div>
+        </div>
+        <div class="table-responsive">
+          <table class="data-table" id="table-p3-pressure">
+            <thead>
+              <tr>
+                <th>Property Code</th>
+                <th>Property Name</th>
+                <th>City</th>
+                <th>Facility Type</th>
+                <th>Capacity</th>
+                <th>Avg Utilization %</th>
+                <th>Peak Utilization %</th>
+                <th>Days in Pressure (≥85%)</th>
+                <th>Capacity Pressure %</th>
+                <th>Pressure Status</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- PAGE 4: COST & EFFICIENCY -->
+    <section id="page4" class="page-view">
+      <div class="section-intro">
+        <h2 class="section-title">Cost & Financial Efficiency</h2>
+        <p class="section-description">Economic analysis contrasting fixed spatial carrying liabilities against actual physical utilization to isolate occupancy cost premiums.</p>
+      </div>
+
+      <div class="grid-2col mt-3">
+        <div class="panel">
+          <div class="panel-header">
+            <div>
+              <h2 class="panel-title">Cost intensity vs. utilization: Cost per occupied seat vs. Average utilization</h2>
+              <p class="panel-subtitle">X-axis: Average Utilization % | Y-axis: Annual Cost per Occupied Seat (₹) | Bubble: Seat Capacity</p>
+            </div>
+          </div>
+          <div class="chart-box" id="chart-p4-scatter"></div>
+        </div>
+        <div class="panel">
+          <div class="panel-header">
+            <div>
+              <h2 class="panel-title">Operating expenditure composition by country (Annualized ₹)</h2>
+              <p class="panel-subtitle">Breakdown of gross lease rent, CAM service charge, energy/utilities, facilities, and maintenance</p>
+            </div>
+          </div>
+          <div class="chart-box" id="chart-p4-cost-breakdown"></div>
+        </div>
+      </div>
+
+      <div class="panel mt-4">
+        <div class="panel-header">
+          <div>
+            <h2 class="panel-title">Occupancy cost efficiency ledger & carrying cost penalty</h2>
+            <p class="panel-subtitle">Contrasting cost per provisioned work point against cost per active attendee</p>
+          </div>
+        </div>
+        <div class="table-responsive">
+          <table class="data-table" id="table-p4-cost-table">
+            <thead>
+              <tr>
+                <th>Property Code</th>
+                <th>Property Name</th>
+                <th>City</th>
+                <th>Annual Cost (₹ Cr)</th>
+                <th>Cost/Usable m²</th>
+                <th>Cost/Available Seat</th>
+                <th>Cost/Occupied Seat</th>
+                <th>Utilization Premium</th>
+                <th>Inefficiency Multiplier</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- PAGE 5: LEASE & MANAGEMENT ATTENTION -->
+    <section id="page5" class="page-view">
+      <div class="section-intro">
+        <h2 class="section-title">Lease Milestones & Management Attention</h2>
+        <p class="section-description">Multi-dimensional operational prioritization synthesizing utilization inefficiency, cost drag, lease timing, and data quality.</p>
+      </div>
+
+      <div class="grid-2col mt-3">
+        <div class="panel">
+          <div class="panel-header">
+            <div>
+              <h2 class="panel-title">Lease expiration distribution by decision horizon</h2>
+              <p class="panel-subtitle">Shows concentration of contractual expirations requiring advance strategy</p>
+            </div>
+          </div>
+          <div class="chart-box" id="chart-p5-lease-bars"></div>
+        </div>
+        <div class="panel">
+          <div class="panel-header">
+            <div>
+              <h2 class="panel-title">Primary attention driver breakdown across portfolio</h2>
+              <p class="panel-subtitle">Categorization of what triggers highest operational review priority</p>
+            </div>
+          </div>
+          <div class="chart-box" id="chart-p5-drivers"></div>
+        </div>
+      </div>
+
+      <div class="panel mt-4">
+        <div class="panel-header">
+          <div>
+            <h2 class="panel-title">Signature Visual: Management Attention Table</h2>
+            <p class="panel-subtitle">Ranked by transparent 5-component Portfolio Attention Index (30% util, 20% cost, 20% lease, 15% cap, 15% DQ)</p>
+          </div>
+        </div>
+        <div class="table-responsive">
+          <table class="data-table" id="table-p5-attention">
+            <thead>
+              <tr>
+                <th>Rank</th>
+                <th>Property Code</th>
+                <th>Property Name</th>
+                <th>City</th>
+                <th>Avg Util %</th>
+                <th>Peak Util %</th>
+                <th>Cost/Occ Seat</th>
+                <th>Lease Horizon</th>
+                <th>Attention Index</th>
+                <th>Primary Attention Driver</th>
+                <th>Action Priority</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- PAGE 6: DATA QUALITY & CONTROLS -->
+    <section id="page6" class="page-view">
+      <div class="section-intro">
+        <h2 class="section-title">Data Quality & Governance Controls</h2>
+        <p class="section-description">Complete auditability proving that management metrics are constructed on verified, cleaned operational data.</p>
+      </div>
+
+      <div class="kpi-grid">
+        <div class="kpi-card accent-green">
+          <div class="kpi-label">Overall Data Quality Pass Rate</div>
+          <div class="kpi-value">99.98%</div>
+          <div class="kpi-context">282,520 of 282,584 records clean</div>
+        </div>
+        <div class="kpi-card accent-red">
+          <div class="kpi-label">Logged Injected Defects</div>
+          <div class="kpi-value">44</div>
+          <div class="kpi-context">Tracked in quality manifest</div>
+        </div>
+        <div class="kpi-card">
+          <div class="kpi-label">Critical Severity Exceptions</div>
+          <div class="kpi-value">32</div>
+          <div class="kpi-context">100% remediated in Clean layer</div>
+        </div>
+        <div class="kpi-card">
+          <div class="kpi-label">Rules Evaluated</div>
+          <div class="kpi-value">12 Rules</div>
+          <div class="kpi-context">DQ001 to DQ012 covering 6 dimensions</div>
+        </div>
+      </div>
+
+      <div class="grid-2col mt-4">
+        <div class="panel">
+          <div class="panel-header">
+            <div>
+              <h2 class="panel-title">Quality exceptions detected by rule code</h2>
+              <p class="panel-subtitle">Automated validation flags across uniqueness, capacity, rate bounds, chronology, and casing</p>
+            </div>
+          </div>
+          <div class="chart-box" id="chart-p6-rules"></div>
+        </div>
+        <div class="panel">
+          <div class="panel-header">
+            <div>
+              <h2 class="panel-title">Quality exceptions by severity classification</h2>
+              <p class="panel-subtitle">All Critical and High defects remediated before loading into Analytical and Power BI models</p>
+            </div>
+          </div>
+          <div class="chart-box" id="chart-p6-severity"></div>
+        </div>
+      </div>
+
+      <div class="panel mt-4">
+        <div class="panel-header">
+          <div>
+            <h2 class="panel-title">Data Quality Exception Ledger (From data/quality_issue_manifest.csv)</h2>
+            <p class="panel-subtitle">Transparent audit trail documenting injected defect, validation rule, uncleaned value, and clean remediation</p>
+          </div>
+        </div>
+        <div class="table-responsive">
+          <table class="data-table" id="table-p6-ledger">
+            <thead>
+              <tr>
+                <th>Issue ID</th>
+                <th>Rule ID</th>
+                <th>Table Name</th>
+                <th>Record Identifier</th>
+                <th>Severity</th>
+                <th>Validation Requirement</th>
+                <th>Injected Raw Value</th>
+                <th>Remediated Clean Value</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- PAGE 7: PROPERTY DETAIL DRILL-THROUGH -->
+    <section id="page7" class="page-view">
+      <div class="drillthrough-bar">
+        <div class="drillthrough-select-wrap">
+          <label for="property-selector">Select Property for Deep Dive:</label>
+          <select id="property-selector" class="slicer-select"></select>
+        </div>
+        <button id="btn-back-to-overview" class="btn-primary">Back to Executive Overview</button>
+      </div>
+
+      <div class="property-banner mt-3" id="prop-banner">
+        <div class="banner-title-area">
+          <h2 class="banner-name" id="prop-banner-name">Marina Bay Financial Centre Tower 2</h2>
+          <div class="banner-meta" id="prop-banner-meta">PROP-SGP-01 | Singapore, Singapore | Regional Headquarters | Leased | Built 2017</div>
+        </div>
+        <div class="banner-rank-area">
+          <div class="banner-rank-label">Attention Rank</div>
+          <div class="banner-rank-value" id="prop-banner-rank">#1</div>
+          <div class="banner-rank-tier" id="prop-banner-tier">Immediate Attention</div>
+        </div>
+      </div>
+
+      <div class="kpi-grid mt-3">
+        <div class="kpi-card">
+          <div class="kpi-label">Usable Area</div>
+          <div class="kpi-value" id="detail-usable">5,400 m²</div>
+          <div class="kpi-context" id="detail-rentable">Rentable: 6,500 m²</div>
+        </div>
+        <div class="kpi-card">
+          <div class="kpi-label">Workstation Capacity</div>
+          <div class="kpi-value" id="detail-seats">480 seats</div>
+          <div class="kpi-context" id="detail-density">11.3 m²/seat</div>
+        </div>
+        <div class="kpi-card">
+          <div class="kpi-label">Assigned Headcount</div>
+          <div class="kpi-value" id="detail-hc">680 people</div>
+          <div class="kpi-context" id="detail-sharing">Sharing ratio: 1.42:1</div>
+        </div>
+        <div class="kpi-card accent-blue">
+          <div class="kpi-label">Average Utilization %</div>
+          <div class="kpi-value" id="detail-util">71.0%</div>
+          <div class="kpi-context" id="detail-presence">Avg Presence: 341/day</div>
+        </div>
+        <div class="kpi-card accent-red">
+          <div class="kpi-label">Peak Utilization %</div>
+          <div class="kpi-value" id="detail-peak">94.2%</div>
+          <div class="kpi-context">Pressure rate: 31.2%</div>
+        </div>
+        <div class="kpi-card">
+          <div class="kpi-label">Annual Operating Cost</div>
+          <div class="kpi-value" id="detail-cost">₹73.8 Cr</div>
+          <div class="kpi-context">SGD $11.6M</div>
+        </div>
+        <div class="kpi-card accent-orange">
+          <div class="kpi-label">Cost per Occupied Seat</div>
+          <div class="kpi-value" id="detail-cost-occ">₹2,164,223</div>
+          <div class="kpi-context">₹1,537,500/seat</div>
+        </div>
+        <div class="kpi-card">
+          <div class="kpi-label">Lease Expiry Date</div>
+          <div class="kpi-value" id="detail-lease-date">2027-02-28</div>
+          <div class="kpi-context" id="detail-lease-horizon">Expiring in 5 Months</div>
+        </div>
+      </div>
+
+      <div class="grid-2col mt-4">
+        <div class="panel">
+          <div class="panel-header">
+            <div>
+              <h2 class="panel-title">24-Month historical utilization and presence trajectory</h2>
+              <p class="panel-subtitle">Monthly average presence vs. physical seat capacity</p>
+            </div>
+          </div>
+          <div class="chart-box" id="chart-detail-history"></div>
+        </div>
+        <div class="panel">
+          <div class="panel-header">
+            <div>
+              <h2 class="panel-title">Floor-by-floor area & seat allocation breakdown</h2>
+              <p class="panel-subtitle">Zoning distribution across building levels</p>
+            </div>
+          </div>
+          <div class="table-responsive">
+            <table class="data-table" id="table-detail-floors">
+              <thead>
+                <tr>
+                  <th>Floor</th>
+                  <th>Floor Name</th>
+                  <th>Usable Area (m²)</th>
+                  <th>Workstations</th>
+                  <th>Floor Density</th>
+                </tr>
+              </thead>
+              <tbody></tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <div class="panel mt-4 analyst-callout">
+        <div class="callout-header">
+          <span class="callout-tag">Property Specific Strategic Recommendation</span>
+          <h3 class="callout-title" id="detail-rec-title">Operational Context & Recommended Investigation</h3>
+        </div>
+        <p class="callout-body" id="detail-rec-body">
+          This flagship facility exhibits acute mid-week peak demand (94.2%) coupled with premium operating cost intensity (₹2.16M per occupied seat annually). With the primary lease contract expiring within 5 months (2027-02-28), management has immediate leverage to restructure the floorplate, adopt agile hoteling to smooth mid-week attendance, or negotiate renewal terms incorporating hybrid sharing assumptions.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="app-footer">
+    <div>Corporate Real Estate Portfolio & Workplace Analytics &bull; Regional Operational Decision Support Platform</div>
+    <div>Strictly synthetic analytical demonstration dataset. Not real corporate data.</div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

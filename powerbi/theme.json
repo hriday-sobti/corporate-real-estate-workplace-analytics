@@ -1,0 +1,48 @@
+{
+  "name": "Corporate Real Estate Executive Theme",
+  "dataColors": [
+    "#1F4E79",
+    "#E07A5F",
+    "#2E7D32",
+    "#4A5568",
+    "#E67E22",
+    "#6C757D",
+    "#17A2B8",
+    "#8E44AD"
+  ],
+  "background": "#F8F9FA",
+  "foreground": "#212529",
+  "tableAccent": "#1F4E79",
+  "visualStyles": {
+    "*": {
+      "*": {
+        "outspace": [{ "color": { "solid": { "color": "#F8F9FA" } } }],
+        "background": [{ "color": { "solid": { "color": "#FFFFFF" } }, "transparency": 0 }],
+        "border": [{ "show": true, "color": { "solid": { "color": "#E2E8F0" } }, "radius": 4 }],
+        "title": [
+          {
+            "show": true,
+            "fontColor": { "solid": { "color": "#1A202C" } },
+            "fontSize": 11,
+            "fontFamily": "Segoe UI",
+            "bold": true
+          }
+        ],
+        "subtitle": [
+          {
+            "show": true,
+            "fontColor": { "solid": { "color": "#718096" } },
+            "fontSize": 9,
+            "fontFamily": "Segoe UI"
+          }
+        ]
+      }
+    },
+    "card": {
+      "*": {
+        "labels": [{ "fontSize": 20, "fontFamily": "Segoe UI", "bold": true, "color": { "solid": { "color": "#1F4E79" } } }],
+        "categoryLabels": [{ "fontSize": 9, "fontFamily": "Segoe UI", "color": { "solid": { "color": "#4A5568" } } }]
+      }
+    }
+  }
+}

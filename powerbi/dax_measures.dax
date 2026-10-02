@@ -1,0 +1,222 @@
+// ====================================================================
+// Corporate Real Estate Portfolio & Workplace Analytics
+// DAX Measure Library (Organized by Logical Display Folders)
+// ====================================================================
+
+// --------------------------------------------------------------------
+// FOLDER: 01 Portfolio Scale
+// --------------------------------------------------------------------
+
+[Total Properties] =
+DISTINCTCOUNT ( 'dim_property'[PropertyKey] )
+/* FormatString: "#,##0" | Description: Total count of operational properties */
+
+[Total Usable Area] =
+SUM ( 'dim_property'[UsableAreaSqM] )
+/* FormatString: "#,##0 sqm" | Description: Net workable operational floor area */
+
+[Total Rentable Area] =
+SUM ( 'dim_property'[RentableAreaSqM] )
+/* FormatString: "#,##0 sqm" | Description: Total commercial lease area */
+
+[Core Loss Area] =
+[Total Rentable Area] - [Total Usable Area]
+/* FormatString: "#,##0 sqm" | Description: Core service and building loss area */
+
+[Portfolio Loss Factor %] =
+DIVIDE ( [Core Loss Area], [Total Rentable Area], 0 )
+/* FormatString: "0.0%" | Description: Core loss factor percentage */
+
+[Total Seat Capacity] =
+SUM ( 'dim_property'[CapacitySeats] )
+/* FormatString: "#,##0" | Description: Total primary individual work points */
+
+[Assigned Headcount] =
+SUM ( 'dim_property'[AssignedHeadcount] )
+/* FormatString: "#,##0" | Description: Total administrative headcount assigned */
+
+[Desk Sharing Ratio] =
+DIVIDE ( [Assigned Headcount], [Total Seat Capacity], 0 )
+/* FormatString: "0.00" | Description: Assigned personnel per available desk */
+
+[Average Density SqM] =
+DIVIDE ( [Total Usable Area], [Total Seat Capacity], 0 )
+/* FormatString: "0.0 sqm/seat" | Description: Usable area per installed seat */
+
+
+// --------------------------------------------------------------------
+// FOLDER: 02 Utilization & Presence
+// --------------------------------------------------------------------
+
+[Average Daily Presence] =
+AVERAGE ( 'fact_headcount'[AverageDailyPresence] )
+/* FormatString: "#,##0" | Description: Empirical daily physical badge entrants */
+
+[Total Vacant Capacity] =
+[Total Seat Capacity] - [Average Daily Presence]
+/* FormatString: "#,##0 seats" | Description: Unused seat capacity during business hours */
+
+[Total Occupied Hours] =
+SUM ( 'fact_daily_workplace_utilization'[OccupiedHours] )
+/* FormatString: "#,##0.0" | Description: Integrated occupied seat-hours */
+
+[Total Available Hours] =
+SUM ( 'fact_daily_workplace_utilization'[AvailableHours] )
+/* FormatString: "#,##0.0" | Description: Total provisioned seat-hours (Capacity x 10h) */
+
+[Average Utilization %] =
+DIVIDE ( [Total Occupied Hours], [Total Available Hours], 0 )
+/* FormatString: "0.0%" | Description: Percentage of capacity actively engaged */
+
+[Peak Utilization %] =
+AVERAGE ( 'fact_daily_workplace_utilization'[PeakUtilizationRate] )
+/* FormatString: "0.0%" | Description: Mean peak daily utilization rate */
+
+[Max Peak Utilization %] =
+MAX ( 'fact_daily_workplace_utilization'[PeakUtilizationRate] )
+/* FormatString: "0.0%" | Description: Absolute maximum peak utilization observed */
+
+[Capacity Pressure %] =
+DIVIDE (
+    CALCULATE (
+        COUNTROWS ( 'fact_daily_workplace_utilization' ),
+        'fact_daily_workplace_utilization'[PeakUtilizationRate] >= 0.85
+    ),
+    COUNTROWS ( 'fact_daily_workplace_utilization' ),
+    0
+)
+/* FormatString: "0.0%" | Description: Percentage of observations breaching 85% choke point */
+
+
+// --------------------------------------------------------------------
+// FOLDER: 03 Financial Efficiency
+// --------------------------------------------------------------------
+
+[Total Operating Cost INR] =
+SUM ( 'fact_monthly_property_cost'[TotalOperatingCostINR] )
+/* FormatString: "₹#,##0" | Description: Total operating expenditure in INR */
+
+[Annual Operating Cost INR] =
+// Observation horizon is 24 months, so annualized cost is total divided by 2
+DIVIDE ( [Total Operating Cost INR], 2.0, 0 )
+/* FormatString: "₹#,##0" | Description: Annualized operating expenditure in INR */
+
+[Cost per SqM] =
+DIVIDE ( [Annual Operating Cost INR], [Total Usable Area], 0 )
+/* FormatString: "₹#,##0/sqm" | Description: Annual operating cost per usable square metre */
+
+[Cost per Seat] =
+DIVIDE ( [Annual Operating Cost INR], [Total Seat Capacity], 0 )
+/* FormatString: "₹#,##0" | Description: Annual carrying cost per available work point */
+
+[Cost per Occupied Seat] =
+DIVIDE ( [Annual Operating Cost INR], [Average Daily Presence], 0 )
+/* FormatString: "₹#,##0" | Description: Annual operating cost per active daily attendee */
+
+[Utilization Cost Premium] =
+[Cost per Occupied Seat] - [Cost per Seat]
+/* FormatString: "₹#,##0" | Description: Economic penalty incurred from vacant capacity */
+
+[Cost Inefficiency Multiplier %] =
+DIVIDE ( [Utilization Cost Premium], [Cost per Seat], 0 )
+/* FormatString: "0.0%" | Description: Cost inflation percentage driven by underutilization */
+
+
+// --------------------------------------------------------------------
+// FOLDER: 04 Room Dynamics
+// --------------------------------------------------------------------
+
+[Total Room Bookings] =
+SUM ( 'fact_room_utilization'[BookingCount] )
+/* FormatString: "#,##0" | Description: Total room reservations scheduled */
+
+[Total Attended Bookings] =
+SUM ( 'fact_room_utilization'[AttendedBookingCount] )
+/* FormatString: "#,##0" | Description: Room reservations physically verified with attendees */
+
+[Total No Shows] =
+SUM ( 'fact_room_utilization'[NoShowCount] )
+/* FormatString: "#,##0" | Description: Unattended ghost bookings */
+
+[Room No-Show Rate %] =
+DIVIDE ( [Total No Shows], [Total Room Bookings], 0 )
+/* FormatString: "0.0%" | Description: Percentage of bookings where attendees failed to show */
+
+[Average Room Utilization %] =
+AVERAGE ( 'fact_room_utilization'[RoomUtilizationRate] )
+/* FormatString: "0.0%" | Description: Percentage of 10-hour operating window room was used */
+
+[Average Meeting Attendees] =
+AVERAGE ( 'fact_room_utilization'[AverageAttendees] )
+/* FormatString: "0.0" | Description: Average attendees per attended meeting */
+
+
+// --------------------------------------------------------------------
+// FOLDER: 05 Lease & Governance
+// --------------------------------------------------------------------
+
+[Lease Expiring Within 6 Months] =
+CALCULATE (
+    COUNTROWS ( 'dim_lease' ),
+    'dim_lease'[ExpiryHorizonCategory] = "Expiring <= 6M"
+)
+/* FormatString: "#,##0" | Description: Leased contracts requiring immediate notice/renewal */
+
+[Lease Expiring Within 12 Months] =
+CALCULATE (
+    COUNTROWS ( 'dim_lease' ),
+    'dim_lease'[ExpiryHorizonCategory] IN { "Expiring <= 6M", "Expiring 6-12M" }
+)
+/* FormatString: "#,##0" | Description: Leased contracts expiring within 1 year */
+
+[Lease Expiring Within 24 Months] =
+CALCULATE (
+    COUNTROWS ( 'dim_lease' ),
+    'dim_lease'[ExpiryHorizonCategory] IN { "Expiring <= 6M", "Expiring 6-12M", "Expiring 12-24M" }
+)
+/* FormatString: "#,##0" | Description: Leased contracts in near-term 2-year decision window */
+
+[Owned Properties Count] =
+CALCULATE (
+    COUNTROWS ( 'dim_property' ),
+    'dim_property'[OwnershipType] = "Owned"
+)
+/* FormatString: "#,##0" | Description: Count of corporate freehold owned assets */
+
+[Expiring Rent Exposure INR] =
+CALCULATE (
+    SUM ( 'dim_lease'[AnnualRentINR] ),
+    'dim_lease'[ExpiryHorizonCategory] IN { "Expiring <= 6M", "Expiring 6-12M" }
+)
+/* FormatString: "₹#,##0" | Description: Total annual base rent expiring within 12 months */
+
+
+// --------------------------------------------------------------------
+// FOLDER: 06 Data Quality & Strategic Prioritization
+// --------------------------------------------------------------------
+
+[Data Quality Exception Count] =
+COUNTROWS ( 'fact_data_quality' )
+/* FormatString: "#,##0" | Description: Total logged data quality exceptions */
+
+[Data Quality Pass Rate %] =
+// 282,584 total evaluated records across the ingestion layer
+VAR TotalEvaluated = 282584
+VAR Exceptions = [Data Quality Exception Count]
+RETURN
+    DIVIDE ( TotalEvaluated - Exceptions, TotalEvaluated, 1.0 )
+/* FormatString: "0.00%" | Description: Portfolio-wide data quality pass rate */
+
+[Critical Exceptions Count] =
+CALCULATE (
+    COUNTROWS ( 'fact_data_quality' ),
+    'fact_data_quality'[Severity] = "Critical"
+)
+/* FormatString: "#,##0" | Description: Critical severity data quality issues */
+
+[Portfolio Attention Count] =
+CALCULATE (
+    COUNTROWS ( 'dim_property' ),
+    RELATED ( 'mart_portfolio_attention_index'[AttentionTier] ) = "Immediate Attention"
+)
+/* FormatString: "#,##0" | Description: Properties flagged for immediate management review */
