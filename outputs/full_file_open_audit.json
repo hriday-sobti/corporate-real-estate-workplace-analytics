@@ -1,0 +1,865 @@
+{
+  "total_files_audited": 143,
+  "passed_files": 143,
+  "failed_files": 0,
+  "results": [
+    {
+      "path": "./.gitignore",
+      "extension": "",
+      "status": "PASSED",
+      "details": "Other file format (583 bytes)"
+    },
+    {
+      "path": "./app.js",
+      "extension": ".js",
+      "status": "PASSED",
+      "details": "Text file valid (798 lines)"
+    },
+    {
+      "path": "./Corporate_Real_Estate_Executive_Review.pptx",
+      "extension": ".pptx",
+      "status": "PASSED",
+      "details": "PowerPoint valid (7 slides)"
+    },
+    {
+      "path": "./Corporate_Real_Estate_Management_Workbook.xlsx",
+      "extension": ".xlsx",
+      "status": "PASSED",
+      "details": "Excel valid (8 sheets: Executive Summary, Property Register, Occupancy Analysis, Cost Analysis...)"
+    },
+    {
+      "path": "./Corporate_Real_Estate_Portfolio_Analytics_Report.pdf",
+      "extension": ".pdf",
+      "status": "PASSED",
+      "details": "PDF valid (10 pages, extractable text)"
+    },
+    {
+      "path": "./dashboard_data.js",
+      "extension": ".js",
+      "status": "PASSED",
+      "details": "Text file valid (1 lines)"
+    },
+    {
+      "path": "./dashboard_data.json",
+      "extension": ".json",
+      "status": "PASSED",
+      "details": "JSON valid (9 top-level items)"
+    },
+    {
+      "path": "./index.html",
+      "extension": ".html",
+      "status": "PASSED",
+      "details": "Text file valid (631 lines)"
+    },
+    {
+      "path": "./LICENSE",
+      "extension": "",
+      "status": "PASSED",
+      "details": "Other file format (1,075 bytes)"
+    },
+    {
+      "path": "./project_tracker.csv",
+      "extension": ".csv",
+      "status": "PASSED",
+      "details": "CSV valid (22 rows, 12 cols)"
+    },
+    {
+      "path": "./README.md",
+      "extension": ".md",
+      "status": "PASSED",
+      "details": "Markdown valid (400 lines, 20 links resolved)"
+    },
+    {
+      "path": "./requirements.txt",
+      "extension": ".txt",
+      "status": "PASSED",
+      "details": "Text file valid (16 lines)"
+    },
+    {
+      "path": "./style.css",
+      "extension": ".css",
+      "status": "PASSED",
+      "details": "Text file valid (554 lines)"
+    },
+    {
+      "path": "./data/cre_analytics.duckdb",
+      "extension": ".duckdb",
+      "status": "PASSED",
+      "details": "DuckDB valid (19 tables: dim_date, dim_facility_type, dim_floor...)"
+    },
+    {
+      "path": "./data/quality_issue_manifest.csv",
+      "extension": ".csv",
+      "status": "PASSED",
+      "details": "CSV valid (44 rows, 8 cols)"
+    },
+    {
+      "path": "./data/analytical/dim_date.csv",
+      "extension": ".csv",
+      "status": "PASSED",
+      "details": "CSV valid (730 rows, 14 cols)"
+    },
+    {
+      "path": "./data/analytical/dim_facility_type.csv",
+      "extension": ".csv",
+      "status": "PASSED",
+      "details": "CSV valid (4 rows, 5 cols)"
+    },
+    {
+      "path": "./data/analytical/dim_floor.csv",
+      "extension": ".csv",
+      "status": "PASSED",
+      "details": "CSV valid (112 rows, 7 cols)"
+    },
+    {
+      "path": "./data/analytical/dim_geography.csv",
+      "extension": ".csv",
+      "status": "PASSED",
+      "details": "CSV valid (11 rows, 8 cols)"
+    },
+    {
+      "path": "./data/analytical/dim_lease.csv",
+      "extension": ".csv",
+      "status": "PASSED",
+      "details": "CSV valid (25 rows, 11 cols)"
+    },
+    {
+      "path": "./data/analytical/dim_property.csv",
+      "extension": ".csv",
+      "status": "PASSED",
+      "details": "CSV valid (25 rows, 15 cols)"
+    },
+    {
+      "path": "./data/analytical/dim_space.csv",
+      "extension": ".csv",
+      "status": "PASSED",
+      "details": "CSV valid (809 rows, 9 cols)"
+    },
+    {
+      "path": "./data/analytical/fact_daily_workplace_utilization.csv",
+      "extension": ".csv",
+      "status": "PASSED",
+      "details": "CSV valid (168,672 rows, 16 cols)"
+    },
+    {
+      "path": "./data/analytical/fact_data_quality.csv",
+      "extension": ".csv",
+      "status": "PASSED",
+      "details": "CSV valid (44 rows, 11 cols)"
+    },
+    {
+      "path": "./data/analytical/fact_headcount.csv",
+      "extension": ".csv",
+      "status": "PASSED",
+      "details": "CSV valid (600 rows, 6 cols)"
+    },
+    {
+      "path": "./data/analytical/fact_monthly_property_cost.csv",
+      "extension": ".csv",
+      "status": "PASSED",
+      "details": "CSV valid (600 rows, 13 cols)"
+    },
+    {
+      "path": "./data/analytical/fact_room_utilization.csv",
+      "extension": ".csv",
+      "status": "PASSED",
+      "details": "CSV valid (112,448 rows, 14 cols)"
+    },
+    {
+      "path": "./data/analytical/mart_portfolio_attention_index.csv",
+      "extension": ".csv",
+      "status": "PASSED",
+      "details": "CSV valid (25 rows, 44 cols)"
+    },
+    {
+      "path": "./data/analytical/mart_property_monthly_summary.csv",
+      "extension": ".csv",
+      "status": "PASSED",
+      "details": "CSV valid (600 rows, 32 cols)"
+    },
+    {
+      "path": "./data/analytical/mart_scenario_consolidation.csv",
+      "extension": ".csv",
+      "status": "PASSED",
+      "details": "CSV valid (75 rows, 20 cols)"
+    },
+    {
+      "path": "./data/analytical/mart_workplace_pressure_matrix.csv",
+      "extension": ".csv",
+      "status": "PASSED",
+      "details": "CSV valid (25 rows, 35 cols)"
+    },
+    {
+      "path": "./data/clean/dim_date.csv",
+      "extension": ".csv",
+      "status": "PASSED",
+      "details": "CSV valid (730 rows, 14 cols)"
+    },
+    {
+      "path": "./data/clean/dim_facility_type.csv",
+      "extension": ".csv",
+      "status": "PASSED",
+      "details": "CSV valid (4 rows, 5 cols)"
+    },
+    {
+      "path": "./data/clean/dim_floor.csv",
+      "extension": ".csv",
+      "status": "PASSED",
+      "details": "CSV valid (112 rows, 7 cols)"
+    },
+    {
+      "path": "./data/clean/dim_geography.csv",
+      "extension": ".csv",
+      "status": "PASSED",
+      "details": "CSV valid (11 rows, 8 cols)"
+    },
+    {
+      "path": "./data/clean/dim_lease.csv",
+      "extension": ".csv",
+      "status": "PASSED",
+      "details": "CSV valid (25 rows, 11 cols)"
+    },
+    {
+      "path": "./data/clean/dim_property.csv",
+      "extension": ".csv",
+      "status": "PASSED",
+      "details": "CSV valid (25 rows, 15 cols)"
+    },
+    {
+      "path": "./data/clean/dim_space.csv",
+      "extension": ".csv",
+      "status": "PASSED",
+      "details": "CSV valid (809 rows, 9 cols)"
+    },
+    {
+      "path": "./data/clean/fact_daily_workplace_utilization.csv",
+      "extension": ".csv",
+      "status": "PASSED",
+      "details": "CSV valid (168,672 rows, 15 cols)"
+    },
+    {
+      "path": "./data/clean/fact_data_quality.csv",
+      "extension": ".csv",
+      "status": "PASSED",
+      "details": "CSV valid (44 rows, 11 cols)"
+    },
+    {
+      "path": "./data/clean/fact_headcount.csv",
+      "extension": ".csv",
+      "status": "PASSED",
+      "details": "CSV valid (600 rows, 6 cols)"
+    },
+    {
+      "path": "./data/clean/fact_monthly_property_cost.csv",
+      "extension": ".csv",
+      "status": "PASSED",
+      "details": "CSV valid (600 rows, 13 cols)"
+    },
+    {
+      "path": "./data/clean/fact_room_utilization.csv",
+      "extension": ".csv",
+      "status": "PASSED",
+      "details": "CSV valid (112,448 rows, 14 cols)"
+    },
+    {
+      "path": "./data/raw/raw_date.csv",
+      "extension": ".csv",
+      "status": "PASSED",
+      "details": "CSV valid (730 rows, 14 cols)"
+    },
+    {
+      "path": "./data/raw/raw_facility_type.csv",
+      "extension": ".csv",
+      "status": "PASSED",
+      "details": "CSV valid (4 rows, 5 cols)"
+    },
+    {
+      "path": "./data/raw/raw_floors.csv",
+      "extension": ".csv",
+      "status": "PASSED",
+      "details": "CSV valid (112 rows, 7 cols)"
+    },
+    {
+      "path": "./data/raw/raw_geography.csv",
+      "extension": ".csv",
+      "status": "PASSED",
+      "details": "CSV valid (11 rows, 8 cols)"
+    },
+    {
+      "path": "./data/raw/raw_headcount.csv",
+      "extension": ".csv",
+      "status": "PASSED",
+      "details": "CSV valid (600 rows, 6 cols)"
+    },
+    {
+      "path": "./data/raw/raw_leases.csv",
+      "extension": ".csv",
+      "status": "PASSED",
+      "details": "CSV valid (25 rows, 11 cols)"
+    },
+    {
+      "path": "./data/raw/raw_properties.csv",
+      "extension": ".csv",
+      "status": "PASSED",
+      "details": "CSV valid (26 rows, 17 cols)"
+    },
+    {
+      "path": "./data/raw/raw_property_costs.csv",
+      "extension": ".csv",
+      "status": "PASSED",
+      "details": "CSV valid (600 rows, 13 cols)"
+    },
+    {
+      "path": "./data/raw/raw_room_utilization.csv",
+      "extension": ".csv",
+      "status": "PASSED",
+      "details": "CSV valid (112,448 rows, 14 cols)"
+    },
+    {
+      "path": "./data/raw/raw_spaces.csv",
+      "extension": ".csv",
+      "status": "PASSED",
+      "details": "CSV valid (809 rows, 9 cols)"
+    },
+    {
+      "path": "./data/raw/raw_utilization.csv",
+      "extension": ".csv",
+      "status": "PASSED",
+      "details": "CSV valid (168,676 rows, 15 cols)"
+    },
+    {
+      "path": "./docs/assumptions.md",
+      "extension": ".md",
+      "status": "PASSED",
+      "details": "Markdown valid (91 lines, 0 links resolved)"
+    },
+    {
+      "path": "./docs/data_dictionary.md",
+      "extension": ".md",
+      "status": "PASSED",
+      "details": "Markdown valid (233 lines, 0 links resolved)"
+    },
+    {
+      "path": "./docs/data_lineage.md",
+      "extension": ".md",
+      "status": "PASSED",
+      "details": "Markdown valid (81 lines, 0 links resolved)"
+    },
+    {
+      "path": "./docs/data_provenance.md",
+      "extension": ".md",
+      "status": "PASSED",
+      "details": "Markdown valid (65 lines, 0 links resolved)"
+    },
+    {
+      "path": "./docs/data_quality_framework.md",
+      "extension": ".md",
+      "status": "PASSED",
+      "details": "Markdown valid (70 lines, 0 links resolved)"
+    },
+    {
+      "path": "./docs/final_audit.md",
+      "extension": ".md",
+      "status": "PASSED",
+      "details": "Markdown valid (54 lines, 0 links resolved)"
+    },
+    {
+      "path": "./docs/metric_dictionary.md",
+      "extension": ".md",
+      "status": "PASSED",
+      "details": "Markdown valid (191 lines, 0 links resolved)"
+    },
+    {
+      "path": "./docs/reconciliation_report.md",
+      "extension": ".md",
+      "status": "PASSED",
+      "details": "Markdown valid (67 lines, 0 links resolved)"
+    },
+    {
+      "path": "./docs/research_notes.md",
+      "extension": ".md",
+      "status": "PASSED",
+      "details": "Markdown valid (226 lines, 0 links resolved)"
+    },
+    {
+      "path": "./excel/Corporate_Real_Estate_Management_Workbook.xlsx",
+      "extension": ".xlsx",
+      "status": "PASSED",
+      "details": "Excel valid (8 sheets: Executive Summary, Property Register, Occupancy Analysis, Cost Analysis...)"
+    },
+    {
+      "path": "./outputs/150_aok_verification_report.json",
+      "extension": ".json",
+      "status": "PASSED",
+      "details": "JSON valid (6 top-level items)"
+    },
+    {
+      "path": "./outputs/attention_index_sensitivity.json",
+      "extension": ".json",
+      "status": "PASSED",
+      "details": "JSON valid (5 top-level items)"
+    },
+    {
+      "path": "./outputs/data_quality_validation_report.json",
+      "extension": ".json",
+      "status": "PASSED",
+      "details": "JSON valid (2 top-level items)"
+    },
+    {
+      "path": "./outputs/full_file_open_audit.json",
+      "extension": ".json",
+      "status": "PASSED",
+      "details": "JSON valid (4 top-level items)"
+    },
+    {
+      "path": "./outputs/reconciliation_summary.json",
+      "extension": ".json",
+      "status": "PASSED",
+      "details": "JSON valid (10 top-level items)"
+    },
+    {
+      "path": "./outputs/scenario_consolidation_results.json",
+      "extension": ".json",
+      "status": "PASSED",
+      "details": "JSON valid (3 top-level items)"
+    },
+    {
+      "path": "./outputs/sql_query_results.json",
+      "extension": ".json",
+      "status": "PASSED",
+      "details": "JSON valid (4 top-level items)"
+    },
+    {
+      "path": "./outputs/visual_qa_report.json",
+      "extension": ".json",
+      "status": "PASSED",
+      "details": "JSON valid (3 top-level items)"
+    },
+    {
+      "path": "./outputs/charts/eda_attention_ranking.png",
+      "extension": ".png",
+      "status": "PASSED",
+      "details": "Image valid (2700x1500 px)"
+    },
+    {
+      "path": "./outputs/charts/eda_cost_vs_utilization.png",
+      "extension": ".png",
+      "status": "PASSED",
+      "details": "Image valid (2700x1650 px)"
+    },
+    {
+      "path": "./outputs/charts/eda_pressure_matrix.png",
+      "extension": ".png",
+      "status": "PASSED",
+      "details": "Image valid (2700x1800 px)"
+    },
+    {
+      "path": "./outputs/charts/eda_room_mismatch.png",
+      "extension": ".png",
+      "status": "PASSED",
+      "details": "Image valid (3000x1350 px)"
+    },
+    {
+      "path": "./outputs/charts/eda_weekday_utilization.png",
+      "extension": ".png",
+      "status": "PASSED",
+      "details": "Image valid (2400x1350 px)"
+    },
+    {
+      "path": "./outputs/qa_renders/pdf/page_01.png",
+      "extension": ".png",
+      "status": "PASSED",
+      "details": "Image valid (1224x1584 px)"
+    },
+    {
+      "path": "./outputs/qa_renders/pdf/page_02.png",
+      "extension": ".png",
+      "status": "PASSED",
+      "details": "Image valid (1224x1584 px)"
+    },
+    {
+      "path": "./outputs/qa_renders/pdf/page_03.png",
+      "extension": ".png",
+      "status": "PASSED",
+      "details": "Image valid (1224x1584 px)"
+    },
+    {
+      "path": "./outputs/qa_renders/pdf/page_04.png",
+      "extension": ".png",
+      "status": "PASSED",
+      "details": "Image valid (1224x1584 px)"
+    },
+    {
+      "path": "./outputs/qa_renders/pdf/page_05.png",
+      "extension": ".png",
+      "status": "PASSED",
+      "details": "Image valid (1224x1584 px)"
+    },
+    {
+      "path": "./outputs/qa_renders/pdf/page_06.png",
+      "extension": ".png",
+      "status": "PASSED",
+      "details": "Image valid (1224x1584 px)"
+    },
+    {
+      "path": "./outputs/qa_renders/pdf/page_07.png",
+      "extension": ".png",
+      "status": "PASSED",
+      "details": "Image valid (1224x1584 px)"
+    },
+    {
+      "path": "./outputs/qa_renders/pdf/page_08.png",
+      "extension": ".png",
+      "status": "PASSED",
+      "details": "Image valid (1224x1584 px)"
+    },
+    {
+      "path": "./outputs/qa_renders/pdf/page_09.png",
+      "extension": ".png",
+      "status": "PASSED",
+      "details": "Image valid (1224x1584 px)"
+    },
+    {
+      "path": "./outputs/qa_renders/pdf/page_10.png",
+      "extension": ".png",
+      "status": "PASSED",
+      "details": "Image valid (1224x1584 px)"
+    },
+    {
+      "path": "./powerbi/build_pbi_model.py",
+      "extension": ".py",
+      "status": "PASSED",
+      "details": "Python syntax valid (334 lines)"
+    },
+    {
+      "path": "./powerbi/dax_measures.dax",
+      "extension": ".dax",
+      "status": "PASSED",
+      "details": "Other file format (8,691 bytes)"
+    },
+    {
+      "path": "./powerbi/export_dashboard_data.py",
+      "extension": ".py",
+      "status": "PASSED",
+      "details": "Python syntax valid (49 lines)"
+    },
+    {
+      "path": "./powerbi/Model.bim",
+      "extension": ".bim",
+      "status": "PASSED",
+      "details": "Other file format (53,554 bytes)"
+    },
+    {
+      "path": "./powerbi/power_query_scripts.m",
+      "extension": ".m",
+      "status": "PASSED",
+      "details": "Text file valid (100 lines)"
+    },
+    {
+      "path": "./powerbi/report_layout_spec.json",
+      "extension": ".json",
+      "status": "PASSED",
+      "details": "JSON valid (6 top-level items)"
+    },
+    {
+      "path": "./powerbi/theme.json",
+      "extension": ".json",
+      "status": "PASSED",
+      "details": "JSON valid (6 top-level items)"
+    },
+    {
+      "path": "./powerbi/dashboard_preview/app.js",
+      "extension": ".js",
+      "status": "PASSED",
+      "details": "Text file valid (798 lines)"
+    },
+    {
+      "path": "./powerbi/dashboard_preview/dashboard_data.js",
+      "extension": ".js",
+      "status": "PASSED",
+      "details": "Text file valid (1 lines)"
+    },
+    {
+      "path": "./powerbi/dashboard_preview/dashboard_data.json",
+      "extension": ".json",
+      "status": "PASSED",
+      "details": "JSON valid (9 top-level items)"
+    },
+    {
+      "path": "./powerbi/dashboard_preview/index.html",
+      "extension": ".html",
+      "status": "PASSED",
+      "details": "Text file valid (631 lines)"
+    },
+    {
+      "path": "./powerbi/dashboard_preview/style.css",
+      "extension": ".css",
+      "status": "PASSED",
+      "details": "Text file valid (554 lines)"
+    },
+    {
+      "path": "./presentation/Corporate_Real_Estate_Executive_Review.pptx",
+      "extension": ".pptx",
+      "status": "PASSED",
+      "details": "PowerPoint valid (7 slides)"
+    },
+    {
+      "path": "./reports/Corporate_Real_Estate_Portfolio_Analytics_Report.pdf",
+      "extension": ".pdf",
+      "status": "PASSED",
+      "details": "PDF valid (10 pages, extractable text)"
+    },
+    {
+      "path": "./sql/01_schema/create_schema.sql",
+      "extension": ".sql",
+      "status": "PASSED",
+      "details": "SQL file valid (207 lines)"
+    },
+    {
+      "path": "./sql/02_load/load_clean_data.sql",
+      "extension": ".sql",
+      "status": "PASSED",
+      "details": "SQL file valid (23 lines)"
+    },
+    {
+      "path": "./sql/03_quality/quality_audits.sql",
+      "extension": ".sql",
+      "status": "PASSED",
+      "details": "SQL file valid (98 lines)"
+    },
+    {
+      "path": "./sql/04_kpis/portfolio_kpis.sql",
+      "extension": ".sql",
+      "status": "PASSED",
+      "details": "SQL file valid (102 lines)"
+    },
+    {
+      "path": "./sql/05_analysis/business_questions.sql",
+      "extension": ".sql",
+      "status": "PASSED",
+      "details": "SQL file valid (434 lines)"
+    },
+    {
+      "path": "./sql/06_views/create_views.sql",
+      "extension": ".sql",
+      "status": "PASSED",
+      "details": "SQL file valid (185 lines)"
+    },
+    {
+      "path": "./src/__init__.py",
+      "extension": ".py",
+      "status": "PASSED",
+      "details": "Python syntax valid (1 lines)"
+    },
+    {
+      "path": "./src/analytics/attention_matrix.py",
+      "extension": ".py",
+      "status": "PASSED",
+      "details": "Python syntax valid (108 lines)"
+    },
+    {
+      "path": "./src/analytics/eda.py",
+      "extension": ".py",
+      "status": "PASSED",
+      "details": "Python syntax valid (287 lines)"
+    },
+    {
+      "path": "./src/analytics/scenario_model.py",
+      "extension": ".py",
+      "status": "PASSED",
+      "details": "Python syntax valid (194 lines)"
+    },
+    {
+      "path": "./src/analytics/__init__.py",
+      "extension": ".py",
+      "status": "PASSED",
+      "details": "Python syntax valid (0 lines)"
+    },
+    {
+      "path": "./src/cleaning/clean_pipeline.py",
+      "extension": ".py",
+      "status": "PASSED",
+      "details": "Python syntax valid (442 lines)"
+    },
+    {
+      "path": "./src/cleaning/__init__.py",
+      "extension": ".py",
+      "status": "PASSED",
+      "details": "Python syntax valid (0 lines)"
+    },
+    {
+      "path": "./src/data_generation/constants.py",
+      "extension": ".py",
+      "status": "PASSED",
+      "details": "Python syntax valid (689 lines)"
+    },
+    {
+      "path": "./src/data_generation/generate_portfolio.py",
+      "extension": ".py",
+      "status": "PASSED",
+      "details": "Python syntax valid (284 lines)"
+    },
+    {
+      "path": "./src/data_generation/generate_time_series.py",
+      "extension": ".py",
+      "status": "PASSED",
+      "details": "Python syntax valid (390 lines)"
+    },
+    {
+      "path": "./src/data_generation/inject_quality_issues.py",
+      "extension": ".py",
+      "status": "PASSED",
+      "details": "Python syntax valid (220 lines)"
+    },
+    {
+      "path": "./src/data_generation/main.py",
+      "extension": ".py",
+      "status": "PASSED",
+      "details": "Python syntax valid (60 lines)"
+    },
+    {
+      "path": "./src/data_generation/__init__.py",
+      "extension": ".py",
+      "status": "PASSED",
+      "details": "Python syntax valid (0 lines)"
+    },
+    {
+      "path": "./src/transformation/__init__.py",
+      "extension": ".py",
+      "status": "PASSED",
+      "details": "Python syntax valid (0 lines)"
+    },
+    {
+      "path": "./src/utilities/audit_all_files.py",
+      "extension": ".py",
+      "status": "PASSED",
+      "details": "Python syntax valid (187 lines)"
+    },
+    {
+      "path": "./src/utilities/build_excel_workbook.py",
+      "extension": ".py",
+      "status": "PASSED",
+      "details": "Python syntax valid (624 lines)"
+    },
+    {
+      "path": "./src/utilities/build_pdf_report.py",
+      "extension": ".py",
+      "status": "PASSED",
+      "details": "Python syntax valid (521 lines)"
+    },
+    {
+      "path": "./src/utilities/build_presentation.py",
+      "extension": ".py",
+      "status": "PASSED",
+      "details": "Python syntax valid (339 lines)"
+    },
+    {
+      "path": "./src/utilities/db_loader.py",
+      "extension": ".py",
+      "status": "PASSED",
+      "details": "Python syntax valid (106 lines)"
+    },
+    {
+      "path": "./src/utilities/run_sql_queries.py",
+      "extension": ".py",
+      "status": "PASSED",
+      "details": "Python syntax valid (89 lines)"
+    },
+    {
+      "path": "./src/utilities/verify_150_aok.py",
+      "extension": ".py",
+      "status": "PASSED",
+      "details": "Python syntax valid (205 lines)"
+    },
+    {
+      "path": "./src/utilities/verify_reconciliation.py",
+      "extension": ".py",
+      "status": "PASSED",
+      "details": "Python syntax valid (251 lines)"
+    },
+    {
+      "path": "./src/utilities/visual_qa.py",
+      "extension": ".py",
+      "status": "PASSED",
+      "details": "Python syntax valid (120 lines)"
+    },
+    {
+      "path": "./src/utilities/__init__.py",
+      "extension": ".py",
+      "status": "PASSED",
+      "details": "Python syntax valid (0 lines)"
+    },
+    {
+      "path": "./src/validation/engine.py",
+      "extension": ".py",
+      "status": "PASSED",
+      "details": "Python syntax valid (139 lines)"
+    },
+    {
+      "path": "./src/validation/rules.py",
+      "extension": ".py",
+      "status": "PASSED",
+      "details": "Python syntax valid (351 lines)"
+    },
+    {
+      "path": "./src/validation/__init__.py",
+      "extension": ".py",
+      "status": "PASSED",
+      "details": "Python syntax valid (0 lines)"
+    },
+    {
+      "path": "./tests/test_data_pipeline.py",
+      "extension": ".py",
+      "status": "PASSED",
+      "details": "Python syntax valid (167 lines)"
+    },
+    {
+      "path": "./tests/test_data_quality_rules.py",
+      "extension": ".py",
+      "status": "PASSED",
+      "details": "Python syntax valid (161 lines)"
+    },
+    {
+      "path": "./tests/test_deliverable_artifacts.py",
+      "extension": ".py",
+      "status": "PASSED",
+      "details": "Python syntax valid (116 lines)"
+    },
+    {
+      "path": "./tests/test_financial_and_cost.py",
+      "extension": ".py",
+      "status": "PASSED",
+      "details": "Python syntax valid (88 lines)"
+    },
+    {
+      "path": "./tests/test_models_and_scenarios.py",
+      "extension": ".py",
+      "status": "PASSED",
+      "details": "Python syntax valid (95 lines)"
+    },
+    {
+      "path": "./tests/test_schema_integrity.py",
+      "extension": ".py",
+      "status": "PASSED",
+      "details": "Python syntax valid (154 lines)"
+    },
+    {
+      "path": "./tests/test_sql_queries_and_views.py",
+      "extension": ".py",
+      "status": "PASSED",
+      "details": "Python syntax valid (75 lines)"
+    },
+    {
+      "path": "./tests/test_utilization_invariants.py",
+      "extension": ".py",
+      "status": "PASSED",
+      "details": "Python syntax valid (110 lines)"
+    },
+    {
+      "path": "./tests/__init__.py",
+      "extension": ".py",
+      "status": "PASSED",
+      "details": "Python syntax valid (0 lines)"
+    }
+  ]
+}

@@ -1,0 +1,909 @@
+{
+  "total_cycles": 150,
+  "passed_cycles": 150,
+  "failed_cycles": 0,
+  "success_rate_pct": 100.0,
+  "total_duration_sec": 0.81,
+  "cycles": [
+    {
+      "cycle": 1,
+      "status": "AOK",
+      "duration_ms": 9.49,
+      "checks_passed": 12
+    },
+    {
+      "cycle": 2,
+      "status": "AOK",
+      "duration_ms": 5.5,
+      "checks_passed": 12
+    },
+    {
+      "cycle": 3,
+      "status": "AOK",
+      "duration_ms": 5.04,
+      "checks_passed": 12
+    },
+    {
+      "cycle": 4,
+      "status": "AOK",
+      "duration_ms": 5.3,
+      "checks_passed": 12
+    },
+    {
+      "cycle": 5,
+      "status": "AOK",
+      "duration_ms": 5.83,
+      "checks_passed": 12
+    },
+    {
+      "cycle": 6,
+      "status": "AOK",
+      "duration_ms": 5.92,
+      "checks_passed": 12
+    },
+    {
+      "cycle": 7,
+      "status": "AOK",
+      "duration_ms": 4.95,
+      "checks_passed": 12
+    },
+    {
+      "cycle": 8,
+      "status": "AOK",
+      "duration_ms": 5.77,
+      "checks_passed": 12
+    },
+    {
+      "cycle": 9,
+      "status": "AOK",
+      "duration_ms": 5.08,
+      "checks_passed": 12
+    },
+    {
+      "cycle": 10,
+      "status": "AOK",
+      "duration_ms": 5.95,
+      "checks_passed": 12
+    },
+    {
+      "cycle": 11,
+      "status": "AOK",
+      "duration_ms": 5.67,
+      "checks_passed": 12
+    },
+    {
+      "cycle": 12,
+      "status": "AOK",
+      "duration_ms": 5.82,
+      "checks_passed": 12
+    },
+    {
+      "cycle": 13,
+      "status": "AOK",
+      "duration_ms": 5.16,
+      "checks_passed": 12
+    },
+    {
+      "cycle": 14,
+      "status": "AOK",
+      "duration_ms": 5.41,
+      "checks_passed": 12
+    },
+    {
+      "cycle": 15,
+      "status": "AOK",
+      "duration_ms": 5.0,
+      "checks_passed": 12
+    },
+    {
+      "cycle": 16,
+      "status": "AOK",
+      "duration_ms": 5.45,
+      "checks_passed": 12
+    },
+    {
+      "cycle": 17,
+      "status": "AOK",
+      "duration_ms": 5.59,
+      "checks_passed": 12
+    },
+    {
+      "cycle": 18,
+      "status": "AOK",
+      "duration_ms": 5.56,
+      "checks_passed": 12
+    },
+    {
+      "cycle": 19,
+      "status": "AOK",
+      "duration_ms": 6.54,
+      "checks_passed": 12
+    },
+    {
+      "cycle": 20,
+      "status": "AOK",
+      "duration_ms": 5.36,
+      "checks_passed": 12
+    },
+    {
+      "cycle": 21,
+      "status": "AOK",
+      "duration_ms": 4.79,
+      "checks_passed": 12
+    },
+    {
+      "cycle": 22,
+      "status": "AOK",
+      "duration_ms": 5.52,
+      "checks_passed": 12
+    },
+    {
+      "cycle": 23,
+      "status": "AOK",
+      "duration_ms": 5.55,
+      "checks_passed": 12
+    },
+    {
+      "cycle": 24,
+      "status": "AOK",
+      "duration_ms": 5.36,
+      "checks_passed": 12
+    },
+    {
+      "cycle": 25,
+      "status": "AOK",
+      "duration_ms": 6.91,
+      "checks_passed": 12
+    },
+    {
+      "cycle": 26,
+      "status": "AOK",
+      "duration_ms": 4.92,
+      "checks_passed": 12
+    },
+    {
+      "cycle": 27,
+      "status": "AOK",
+      "duration_ms": 5.07,
+      "checks_passed": 12
+    },
+    {
+      "cycle": 28,
+      "status": "AOK",
+      "duration_ms": 5.31,
+      "checks_passed": 12
+    },
+    {
+      "cycle": 29,
+      "status": "AOK",
+      "duration_ms": 5.8,
+      "checks_passed": 12
+    },
+    {
+      "cycle": 30,
+      "status": "AOK",
+      "duration_ms": 5.44,
+      "checks_passed": 12
+    },
+    {
+      "cycle": 31,
+      "status": "AOK",
+      "duration_ms": 5.78,
+      "checks_passed": 12
+    },
+    {
+      "cycle": 32,
+      "status": "AOK",
+      "duration_ms": 4.96,
+      "checks_passed": 12
+    },
+    {
+      "cycle": 33,
+      "status": "AOK",
+      "duration_ms": 5.54,
+      "checks_passed": 12
+    },
+    {
+      "cycle": 34,
+      "status": "AOK",
+      "duration_ms": 5.11,
+      "checks_passed": 12
+    },
+    {
+      "cycle": 35,
+      "status": "AOK",
+      "duration_ms": 4.91,
+      "checks_passed": 12
+    },
+    {
+      "cycle": 36,
+      "status": "AOK",
+      "duration_ms": 5.8,
+      "checks_passed": 12
+    },
+    {
+      "cycle": 37,
+      "status": "AOK",
+      "duration_ms": 5.65,
+      "checks_passed": 12
+    },
+    {
+      "cycle": 38,
+      "status": "AOK",
+      "duration_ms": 5.02,
+      "checks_passed": 12
+    },
+    {
+      "cycle": 39,
+      "status": "AOK",
+      "duration_ms": 5.56,
+      "checks_passed": 12
+    },
+    {
+      "cycle": 40,
+      "status": "AOK",
+      "duration_ms": 5.91,
+      "checks_passed": 12
+    },
+    {
+      "cycle": 41,
+      "status": "AOK",
+      "duration_ms": 5.81,
+      "checks_passed": 12
+    },
+    {
+      "cycle": 42,
+      "status": "AOK",
+      "duration_ms": 5.96,
+      "checks_passed": 12
+    },
+    {
+      "cycle": 43,
+      "status": "AOK",
+      "duration_ms": 5.23,
+      "checks_passed": 12
+    },
+    {
+      "cycle": 44,
+      "status": "AOK",
+      "duration_ms": 5.81,
+      "checks_passed": 12
+    },
+    {
+      "cycle": 45,
+      "status": "AOK",
+      "duration_ms": 5.57,
+      "checks_passed": 12
+    },
+    {
+      "cycle": 46,
+      "status": "AOK",
+      "duration_ms": 4.89,
+      "checks_passed": 12
+    },
+    {
+      "cycle": 47,
+      "status": "AOK",
+      "duration_ms": 4.75,
+      "checks_passed": 12
+    },
+    {
+      "cycle": 48,
+      "status": "AOK",
+      "duration_ms": 5.28,
+      "checks_passed": 12
+    },
+    {
+      "cycle": 49,
+      "status": "AOK",
+      "duration_ms": 5.2,
+      "checks_passed": 12
+    },
+    {
+      "cycle": 50,
+      "status": "AOK",
+      "duration_ms": 4.89,
+      "checks_passed": 12
+    },
+    {
+      "cycle": 51,
+      "status": "AOK",
+      "duration_ms": 5.45,
+      "checks_passed": 12
+    },
+    {
+      "cycle": 52,
+      "status": "AOK",
+      "duration_ms": 4.92,
+      "checks_passed": 12
+    },
+    {
+      "cycle": 53,
+      "status": "AOK",
+      "duration_ms": 5.03,
+      "checks_passed": 12
+    },
+    {
+      "cycle": 54,
+      "status": "AOK",
+      "duration_ms": 5.74,
+      "checks_passed": 12
+    },
+    {
+      "cycle": 55,
+      "status": "AOK",
+      "duration_ms": 5.69,
+      "checks_passed": 12
+    },
+    {
+      "cycle": 56,
+      "status": "AOK",
+      "duration_ms": 5.84,
+      "checks_passed": 12
+    },
+    {
+      "cycle": 57,
+      "status": "AOK",
+      "duration_ms": 5.75,
+      "checks_passed": 12
+    },
+    {
+      "cycle": 58,
+      "status": "AOK",
+      "duration_ms": 5.75,
+      "checks_passed": 12
+    },
+    {
+      "cycle": 59,
+      "status": "AOK",
+      "duration_ms": 5.67,
+      "checks_passed": 12
+    },
+    {
+      "cycle": 60,
+      "status": "AOK",
+      "duration_ms": 5.17,
+      "checks_passed": 12
+    },
+    {
+      "cycle": 61,
+      "status": "AOK",
+      "duration_ms": 5.4,
+      "checks_passed": 12
+    },
+    {
+      "cycle": 62,
+      "status": "AOK",
+      "duration_ms": 5.25,
+      "checks_passed": 12
+    },
+    {
+      "cycle": 63,
+      "status": "AOK",
+      "duration_ms": 6.01,
+      "checks_passed": 12
+    },
+    {
+      "cycle": 64,
+      "status": "AOK",
+      "duration_ms": 5.43,
+      "checks_passed": 12
+    },
+    {
+      "cycle": 65,
+      "status": "AOK",
+      "duration_ms": 5.32,
+      "checks_passed": 12
+    },
+    {
+      "cycle": 66,
+      "status": "AOK",
+      "duration_ms": 4.83,
+      "checks_passed": 12
+    },
+    {
+      "cycle": 67,
+      "status": "AOK",
+      "duration_ms": 6.65,
+      "checks_passed": 12
+    },
+    {
+      "cycle": 68,
+      "status": "AOK",
+      "duration_ms": 5.63,
+      "checks_passed": 12
+    },
+    {
+      "cycle": 69,
+      "status": "AOK",
+      "duration_ms": 4.86,
+      "checks_passed": 12
+    },
+    {
+      "cycle": 70,
+      "status": "AOK",
+      "duration_ms": 5.67,
+      "checks_passed": 12
+    },
+    {
+      "cycle": 71,
+      "status": "AOK",
+      "duration_ms": 4.74,
+      "checks_passed": 12
+    },
+    {
+      "cycle": 72,
+      "status": "AOK",
+      "duration_ms": 4.96,
+      "checks_passed": 12
+    },
+    {
+      "cycle": 73,
+      "status": "AOK",
+      "duration_ms": 5.19,
+      "checks_passed": 12
+    },
+    {
+      "cycle": 74,
+      "status": "AOK",
+      "duration_ms": 5.63,
+      "checks_passed": 12
+    },
+    {
+      "cycle": 75,
+      "status": "AOK",
+      "duration_ms": 5.04,
+      "checks_passed": 12
+    },
+    {
+      "cycle": 76,
+      "status": "AOK",
+      "duration_ms": 6.01,
+      "checks_passed": 12
+    },
+    {
+      "cycle": 77,
+      "status": "AOK",
+      "duration_ms": 4.9,
+      "checks_passed": 12
+    },
+    {
+      "cycle": 78,
+      "status": "AOK",
+      "duration_ms": 5.27,
+      "checks_passed": 12
+    },
+    {
+      "cycle": 79,
+      "status": "AOK",
+      "duration_ms": 6.33,
+      "checks_passed": 12
+    },
+    {
+      "cycle": 80,
+      "status": "AOK",
+      "duration_ms": 5.51,
+      "checks_passed": 12
+    },
+    {
+      "cycle": 81,
+      "status": "AOK",
+      "duration_ms": 4.99,
+      "checks_passed": 12
+    },
+    {
+      "cycle": 82,
+      "status": "AOK",
+      "duration_ms": 5.28,
+      "checks_passed": 12
+    },
+    {
+      "cycle": 83,
+      "status": "AOK",
+      "duration_ms": 5.39,
+      "checks_passed": 12
+    },
+    {
+      "cycle": 84,
+      "status": "AOK",
+      "duration_ms": 4.83,
+      "checks_passed": 12
+    },
+    {
+      "cycle": 85,
+      "status": "AOK",
+      "duration_ms": 6.77,
+      "checks_passed": 12
+    },
+    {
+      "cycle": 86,
+      "status": "AOK",
+      "duration_ms": 5.39,
+      "checks_passed": 12
+    },
+    {
+      "cycle": 87,
+      "status": "AOK",
+      "duration_ms": 4.86,
+      "checks_passed": 12
+    },
+    {
+      "cycle": 88,
+      "status": "AOK",
+      "duration_ms": 5.76,
+      "checks_passed": 12
+    },
+    {
+      "cycle": 89,
+      "status": "AOK",
+      "duration_ms": 5.04,
+      "checks_passed": 12
+    },
+    {
+      "cycle": 90,
+      "status": "AOK",
+      "duration_ms": 5.37,
+      "checks_passed": 12
+    },
+    {
+      "cycle": 91,
+      "status": "AOK",
+      "duration_ms": 5.8,
+      "checks_passed": 12
+    },
+    {
+      "cycle": 92,
+      "status": "AOK",
+      "duration_ms": 5.03,
+      "checks_passed": 12
+    },
+    {
+      "cycle": 93,
+      "status": "AOK",
+      "duration_ms": 5.32,
+      "checks_passed": 12
+    },
+    {
+      "cycle": 94,
+      "status": "AOK",
+      "duration_ms": 4.97,
+      "checks_passed": 12
+    },
+    {
+      "cycle": 95,
+      "status": "AOK",
+      "duration_ms": 4.92,
+      "checks_passed": 12
+    },
+    {
+      "cycle": 96,
+      "status": "AOK",
+      "duration_ms": 4.96,
+      "checks_passed": 12
+    },
+    {
+      "cycle": 97,
+      "status": "AOK",
+      "duration_ms": 4.69,
+      "checks_passed": 12
+    },
+    {
+      "cycle": 98,
+      "status": "AOK",
+      "duration_ms": 5.04,
+      "checks_passed": 12
+    },
+    {
+      "cycle": 99,
+      "status": "AOK",
+      "duration_ms": 5.6,
+      "checks_passed": 12
+    },
+    {
+      "cycle": 100,
+      "status": "AOK",
+      "duration_ms": 5.47,
+      "checks_passed": 12
+    },
+    {
+      "cycle": 101,
+      "status": "AOK",
+      "duration_ms": 5.54,
+      "checks_passed": 12
+    },
+    {
+      "cycle": 102,
+      "status": "AOK",
+      "duration_ms": 5.42,
+      "checks_passed": 12
+    },
+    {
+      "cycle": 103,
+      "status": "AOK",
+      "duration_ms": 5.93,
+      "checks_passed": 12
+    },
+    {
+      "cycle": 104,
+      "status": "AOK",
+      "duration_ms": 5.16,
+      "checks_passed": 12
+    },
+    {
+      "cycle": 105,
+      "status": "AOK",
+      "duration_ms": 6.0,
+      "checks_passed": 12
+    },
+    {
+      "cycle": 106,
+      "status": "AOK",
+      "duration_ms": 4.89,
+      "checks_passed": 12
+    },
+    {
+      "cycle": 107,
+      "status": "AOK",
+      "duration_ms": 5.06,
+      "checks_passed": 12
+    },
+    {
+      "cycle": 108,
+      "status": "AOK",
+      "duration_ms": 5.57,
+      "checks_passed": 12
+    },
+    {
+      "cycle": 109,
+      "status": "AOK",
+      "duration_ms": 4.95,
+      "checks_passed": 12
+    },
+    {
+      "cycle": 110,
+      "status": "AOK",
+      "duration_ms": 4.84,
+      "checks_passed": 12
+    },
+    {
+      "cycle": 111,
+      "status": "AOK",
+      "duration_ms": 5.83,
+      "checks_passed": 12
+    },
+    {
+      "cycle": 112,
+      "status": "AOK",
+      "duration_ms": 4.9,
+      "checks_passed": 12
+    },
+    {
+      "cycle": 113,
+      "status": "AOK",
+      "duration_ms": 4.99,
+      "checks_passed": 12
+    },
+    {
+      "cycle": 114,
+      "status": "AOK",
+      "duration_ms": 5.63,
+      "checks_passed": 12
+    },
+    {
+      "cycle": 115,
+      "status": "AOK",
+      "duration_ms": 5.1,
+      "checks_passed": 12
+    },
+    {
+      "cycle": 116,
+      "status": "AOK",
+      "duration_ms": 4.72,
+      "checks_passed": 12
+    },
+    {
+      "cycle": 117,
+      "status": "AOK",
+      "duration_ms": 4.84,
+      "checks_passed": 12
+    },
+    {
+      "cycle": 118,
+      "status": "AOK",
+      "duration_ms": 5.6,
+      "checks_passed": 12
+    },
+    {
+      "cycle": 119,
+      "status": "AOK",
+      "duration_ms": 5.53,
+      "checks_passed": 12
+    },
+    {
+      "cycle": 120,
+      "status": "AOK",
+      "duration_ms": 6.45,
+      "checks_passed": 12
+    },
+    {
+      "cycle": 121,
+      "status": "AOK",
+      "duration_ms": 5.43,
+      "checks_passed": 12
+    },
+    {
+      "cycle": 122,
+      "status": "AOK",
+      "duration_ms": 5.71,
+      "checks_passed": 12
+    },
+    {
+      "cycle": 123,
+      "status": "AOK",
+      "duration_ms": 4.77,
+      "checks_passed": 12
+    },
+    {
+      "cycle": 124,
+      "status": "AOK",
+      "duration_ms": 4.98,
+      "checks_passed": 12
+    },
+    {
+      "cycle": 125,
+      "status": "AOK",
+      "duration_ms": 5.05,
+      "checks_passed": 12
+    },
+    {
+      "cycle": 126,
+      "status": "AOK",
+      "duration_ms": 5.1,
+      "checks_passed": 12
+    },
+    {
+      "cycle": 127,
+      "status": "AOK",
+      "duration_ms": 4.82,
+      "checks_passed": 12
+    },
+    {
+      "cycle": 128,
+      "status": "AOK",
+      "duration_ms": 4.87,
+      "checks_passed": 12
+    },
+    {
+      "cycle": 129,
+      "status": "AOK",
+      "duration_ms": 5.62,
+      "checks_passed": 12
+    },
+    {
+      "cycle": 130,
+      "status": "AOK",
+      "duration_ms": 4.77,
+      "checks_passed": 12
+    },
+    {
+      "cycle": 131,
+      "status": "AOK",
+      "duration_ms": 5.69,
+      "checks_passed": 12
+    },
+    {
+      "cycle": 132,
+      "status": "AOK",
+      "duration_ms": 5.01,
+      "checks_passed": 12
+    },
+    {
+      "cycle": 133,
+      "status": "AOK",
+      "duration_ms": 4.78,
+      "checks_passed": 12
+    },
+    {
+      "cycle": 134,
+      "status": "AOK",
+      "duration_ms": 4.76,
+      "checks_passed": 12
+    },
+    {
+      "cycle": 135,
+      "status": "AOK",
+      "duration_ms": 5.12,
+      "checks_passed": 12
+    },
+    {
+      "cycle": 136,
+      "status": "AOK",
+      "duration_ms": 4.98,
+      "checks_passed": 12
+    },
+    {
+      "cycle": 137,
+      "status": "AOK",
+      "duration_ms": 4.66,
+      "checks_passed": 12
+    },
+    {
+      "cycle": 138,
+      "status": "AOK",
+      "duration_ms": 5.8,
+      "checks_passed": 12
+    },
+    {
+      "cycle": 139,
+      "status": "AOK",
+      "duration_ms": 5.57,
+      "checks_passed": 12
+    },
+    {
+      "cycle": 140,
+      "status": "AOK",
+      "duration_ms": 4.8,
+      "checks_passed": 12
+    },
+    {
+      "cycle": 141,
+      "status": "AOK",
+      "duration_ms": 5.33,
+      "checks_passed": 12
+    },
+    {
+      "cycle": 142,
+      "status": "AOK",
+      "duration_ms": 4.87,
+      "checks_passed": 12
+    },
+    {
+      "cycle": 143,
+      "status": "AOK",
+      "duration_ms": 4.74,
+      "checks_passed": 12
+    },
+    {
+      "cycle": 144,
+      "status": "AOK",
+      "duration_ms": 5.61,
+      "checks_passed": 12
+    },
+    {
+      "cycle": 145,
+      "status": "AOK",
+      "duration_ms": 4.85,
+      "checks_passed": 12
+    },
+    {
+      "cycle": 146,
+      "status": "AOK",
+      "duration_ms": 4.88,
+      "checks_passed": 12
+    },
+    {
+      "cycle": 147,
+      "status": "AOK",
+      "duration_ms": 5.4,
+      "checks_passed": 12
+    },
+    {
+      "cycle": 148,
+      "status": "AOK",
+      "duration_ms": 4.72,
+      "checks_passed": 12
+    },
+    {
+      "cycle": 149,
+      "status": "AOK",
+      "duration_ms": 4.75,
+      "checks_passed": 12
+    },
+    {
+      "cycle": 150,
+      "status": "AOK",
+      "duration_ms": 5.42,
+      "checks_passed": 12
+    }
+  ]
+}
