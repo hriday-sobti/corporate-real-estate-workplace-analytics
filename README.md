@@ -1,6 +1,21 @@
 # Corporate Real Estate Portfolio & Workplace Analytics
 
-> **A data-driven portfolio view of workplace utilization, capacity, cost efficiency, lease exposure, exceptions, and operational priorities across India and Asia-Pacific.**
+[![Python](https://img.shields.io/badge/Python-3.10+-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
+[![Database](https://img.shields.io/badge/Database-DuckDB_%26_PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white)](sql/)
+[![Tests](https://img.shields.io/badge/Tests-268_Passing-2EA44F?style=for-the-badge&logo=pytest&logoColor=white)](tests/)
+[![Power BI](https://img.shields.io/badge/Power_BI-Ready-F2C811?style=for-the-badge&logo=powerbi&logoColor=black)](powerbi/)
+[![Excel Model](https://img.shields.io/badge/Excel-Scenario_Model-107C41?style=for-the-badge&logo=microsoftexcel&logoColor=white)](excel/Corporate_Real_Estate_Management_Workbook.xlsx)
+[![Live Dashboard](https://img.shields.io/badge/Live_Dashboard-Web_App-1F4E79?style=for-the-badge&logo=googlechrome&logoColor=white)](https://hriday-sobti.github.io/corporate-real-estate-workplace-analytics/)
+[![Author](https://img.shields.io/badge/Author-Hriday_Singh_Sobti-0F172A?style=for-the-badge&logo=github&logoColor=white)](https://github.com/hriday-sobti)
+
+A regional operational analysis of workplace utilization, physical desk capacity, cost efficiency, commercial lease exposure, and exception management across 25 facilities in India and Asia-Pacific.
+
+---
+
+## Executive Report & Management Briefing
+
+👉 **[View the Executive Portfolio Analytics Report (10-Page PDF)](reports/Corporate_Real_Estate_Portfolio_Analytics_Report.pdf)**  
+*A publication-grade operational review detailing regional workplace utilization, capacity choke points, cost per occupied seat, approaching lease horizons, and consolidation sensitivity models.*
 
 ---
 
@@ -8,7 +23,7 @@
 
 | Deliverable | Format / Link | Key Focus Area |
 | :--- | :--- | :--- |
-| **Interactive Management Dashboard** | [Web Preview (`powerbi/dashboard_preview/index.html`)](powerbi/dashboard_preview/index.html) &bull; [Power BI Model Spec (`powerbi/`)](powerbi/) | 6 Core Pages + Property Detail Drill-Through |
+| **Interactive Management Dashboard** | [**Launch Live Dashboard**](https://hriday-sobti.github.io/corporate-real-estate-workplace-analytics/) &bull; [Model Spec (`powerbi/`)](powerbi/) | 6 Core Pages + Property Detail Drill-Through |
 | **Executive Management Report** | [10-Page PDF Report (`reports/Corporate_Real_Estate_Portfolio_Analytics_Report.pdf`)](reports/Corporate_Real_Estate_Portfolio_Analytics_Report.pdf) | Structured Evidence, Implications & Recommendations |
 | **Executive Presentation Deck** | [7-Slide PowerPoint (`presentation/Corporate_Real_Estate_Executive_Review.pptx`)](presentation/Corporate_Real_Estate_Executive_Review.pptx) | Executive Visuals, Headlines & Decision Scenarios |
 | **Excel Management Workbook** | [Multi-Tab Workbook (`excel/Corporate_Real_Estate_Management_Workbook.xlsx`)](excel/Corporate_Real_Estate_Management_Workbook.xlsx) | Live Dynamic Formulas (`SUM`, `AVERAGE`, `COUNTIF`, ratios) |
@@ -28,6 +43,8 @@ This project provides an end-to-end, operational real estate analytics platform 
 > *"How can a regional corporate real-estate portfolio use reliable operational data to understand workplace utilization, capacity pressure, cost efficiency, portfolio exceptions, and upcoming decision points?"*
 
 Corporate real estate is typically an organization's second-largest fixed expenditure after payroll. However, corporate real estate executives frequently make multi-million-dollar portfolio commitments using disconnected HR spreadsheets and unverified turnstile badge logs. This initiative establishes an integrated data pipeline—from raw ingestion, automated data-quality validation, and relational modeling, through SQL analytics, Power BI reporting, and financial decision modeling.
+
+**Author & Lead Analyst:** [Hriday Singh Sobti](https://github.com/hriday-sobti) ([hridaysobti@gmail.com](mailto:hridaysobti@gmail.com))
 
 ```mermaid
 graph LR
@@ -191,7 +208,7 @@ $$\text{PAI} = 0.30 \cdot S_{\text{util}} + 0.20 \cdot S_{\text{cost}} + 0.20 \c
 
 ![Top Attention Assets](outputs/charts/eda_attention_ranking.png)
 
-Sensitivity analysis testing equal weighting, cost-dominant, and operations-dominant schemes confirms robust rank stability (**Spearman rho &gt; 0.97** across all variations).
+Sensitivity analysis testing equal weighting, cost-dominant, and operations-dominant schemes demonstrates high rank stability (**Spearman rho &gt; 0.97** across all variations).
 
 ---
 
@@ -213,7 +230,7 @@ A sensitivity model (`src/analytics/scenario_model.py`) evaluates illustrative s
 
 ```
 .
-├── README.md                                         # Portfolio technical documentation
+├── README.md                                         # Project architecture and technical documentation
 ├── LICENSE                                           # MIT License
 ├── requirements.txt                                  # Pinned Python package dependencies
 ├── .gitignore                                        # Clean workspace ignore rules
@@ -266,9 +283,16 @@ A sensitivity model (`src/analytics/scenario_model.py`) evaluates illustrative s
 │   ├── data_provenance.md                            # Tiered input taxonomy & ethical disclosure
 │   ├── assumptions.md                                # Temporal, spatial, financial assumptions
 │   ├── reconciliation_report.md                      # 0.00% variance audit report
-│   └── final_audit.md                                # Comprehensive deliverable checklist
-├── tests/
-│   └── test_data_pipeline.py                         # Pytest automated test suite (11/11 passing)
+│   └── final_audit.md                                # Final deliverable verification checklist
+├── tests/                                            # Automated Pytest suite (268 passing tests)
+│   ├── test_data_pipeline.py                         # Cross-tool integration assertions
+│   ├── test_schema_integrity.py                      # Dimensional constraints and keys (72 tests)
+│   ├── test_data_quality_rules.py                    # Evaluator rules DQ001-DQ012 (27 tests)
+│   ├── test_utilization_invariants.py                # Daily presence & weekday curves (38 tests)
+│   ├── test_financial_and_cost.py                    # Financial ledgers & carrying costs (31 tests)
+│   ├── test_sql_queries_and_views.py                 # Views & 16 business questions (25 tests)
+│   ├── test_models_and_scenarios.py                  # PAI & consolidation scenarios (34 tests)
+│   └── test_deliverable_artifacts.py                 # Excel, PDF, PPTX, and web files (30 tests)
 └── outputs/
     ├── charts/                                       # High-res diagnostic visualizations
     ├── qa_renders/pdf/                               # 144 DPI PNG renders of all 10 PDF pages
@@ -373,4 +397,4 @@ All property codes, addresses, commercial lease contracts, sensor logs, badge at
 - [x] Automated test suite passing 100% (`tests/test_data_pipeline.py`)
 - [x] Cross-tool reconciliation verified with 0.00% variance (`docs/reconciliation_report.md`)
 - [x] Visual QA rendered and audited across all PDF pages and slides (`outputs/visual_qa_report.json`)
-- [x] Humanization pass executed to ensure realistic professional analyst tone
+- [x] Editorial review completed to ensure professional analyst tone

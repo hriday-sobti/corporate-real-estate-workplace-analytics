@@ -1059,17 +1059,6 @@
       ],
       "preview": [
         {
-          "RoomType": "Large Meeting Room",
-          "TotalRoomsProvisioned": 112,
-          "RatedCapacity": 12.0,
-          "AvgBookingsPerDay": 3.0,
-          "AvgAttendedPerDay": 2.3,
-          "AvgPhysicalAttendees": 4.2,
-          "SeatSurplusPerMeeting": 7.8,
-          "NoShowRatePct": 23.31,
-          "AverageUtilizationPct": 22.16
-        },
-        {
           "RoomType": "Small Meeting Room",
           "TotalRoomsProvisioned": 112,
           "RatedCapacity": 6.0,
@@ -1079,6 +1068,17 @@
           "SeatSurplusPerMeeting": 2.0,
           "NoShowRatePct": 23.55,
           "AverageUtilizationPct": 37.49
+        },
+        {
+          "RoomType": "Large Meeting Room",
+          "TotalRoomsProvisioned": 112,
+          "RatedCapacity": 12.0,
+          "AvgBookingsPerDay": 3.0,
+          "AvgAttendedPerDay": 2.3,
+          "AvgPhysicalAttendees": 4.2,
+          "SeatSurplusPerMeeting": 7.8,
+          "NoShowRatePct": 23.31,
+          "AverageUtilizationPct": 22.16
         }
       ],
       "status": "SUCCESS"
@@ -1156,6 +1156,17 @@
       ],
       "preview": [
         {
+          "PropertyCode": "PROP-BLR-02",
+          "PropertyName": "Outer Ring Road Alpha Center",
+          "City": "Bengaluru",
+          "Country": "India",
+          "LoggedExceptionCount": 1,
+          "CriticalCount": 0,
+          "HighCount": 1,
+          "MediumCount": 0,
+          "ViolatedRules": "DQ005"
+        },
+        {
           "PropertyCode": "PROP-BOM-02",
           "PropertyName": "BKC Central Tower B",
           "City": "Mumbai",
@@ -1198,17 +1209,6 @@
           "HighCount": 0,
           "MediumCount": 1,
           "ViolatedRules": "DQ009"
-        },
-        {
-          "PropertyCode": "PROP-BLR-02",
-          "PropertyName": "Outer Ring Road Alpha Center",
-          "City": "Bengaluru",
-          "Country": "India",
-          "LoggedExceptionCount": 1,
-          "CriticalCount": 0,
-          "HighCount": 1,
-          "MediumCount": 0,
-          "ViolatedRules": "DQ005"
         }
       ],
       "status": "SUCCESS"

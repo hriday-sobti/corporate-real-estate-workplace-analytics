@@ -266,7 +266,7 @@ def build_pdf_report():
     # -------------------------------------------------------------
     story.append(PageBreak())
     story.append(Paragraph("Portfolio Profile: Spatial Scale & Geographic Footprint", style_h1))
-    story.append(Paragraph("Comprehensive baseline analysis of usable area, rentable area, capacity, and density across 11 metropolitan markets.", style_body))
+    story.append(Paragraph("Baseline spatial analysis of usable area, rentable area, capacity, and density across 11 metropolitan markets.", style_body))
     story.append(HRFlowable(width="100%", thickness=1, color=colors.HexColor("#1F4E79"), spaceAfter=10))
 
     # Scale KPI Summary Table
